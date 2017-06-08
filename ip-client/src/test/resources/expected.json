@@ -1,0 +1,107 @@
+[
+    {
+        "id": "http://data.einnsyn.no/noark5/saksmappe--sak%3A200080--test--2016-03-04T18%3A21%3A41",
+        "type": [
+            "Mappe",
+            "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "Saksmappe"
+        ],
+        "arkivskaper": "http://data.einnsyn.no/virksomhet/test",
+        "offentligTittel": "Søknad om ny parykk",
+        "offentligTittel_SENSITIV": "Søknad om ny parykk",
+        "opprettetAv": "360 Administrator",
+        "opprettetDato": "2016-03-04T18:21:41",
+        "saksansvarlig": "Ola",
+        "publisertDato": "",
+        "standardDato": ""
+    },
+    {
+        "id": "http://data.einnsyn.no/noark5/journalpost--journalpost%3A200033--test--2016-03-04T18%3A28%3A42",
+        "type": [
+            "Basisregistrering",
+            "Registrering",
+            "http://www.w3.org/2000/01/rdf-schema#Resource",
+            "Journalpost"
+        ],
+        "arkivertDato": "2016-03-04T18:28:45",
+        "arkivskaper": "http://data.einnsyn.no/virksomhet/test",
+        "arkivskaperTransitive": [
+            "http://data.einnsyn.no/virksomhet/test"
+        ],
+        "dokumentbeskrivelse": [
+            {
+                "id": "UUID",
+                "type": [
+                    "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "Dokumentbeskrivelse"
+                ],
+                "dokumentobjekt": [
+                    {
+                        "id": "UUID",
+                        "type": [
+                            "http://www.w3.org/2000/01/rdf-schema#Resource",
+                            "Dokumentobjekt"
+                        ],
+                        "referanseDokumentfil": "http://nginx/testfiles/difi-rapport-2010-17-nasjonale-felleskomponenter-i-offentlig-sektor-pdf-.pdf"
+                    }
+                ],
+                "tittel": "Soknad.pdf",
+                "tittel_SENSITIV": "Soknad.pdf"
+            },
+            {
+                "id": "UUID",
+                "type": [
+                    "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "Dokumentbeskrivelse"
+                ],
+                "dokumentobjekt": [
+                    {
+                        "id": "UUID",
+                        "type": [
+                            "http://www.w3.org/2000/01/rdf-schema#Resource",
+                            "Dokumentobjekt"
+                        ],
+                        "referanseDokumentfil": "http://nginx/testfiles/difi-rapport-2010-17-nasjonale-felleskomponenter-i-offentlig-sektor-pdf-.pdf"
+                    }
+                ],
+                "tittel": "Vedlegg.pdf",
+                "tittel_SENSITIV": "Vedlegg.pdf"
+            }
+        ],
+        "forfatter": "Dennis Grisbeck",
+        "journaldato": "2016-03-04",
+        "journalpostnummer": "1",
+        "journalstatus": "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivert",
+        "korrespondansepart": [
+            {
+                "id": "UUID",
+                "type": [
+                    "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "Korrespondansepart"
+                ],
+                "korrespondansepartNavn": "Lene Andersen",
+                "korrespondansepartNavn_SENSITIV": "Lene Andersen",
+                "korrespondanseparttype": "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsender",
+                "postadresse": "Storgaten 14"
+            },
+            {
+                "id": "UUID",
+                "type": [
+                    "http://www.w3.org/2000/01/rdf-schema#Resource",
+                    "Korrespondansepart"
+                ],
+                "korrespondansepartNavn": "PartnerDemo",
+                "korrespondansepartNavn_SENSITIV": "PartnerDemo",
+                "korrespondanseparttype": "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mottaker"
+            }
+        ],
+        "noekkelord": [],
+        "offentligTittel": "Søknad om ny parykk",
+        "offentligTittel_SENSITIV": "Søknad om ny parykk",
+        "opprettetAv": "360 Administrator",
+        "opprettetDato": "2016-03-04T18:28:42",
+        "parent": "http://data.einnsyn.no/noark5/saksmappe--sak%3A200080--test--2016-03-04T18%3A21%3A41",
+        "publisertDato": "",
+        "standardDato": ""
+    }
+]

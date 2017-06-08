@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bestilling>
+    <id>http://data.einnsyn.no/innsynskrav/29549e70-e98c-40f0-87c3-9182e6ba8735</id>
+    <bestillingsdato>2017-03-18T15:00:59.962+01:00</bestillingsdato>
+    <til>
+        <enhet>Direktoratet for forvaltning og IKT</enhet>
+    </til>
+    <kontaktinfo>
+        <forsendelsesmåte>e-post</forsendelsesmåte>
+        <e-post>postmottak@example.com</e-post>
+    </kontaktinfo>
+    <dokumenter>
+        <dokument>
+            <saksnr>2016/20</saksnr>
+            <dokumentnr>1</dokumentnr>
+            <journalnr>2016/258</journalnr>
+        </dokument>
+    </dokumenter>
+</bestilling>
