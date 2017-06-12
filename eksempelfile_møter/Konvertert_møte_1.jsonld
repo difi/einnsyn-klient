@@ -1,0 +1,248 @@
+[ {
+  "@id" : "http://data.einnsyn.no/noark5/a2835c7a-f68b-4fec-904e-758a1d0e63c9",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondansepart" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_LIST" : [ {
+    "@list" : [ {
+      "@value" : "N/A"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_SENSITIV" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mottaker"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/arkiv--eInnsyn--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkiv" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettet"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2100-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "eInnsyn"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1990-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "eInnsyn"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "eInnsyn arkiv for virksomhet 976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "eInnsyn arkiv for virksomhet 976819853"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "eInnsyn arkiv for virksomhet 976819853"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/arkivdel--eInnsyn-Saker--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivdel" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivdelstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/aktivPeriode"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "3000-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1990-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/arkiv--eInnsyn--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "eInnsyn-Saker"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/journalpost--JP-1400915-1042545-35--991825827--2015-03-25T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalpost" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-03-25+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/organinterntDokumentUtenOppfølging"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "915"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalført"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepart" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/a2835c7a-f68b-4fec-904e-758a1d0e63c9"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Endring av møteplan for finanskomiteen 2015"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Vera Holst Eckbo"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/saksmappe--SM-1400915-1042545--991825827--2015-03-25T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker-976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/registreringsID" : [ {
+    "@value" : "JP-1400915-1042545-35"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "JP-1400915-1042545-35"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Endring av møteplan for finanskomiteen 2015"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/saksmappe--SM-1400915-1042545--991825827--2015-03-25T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksmappe" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/administrativEnhet" : [ {
+    "@value" : "976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper" : [ {
+    "@id" : "http://data.einnsyn.no/virksomhet/oepeksport_content_provider_196"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mappeID" : [ {
+    "@value" : "SM-1400915-1042545"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Endring av møteplan for finanskomiteen 2015"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Vera Holst Eckbo"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/arkivdel--eInnsyn-Saker--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/publisertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-06-12T17:17:04.248+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker-976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig" : [ {
+    "@value" : "Vera Holst Eckbo"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Vera Holst Eckbo"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig_SENSITIV" : [ {
+    "@value" : "Vera Holst Eckbo"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksdato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-03-25+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sakssekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "915"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/underBehandling"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "SM-1400915-1042545"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Endring av møteplan for finanskomiteen 2015"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Endring av møteplan for finanskomiteen 2015"
+  } ]
+} ]

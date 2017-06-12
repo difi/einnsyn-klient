@@ -1,0 +1,604 @@
+<arkiv xmlns="http://www.arkivverket.no/standarder/noark5/arkivstruktur" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemID>eInnsyn</systemID>
+  <tittel>eInnsyn arkiv for virksomhet 976819853</tittel>
+  <arkivstatus>Opprettet</arkivstatus>
+  <opprettetDato>1990-01-01T00:00:00.000+01:00</opprettetDato>
+  <opprettetAv>eInnsyn</opprettetAv>
+  <avsluttetDato>2100-01-01T00:00:00.000+01:00</avsluttetDato>
+  <avsluttetAv>Ukjent</avsluttetAv>
+  <arkivskaper>
+    <arkivskaperID>0001</arkivskaperID>
+    <arkivskaperNavn>Ukjent</arkivskaperNavn>
+  </arkivskaper>
+  <arkivdel>
+    <systemID>eInnsyn-Moeter</systemID>
+    <tittel>eInnsyn-Moeter</tittel>
+    <arkivdelstatus>Aktiv periode</arkivdelstatus>
+    <opprettetDato>1990-01-01T00:00:00.000+01:00</opprettetDato>
+    <opprettetAv>Ukjent</opprettetAv>
+    <avsluttetDato>3000-01-01T00:00:00.000+01:00</avsluttetDato>
+    <avsluttetAv>Ukjent</avsluttetAv>
+    <mappe xsi:type="ark:moetemappe" xmlns:ark="http://www.arkivverket.no/standarder/noark5/arkivstruktur">
+      <systemID>MM-1042259-FKOM</systemID>
+      <mappeID>MM-1042259-FKOM</mappeID>
+      <tittel>Ekstra møte</tittel>
+      <offentligTittel>Ekstra møte</offentligTittel>
+      <beskrivelse>Avholdt</beskrivelse>
+      <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+      <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+      <opprettetAv>N/A</opprettetAv>
+      <avsluttetDato>2015-03-25T00:00:00.000+01:00</avsluttetDato>
+      <avsluttetAv>N/A</avsluttetAv>
+      <referanseArkivdel>eInnsyn-Moeter-976819853</referanseArkivdel>
+      <registrering xsi:type="ark:moeteregistrering">
+        <systemID>MR-1042259-FKOM</systemID>
+        <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+        <opprettetAv>N/A</opprettetAv>
+        <arkivertDato>2015-03-25T00:00:00.000+01:00</arkivertDato>
+        <arkivertAv>N/A</arkivertAv>
+        <referanseArkivdel>eInnsyn-Moeter-976819853</referanseArkivdel>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1092954</systemID>
+          <dokumenttype>M</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Sakskart I. Finanskomiteen 25032015</tittel>
+          <beskrivelse>Møtedokument</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:31.830+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1092954</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:45:33.467+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1092954_2_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093059</systemID>
+          <dokumenttype>M</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Sakskart II. Finanskomiteen 25032015</tittel>
+          <beskrivelse>Møtedokument</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:31.920+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1093059</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:45:33.540+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093059_2_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093941</systemID>
+          <dokumenttype>M</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Protokoll. Finanskomiteen 25032015</tittel>
+          <beskrivelse>Møtedokument</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:32.010+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1093941</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:45:33.617+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093941_4_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <registreringsID>MR-1042259-FKOM</registreringsID>
+        <tittel>Møtedokumenter</tittel>
+        <offentligTittel>Møtedokumenter</offentligTittel>
+        <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+        <moeteregistreringstype>Møtedokumenter</moeteregistreringstype>
+        <moetesakstype>Politisk sak</moetesakstype>
+        <moeteregistreringsstatus>N/A</moeteregistreringsstatus>
+        <administrativEnhet>976819853</administrativEnhet>
+        <saksbehandler>N/A</saksbehandler>
+      </registrering>
+      <registrering xsi:type="ark:moeteregistrering">
+        <systemID>MR-1042259-1402362-1036756-34</systemID>
+        <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+        <opprettetAv>N/A</opprettetAv>
+        <arkivertDato>2015-03-25T00:00:00.000+01:00</arkivertDato>
+        <arkivertAv>N/A</arkivertAv>
+        <referanseArkivdel>eInnsyn-Moeter-976819853</referanseArkivdel>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1084797</systemID>
+          <dokumenttype>S</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Saksframlegg</tittel>
+          <beskrivelse>Saksframlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.060+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1084797</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:46:05.640+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1084797_2_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093942</systemID>
+          <dokumenttype>IN</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Innstilling/Vedtak</tittel>
+          <beskrivelse>Innstilling/Vedtak</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:42.400+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1093942</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:46:06.473+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093942_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <registreringsID>34/2015</registreringsID>
+        <tittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</tittel>
+        <offentligTittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</offentligTittel>
+        <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+        <kryssreferanse>
+          <referanseTilRegistrering>JP-1402362-1036756-34</referanseTilRegistrering>
+        </kryssreferanse>
+        <moeteregistreringstype>Saksdokumenter</moeteregistreringstype>
+        <moetesakstype>Politisk sak</moetesakstype>
+        <moeteregistreringsstatus/>
+        <administrativEnhet>976819853</administrativEnhet>
+        <saksbehandler>Marte Olsen Svendal</saksbehandler>
+      </registrering>
+      <registrering xsi:type="ark:moeteregistrering">
+        <systemID>MR-1042259-1400915-1042545-35</systemID>
+        <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+        <opprettetAv>N/A</opprettetAv>
+        <arkivertDato>2015-03-25T00:00:00.000+01:00</arkivertDato>
+        <arkivertAv>N/A</arkivertAv>
+        <referanseArkivdel>eInnsyn-Moeter-976819853</referanseArkivdel>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1092895</systemID>
+          <dokumenttype>S</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Saksframlegg</tittel>
+          <beskrivelse>Saksframlegg</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:42.310+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1092895</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:46:06.403+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1092895_3_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093975</systemID>
+          <dokumenttype>IN</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Innstilling/Vedtak</tittel>
+          <beskrivelse>Innstilling/Vedtak</beskrivelse>
+          <opprettetDato>2015-04-01T09:45:42.490+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Moeter:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Hoveddokument</tilknyttetRegistreringSom>
+          <dokumentnummer>1093975</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-01T09:46:06.550+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093975_3_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <registreringsID>35/2015</registreringsID>
+        <tittel>Endring av møteplan for finanskomiteen 2015</tittel>
+        <offentligTittel>Endring av møteplan for finanskomiteen 2015</offentligTittel>
+        <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+        <kryssreferanse>
+          <referanseTilRegistrering>JP-1400915-1042545-35</referanseTilRegistrering>
+        </kryssreferanse>
+        <moeteregistreringstype>Saksdokumenter</moeteregistreringstype>
+        <moetesakstype>Politisk sak</moetesakstype>
+        <moeteregistreringsstatus/>
+        <administrativEnhet>976819853</administrativEnhet>
+        <saksbehandler>Vera Holst Eckbo</saksbehandler>
+      </registrering>
+      <moetenummer>N/A</moetenummer>
+      <utvalg>http://data.oslo.kommune.no/utvalg/FKOM--976819853</utvalg>
+      <moetedato>2015-03-25T17:30:00.000+01:00</moetedato>
+      <moetested>Ordførerens møterom</moetested>
+      <referanseForrigeMoete>N/A</referanseForrigeMoete>
+      <referanseNesteMoete>N/A</referanseNesteMoete>
+      <moetedeltaker>
+        <moetedeltakerNavn>Ukjent</moetedeltakerNavn>
+        <moetedeltakerFunksjon>Ukjent</moetedeltakerFunksjon>
+      </moetedeltaker>
+    </mappe>
+  </arkivdel>
+  <arkivdel>
+    <systemID>eInnsyn-Saker</systemID>
+    <tittel>eInnsyn-Saker</tittel>
+    <arkivdelstatus>Aktiv periode</arkivdelstatus>
+    <opprettetDato>1990-01-01T00:00:00.000+01:00</opprettetDato>
+    <opprettetAv>Ukjent</opprettetAv>
+    <avsluttetDato>3000-01-01T00:00:00.000+01:00</avsluttetDato>
+    <avsluttetAv>Ukjent</avsluttetAv>
+    <mappe xsi:type="ark:saksmappe" xmlns:ark="http://www.arkivverket.no/standarder/noark5/arkivstruktur">
+      <systemID>SM-1402362-1036756</systemID>
+      <mappeID>SM-1402362-1036756</mappeID>
+      <tittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</tittel>
+      <offentligTittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</offentligTittel>
+      <opprettetDato>2015-02-11T00:00:00.000+01:00</opprettetDato>
+      <opprettetAv>Marte Olsen Svendal</opprettetAv>
+      <avsluttetDato>2015-03-25T00:00:00.000+01:00</avsluttetDato>
+      <avsluttetAv>N/A</avsluttetAv>
+      <referanseArkivdel>eInnsyn-Saker-976819853</referanseArkivdel>
+      <kryssreferanse>
+        <referanseTilMappe>http://data.einnsyn.no/saksmappeformøte--SM-200900441-17324--976819837</referanseTilMappe>
+      </kryssreferanse>
+      <registrering xsi:type="ark:journalpost">
+        <systemID>JP-1402362-1036756-34</systemID>
+        <opprettetDato>2015-02-11T00:00:00.000+01:00</opprettetDato>
+        <opprettetAv>Marte Olsen Svendal</opprettetAv>
+        <arkivertDato>2015-02-11T00:00:00.000+01:00</arkivertDato>
+        <arkivertAv>N/A</arkivertAv>
+        <referanseArkivdel>eInnsyn-Saker-976819853</referanseArkivdel>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1083079</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.133+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1083079</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.433+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1083079_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1083080</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>256-vedlegg 1. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Klemetsrud-anlegget</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.203+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1083080</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.490+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1083080_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1083081</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>256-vedlegg 2. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Haraldrud-anlegget</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.277+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1083081</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.553+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1083081_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1088651</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Notat 6/2015 - Svar på spørsmål fra Ivar Johansen (SV) - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.380+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1088651</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.613+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1088651_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1090795</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Notat 14/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) - Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.457+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1090795</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.677+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1090795_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1090799</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Notat 15/2015 - Svar på spørsmål fra Ivar Johansen (SV) -  Energigjenvinningsetaten - Organisering av leveranseavtaler</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.527+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1090799</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.730+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1090799_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1092028</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Program - åpen høring 11.03.2015</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.610+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1092028</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.793+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1092028_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093776</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Notat 25/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) vedr. oppfølgingsspørsmål organiseringen av Energigjenvinningsetaten - Byrådssak 256/14</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.690+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1093776</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.853+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093776_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <dokumentbeskrivelse>
+          <systemID>DB-976819853-1093782</systemID>
+          <dokumenttype>V</dokumenttype>
+          <dokumentstatus>Dokumentet er ferdigstilt</dokumentstatus>
+          <tittel>Notat 24/2015 - Svar på spørsmål fra Ivar Johansen (SV) og Rina Mariann Hansen (A) vedr. nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem</tittel>
+          <beskrivelse>Vedlegg</beskrivelse>
+          <opprettetDato>2015-04-17T14:06:59.757+02:00</opprettetDato>
+          <opprettetAv>N/A</opprettetAv>
+          <dokumentmedium>Elektronisk arkiv</dokumentmedium>
+          <referanseArkivdel>eInnsyn-Saker:976819853</referanseArkivdel>
+          <tilknyttetRegistreringSom>Vedlegg</tilknyttetRegistreringSom>
+          <dokumentnummer>1093782</dokumentnummer>
+          <tilknyttetDato>2015-03-25T00:00:00.000+01:00</tilknyttetDato>
+          <tilknyttetAv>N/A</tilknyttetAv>
+          <dokumentobjekt>
+            <versjonsnummer>1</versjonsnummer>
+            <variantformat>Arkivformat</variantformat>
+            <format>PDF</format>
+            <opprettetDato>2015-04-17T14:10:26.917+02:00</opprettetDato>
+            <opprettetAv>N/A</opprettetAv>
+            <referanseDokumentfil>http://dev.einnsyn.knowit.no:9000/976819853/1093782_1_1.PDF</referanseDokumentfil>
+            <sjekksum>N/A</sjekksum>
+            <sjekksumAlgoritme>N/A</sjekksumAlgoritme>
+            <filstoerrelse>0</filstoerrelse>
+          </dokumentobjekt>
+        </dokumentbeskrivelse>
+        <registreringsID>JP-1402362-1036756-34</registreringsID>
+        <tittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</tittel>
+        <offentligTittel>Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014</offentligTittel>
+        <journalaar>14</journalaar>
+        <journalsekvensnummer>2362</journalsekvensnummer>
+        <journalposttype>Organinternt dokument uten oppfølging</journalposttype>
+        <journalstatus>Journalført</journalstatus>
+        <journaldato>2015-02-11+01:00</journaldato>
+        <korrespondansepart>
+          <korrespondanseparttype>Mottaker</korrespondanseparttype>
+          <korrespondansepartNavn>N/A</korrespondansepartNavn>
+        </korrespondansepart>
+      </registrering>
+      <saksaar>14</saksaar>
+      <sakssekvensnummer>2362</sakssekvensnummer>
+      <saksdato>2015-02-11+01:00</saksdato>
+      <administrativEnhet>976819853</administrativEnhet>
+      <saksansvarlig>Marte Olsen Svendal</saksansvarlig>
+      <saksstatus>Under behandling</saksstatus>
+    </mappe>
+    <mappe xsi:type="ark:saksmappe" xmlns:ark="http://www.arkivverket.no/standarder/noark5/arkivstruktur">
+      <systemID>SM-1400915-1042545</systemID>
+      <mappeID>SM-1400915-1042545</mappeID>
+      <tittel>Endring av møteplan for finanskomiteen 2015</tittel>
+      <offentligTittel>Endring av møteplan for finanskomiteen 2015</offentligTittel>
+      <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+      <opprettetAv>Vera Holst Eckbo</opprettetAv>
+      <avsluttetDato>2015-03-25T00:00:00.000+01:00</avsluttetDato>
+      <avsluttetAv>N/A</avsluttetAv>
+      <referanseArkivdel>eInnsyn-Saker-976819853</referanseArkivdel>
+      <registrering xsi:type="ark:journalpost">
+        <systemID>JP-1400915-1042545-35</systemID>
+        <opprettetDato>2015-03-25T00:00:00.000+01:00</opprettetDato>
+        <opprettetAv>Vera Holst Eckbo</opprettetAv>
+        <arkivertDato>2015-03-25T00:00:00.000+01:00</arkivertDato>
+        <arkivertAv>N/A</arkivertAv>
+        <referanseArkivdel>eInnsyn-Saker-976819853</referanseArkivdel>
+        <registreringsID>JP-1400915-1042545-35</registreringsID>
+        <tittel>Endring av møteplan for finanskomiteen 2015</tittel>
+        <offentligTittel>Endring av møteplan for finanskomiteen 2015</offentligTittel>
+        <journalaar>14</journalaar>
+        <journalsekvensnummer>915</journalsekvensnummer>
+        <journalposttype>Organinternt dokument uten oppfølging</journalposttype>
+        <journalstatus>Journalført</journalstatus>
+        <journaldato>2015-03-25+01:00</journaldato>
+        <korrespondansepart>
+          <korrespondanseparttype>Mottaker</korrespondanseparttype>
+          <korrespondansepartNavn>N/A</korrespondansepartNavn>
+        </korrespondansepart>
+      </registrering>
+      <saksaar>14</saksaar>
+      <sakssekvensnummer>915</sakssekvensnummer>
+      <saksdato>2015-03-25+01:00</saksdato>
+      <administrativEnhet>976819853</administrativEnhet>
+      <saksansvarlig>Vera Holst Eckbo</saksansvarlig>
+      <saksstatus>Under behandling</saksstatus>
+    </mappe>
+  </arkivdel>
+</arkiv>

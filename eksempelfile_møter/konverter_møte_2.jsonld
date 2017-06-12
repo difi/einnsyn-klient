@@ -1,0 +1,1059 @@
+[ {
+  "@id" : "http://data.einnsyn.no/noark5/04d00a89-6bd0-411e-8bac-d85275919fa2",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.793+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1092028_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/05e81e9a-b522-4598-8a02-50b6b84c41f7",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.730+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1090799_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/14bda5bd-6d37-4398-af9f-ecf7455da4f3",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.677+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1090795_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/178be795-c9f6-4761-9a76-8bc43b1af300",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1083080"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/e1c37ad2-cc1e-4239-a48b-a1e1d82c0ba5"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.203+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1083080"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "256-vedlegg 1. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Klemetsrud-anlegget"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "256-vedlegg 1. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Klemetsrud-anlegget"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "256-vedlegg 1. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Klemetsrud-anlegget"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/569ae3fd-71e5-4b0d-a9c6-f84a89636355",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1090799"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/05e81e9a-b522-4598-8a02-50b6b84c41f7"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.527+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1090799"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Notat 15/2015 - Svar på spørsmål fra Ivar Johansen (SV) -  Energigjenvinningsetaten - Organisering av leveranseavtaler"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Notat 15/2015 - Svar på spørsmål fra Ivar Johansen (SV) -  Energigjenvinningsetaten - Organisering av leveranseavtaler"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Notat 15/2015 - Svar på spørsmål fra Ivar Johansen (SV) -  Energigjenvinningsetaten - Organisering av leveranseavtaler"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/58894df0-a2ea-4ef9-bd67-2b396a0e241c",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1083081"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/ccf90b5c-5e3d-47a8-a3d8-aafb6302b413"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.277+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1083081"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "256-vedlegg 2. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Haraldrud-anlegget"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "256-vedlegg 2. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Haraldrud-anlegget"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "256-vedlegg 2. Avtale av 20.11.2014 mellom Hafslund Varme AS og Oslo kommune v Energigjenvinningsetaten vedrørende levering av varme fra Haraldrud-anlegget"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/680452e9-02fe-4410-b0a3-46f1bb0536e0",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1088651"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/97129e3c-5748-4173-8856-664a2064fc76"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.380+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1088651"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Notat 6/2015 - Svar på spørsmål fra Ivar Johansen (SV) - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Notat 6/2015 - Svar på spørsmål fra Ivar Johansen (SV) - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Notat 6/2015 - Svar på spørsmål fra Ivar Johansen (SV) - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/78e5d76b-1fc2-484f-9bd9-21627ea177d4",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1090795"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/14bda5bd-6d37-4398-af9f-ecf7455da4f3"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.457+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1090795"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Notat 14/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) - Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Notat 14/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) - Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Notat 14/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) - Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/7b3bf1ec-3946-4d4d-9257-bc94a0f409fb",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1093776"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/adec3b1a-a279-4a2b-95f0-e5789633160c"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.690+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1093776"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Notat 25/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) vedr. oppfølgingsspørsmål organiseringen av Energigjenvinningsetaten - Byrådssak 256/14"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Notat 25/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) vedr. oppfølgingsspørsmål organiseringen av Energigjenvinningsetaten - Byrådssak 256/14"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Notat 25/2015 - Svar på spørsmål fra Rina Mariann Hansen (A) vedr. oppfølgingsspørsmål organiseringen av Energigjenvinningsetaten - Byrådssak 256/14"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/957b98a8-046a-4a2f-abf8-942b40b142bc",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1092028"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/04d00a89-6bd0-411e-8bac-d85275919fa2"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.610+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1092028"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Program - åpen høring 11.03.2015"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Program - åpen høring 11.03.2015"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Program - åpen høring 11.03.2015"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/97129e3c-5748-4173-8856-664a2064fc76",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.613+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1088651_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/98bbd66d-b166-463c-9395-ef2cdd487965",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.433+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1083079_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/9a15b31f-a202-44bb-8f69-2cce3eff78bd",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.917+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1093782_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/adec3b1a-a279-4a2b-95f0-e5789633160c",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.853+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1093776_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/arkiv--eInnsyn--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkiv" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettet"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2100-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "eInnsyn"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1990-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "eInnsyn"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "eInnsyn arkiv for virksomhet 976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "eInnsyn arkiv for virksomhet 976819853"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "eInnsyn arkiv for virksomhet 976819853"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/arkivdel--eInnsyn-Saker--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivdel" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivdelstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/aktivPeriode"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "3000-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Ukjent"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1990-01-01T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/arkiv--eInnsyn--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "eInnsyn-Saker"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "eInnsyn-Saker"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/b1f2e5ad-7a3a-401c-83d1-c7957f436717",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1093782"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/9a15b31f-a202-44bb-8f69-2cce3eff78bd"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.757+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1093782"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Notat 24/2015 - Svar på spørsmål fra Ivar Johansen (SV) og Rina Mariann Hansen (A) vedr. nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Notat 24/2015 - Svar på spørsmål fra Ivar Johansen (SV) og Rina Mariann Hansen (A) vedr. nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Notat 24/2015 - Svar på spørsmål fra Ivar Johansen (SV) og Rina Mariann Hansen (A) vedr. nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/ccf90b5c-5e3d-47a8-a3d8-aafb6302b413",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.553+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1083081_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/d53c1f08-1c67-4962-8c5e-156b5b4d94e2",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondansepart" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_LIST" : [ {
+    "@list" : [ {
+      "@value" : "N/A"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_SENSITIV" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mottaker"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/e1c37ad2-cc1e-4239-a48b-a1e1d82c0ba5",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse" : [ {
+    "@value" : "0"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/format" : [ {
+    "@value" : "PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:10:26.490+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "http://dev.einnsyn.knowit.no:9000/976819853/1083080_1_1.PDF"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksum" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sjekksumAlgoritme" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/e1d03543-fae7-44fb-9222-69d14b3d4aa3",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/beskrivelse" : [ {
+    "@value" : "Vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1083079"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/98bbd66d-b166-463c-9395-ef2cdd487965"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype" : [ {
+    "@value" : "V"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-04-17T14:06:59.133+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker:976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "DB-976819853-1083079"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Byrådssak 256/2014 - Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/journalpost--JP-1402362-1036756-34--991825827--2015-02-11T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalpost" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-02-11T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentbeskrivelse" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/178be795-c9f6-4761-9a76-8bc43b1af300"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/569ae3fd-71e5-4b0d-a9c6-f84a89636355"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/58894df0-a2ea-4ef9-bd67-2b396a0e241c"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/680452e9-02fe-4410-b0a3-46f1bb0536e0"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/78e5d76b-1fc2-484f-9bd9-21627ea177d4"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/7b3bf1ec-3946-4d4d-9257-bc94a0f409fb"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/957b98a8-046a-4a2f-abf8-942b40b142bc"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/b1f2e5ad-7a3a-401c-83d1-c7957f436717"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark5/e1d03543-fae7-44fb-9222-69d14b3d4aa3"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-02-11+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/organinterntDokumentUtenOppfølging"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2362"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalført"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepart" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/d53c1f08-1c67-4962-8c5e-156b5b4d94e2"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Marte Olsen Svendal"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-02-11T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/saksmappe--SM-1402362-1036756--991825827--2015-02-11T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker-976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/registreringsID" : [ {
+    "@value" : "JP-1402362-1036756-34"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "JP-1402362-1036756-34"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark5/saksmappe--SM-1402362-1036756--991825827--2015-02-11T00%3A00%3A00.000%2B01%3A00",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksmappe" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/administrativEnhet" : [ {
+    "@value" : "976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper" : [ {
+    "@id" : "http://data.einnsyn.no/virksomhet/oepeksport_content_provider_196"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetAv" : [ {
+    "@value" : "N/A"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-03-25T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mappeID" : [ {
+    "@value" : "SM-1402362-1036756"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv" : [ {
+    "@value" : "Marte Olsen Svendal"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2015-02-11T00:00:00.000+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark5/arkivdel--eInnsyn-Saker--991825827--1990-01-01T00%3A00%3A00.000%2B01%3A00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/publisertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-06-12T17:17:05.434+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseArkivdel" : [ {
+    "@value" : "eInnsyn-Saker-976819853"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig" : [ {
+    "@value" : "Marte Olsen Svendal"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Marte Olsen Svendal"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig_SENSITIV" : [ {
+    "@value" : "Marte Olsen Svendal"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksdato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-02-11+01:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sakssekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2362"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksstatus" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/underBehandling"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/systemID" : [ {
+    "@value" : "SM-1402362-1036756"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Nye avtaler om varmeleveranse fra Energigjenvinningsetatens avfallsenergianlegg på Haraldrud og Klemetsrud til Hafslunds fjernvarmesystem - Byrådssak 256 av 18.12.2014"
+  } ]
+} ]
