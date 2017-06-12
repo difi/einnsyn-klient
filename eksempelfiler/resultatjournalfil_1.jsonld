@@ -55,7 +55,7 @@
     "@value" : "4"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" : [ {
-    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/utgåendeDokument"
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/utgÃ¥endeDokument"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -133,15 +133,15 @@
     "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
-    "@value" : "Referat statusmøte 15. februar"
+    "@value" : "Referat statusmÃ¸te 15. februar"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
     "@list" : [ {
-      "@value" : "Referat statusmøte 15. februar "
+      "@value" : "Referat statusmÃ¸te 15. februar "
     } ]
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
-    "@value" : "Referat statusmøte 15. februar"
+    "@value" : "Referat statusmÃ¸te 15. februar"
   } ]
 }, {
   "@id" : "http://data.einnsyn.no/noark4/arkiv--991825827--Seksjon%20for%20arkitektur",
@@ -166,15 +166,15 @@
     "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokument"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
-    "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar"
+    "@value" : "Oppsummering av spÃ¸rjeundersÃ¸king kommunar og fylkeskommunar"
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
     "@list" : [ {
-      "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar "
+      "@value" : "Oppsummering av spÃ¸rjeundersÃ¸king kommunar og fylkeskommunar "
     } ]
   } ],
   "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
-    "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar"
+    "@value" : "Oppsummering av spÃ¸rjeundersÃ¸king kommunar og fylkeskommunar"
   } ]
 }, {
   "@id" : "http://data.einnsyn.no/noark4/edd838e9-b510-4a3e-96fc-947a913dc19e",
