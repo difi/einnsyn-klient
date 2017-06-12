@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<OFFJOURNAL VERSJON="2.0">
+	<PRODINFO>
+		<PI.ARKSKAPER>ARKIVSKAPER</PI.ARKSKAPER>
+		<PI.BASEID>BASEID</PI.BASEID>
+		<PI.ORGNR>ORGANISASJONSNUMMER</PI.ORGNR>
+		<PI.KOMMUNE>KOMMUNENUMMER</PI.KOMMUNE>
+		<PI.FRADATO>20160109</PI.FRADATO>
+		<PI.TILDATO>20160111</PI.TILDATO>
+		<PI.PRODDATO>20160112</PI.PRODDATO>
+		<PI.ANTFILER>1</PI.ANTFILER>
+		<FIL>
+			<PI.FILNAVN>20160109 - 20160111.xml</PI.FILNAVN>
+		</FIL>
+	</PRODINFO>
+	<RAPPORT>
+		<NOARKSAK.OJ>
+			<SA.SAAR>2014</SA.SAAR>
+			<SA.SEKNR>872</SA.SEKNR>
+			<SA.OFFTITTEL>abc</SA.OFFTITTEL>
+			<SA.ADMKORT>Seksjon for arkitektur</SA.ADMKORT>
+			<SA.ANSVINIT>TAL</SA.ANSVINIT>
+			<KLASSERING.OJ>
+				<KL.ORDNVERDI>07</KL.ORDNVERDI>
+				<KL.SORT>1</KL.SORT>
+				<KL.OPLTEKST>07</KL.OPLTEKST>
+				<KL.OVBESK>Internasjonalt samarbeid</KL.OVBESK>
+			</KLASSERING.OJ>
+			<JOURNPOST.OJ>
+				<JP.JAAR>2016</JP.JAAR>
+				<JP.SEKNR>400</JP.SEKNR>
+				<JP.POSTNR>4</JP.POSTNR>
+				<JP.JDATO>20160111</JP.JDATO>
+				<JP.NDOKTYPE>U</JP.NDOKTYPE>
+				<JP.DOKDATO>20160108</JP.DOKDATO>
+				<JP.OFFINNHOLD>cde</JP.OFFINNHOLD>
+				<JP.TGKODE>U</JP.TGKODE>
+				<AVSMOT.OJ>
+					<AM.NAVN>CNECT CEF Telecom expert group secretariat</AM.NAVN>
+					<AM.IHTYPE>1</AM.IHTYPE>
+				</AVSMOT.OJ>
+				<DOKLINK.OJ>
+						<DL.RNR>1</DL.RNR>
+						<DL.TYPE>H</DL.TYPE>
+						<DOKBESKRIV.OJ>
+							<DB.TITTEL>Oppsummering av spørjeundersøking kommunar og fylkeskommunar </DB.TITTEL>
+								<DOKVERSJON.OJ>
+									<VE.VERSJON>1</VE.VERSJON>
+									<VE.VARIANT>A</VE.VARIANT>
+									<VE.FILREF>https://einnsyn.difi.no/sites/einnsyn/files/einnsyn_-_oppsummering_av_sporjeundersoking_-_openheit_og_innsyn_i_kommunar_og_fylkeskommunar_v1.0.pdf
+									</VE.FILREF>
+								</DOKVERSJON.OJ>
+						</DOKBESKRIV.OJ>
+					</DOKLINK.OJ>
+					<DOKLINK.OJ>
+						<DL.RNR>2</DL.RNR>
+						<DL.TYPE>V</DL.TYPE>
+						<DOKBESKRIV.OJ>
+							<DB.TITTEL>Referat statusmøte 15. februar </DB.TITTEL>
+								<DOKVERSJON.OJ>
+									<VE.VERSJON>1</VE.VERSJON>
+									<VE.VARIANT>A</VE.VARIANT>
+									<VE.FILREF>https://einnsyn.difi.no/sites/einnsyn/files/referat_statusmote_einnsyn_150216.pdf
+									</VE.FILREF>
+								</DOKVERSJON.OJ>
+						</DOKBESKRIV.OJ>
+					</DOKLINK.OJ>
+			</JOURNPOST.OJ>
+		</NOARKSAK.OJ>
+		<NOARKSAK.OJ>
+			<SA.SAAR>2013</SA.SAAR>
+			<SA.SEKNR>342</SA.SEKNR>
+			<SA.OFFTITTEL>abc</SA.OFFTITTEL>
+			<SA.ADMKORT>Seksjon for informasjonssikkerhet</SA.ADMKORT>
+			<SA.ANSVINIT>JHO</SA.ANSVINIT>
+			<KLASSERING.OJ>
+				<KL.ORDNVERDI>505</KL.ORDNVERDI>
+				<KL.SORT>1</KL.SORT>
+				<KL.OPLTEKST>505</KL.OPLTEKST>
+				<KL.OVBESK>Informasjon, kurs og konferanser</KL.OVBESK>
+			</KLASSERING.OJ>
+			<JOURNPOST.OJ>
+				<JP.JAAR>2016</JP.JAAR>
+				<JP.SEKNR>426</JP.SEKNR>
+				<JP.POSTNR>18</JP.POSTNR>
+				<JP.JDATO>20160111</JP.JDATO>
+				<JP.NDOKTYPE>I</JP.NDOKTYPE>
+				<JP.DOKDATO>20160111</JP.DOKDATO>
+				<JP.OFFINNHOLD>cde</JP.OFFINNHOLD>
+				<JP.TGKODE>U</JP.TGKODE>
+				<AVSMOT.OJ>
+					<AM.NAVN>Frøya kommune</AM.NAVN>
+					<AM.IHTYPE>0</AM.IHTYPE>
+				</AVSMOT.OJ>
+				<DOKLINK.OJ>
+						<DL.RNR>1</DL.RNR>
+						<DL.TYPE>H</DL.TYPE>
+						<DOKBESKRIV.OJ>
+							<DB.TITTEL>Fulltekstpublisering av dokument i OEP </DB.TITTEL>
+								<DOKVERSJON.OJ>
+									<VE.VERSJON>1</VE.VERSJON>
+									<VE.VARIANT>A</VE.VARIANT>
+									<VE.FILREF>https://einnsyn.difi.no/sites/einnsyn/files/fulltekstpublisering-av-dokumenter-i-oep.pdf
+									</VE.FILREF>
+								</DOKVERSJON.OJ>
+						</DOKBESKRIV.OJ>
+				</DOKLINK.OJ>
+				<DOKLINK.OJ>
+						<DL.RNR>1</DL.RNR>
+						<DL.TYPE>H</DL.TYPE>
+						<DOKBESKRIV.OJ>
+							<DB.TITTEL>Beriking av journaldata i OEP </DB.TITTEL>
+								<DOKVERSJON.OJ>
+									<VE.VERSJON>1</VE.VERSJON>
+									<VE.VARIANT>A</VE.VARIANT>
+									<VE.FILREF>https://einnsyn.difi.no/sites/einnsyn/files/einnsynberikingjournaldata.pdf
+									</VE.FILREF>
+								</DOKVERSJON.OJ>
+						</DOKBESKRIV.OJ>
+				</DOKLINK.OJ>
+				<DOKLINK.OJ>
+					<DL.RNR>1</DL.RNR>
+					<DL.TYPE>V</DL.TYPE>
+						<DOKBESKRIV.OJ>
+							<DB.TITTEL>Beriking av journaldata i OEP </DB.TITTEL>
+								<DOKVERSJON.OJ>
+									<VE.VERSJON>1</VE.VERSJON>
+									<VE.VARIANT>A</VE.VARIANT>
+									<VE.FILREF>https://einnsyn.difi.no/sites/einnsyn/files/einnsynberikingjournaldata.pdf
+									</VE.FILREF>
+								</DOKVERSJON.OJ>
+						</DOKBESKRIV.OJ>
+				</DOKLINK.OJ>
+			</JOURNPOST.OJ>
+		</NOARKSAK.OJ>
+	</RAPPORT>
+</OFFJOURNAL>

@@ -1,0 +1,235 @@
+ {
+  "@id" : "_:b0",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Skjerming" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilgangsrestriksjon" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/ugradert"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/27138640-04c1-4aab-aaa5-5934b8812a9c",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondansepart" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn" : [ {
+    "@value" : "Frøya kommune"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Frøya kommune"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_SENSITIV" : [ {
+    "@value" : "Frøya kommune"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsender"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/2b3d24f3-f410-43a0-8733-fb011b871161",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "https://einnsyn.difi.no/sites/einnsyn/files/einnsynberikingjournaldata.pdf"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/4999c4b8-3d99-4958-b23d-3d0ce9f34898",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/2b3d24f3-f410-43a0-8733-fb011b871161"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Beriking av journaldata i OEP"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Beriking av journaldata i OEP "
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Beriking av journaldata i OEP"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/528a94ba-d36d-46bb-9c85-6589742ce41f",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "https://einnsyn.difi.no/sites/einnsyn/files/fulltekstpublisering-av-dokumenter-i-oep.pdf"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/7c0e2190-cbcb-4d1e-8441-b95715f83b74",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/f32ad77c-ae56-4d52-8e76-631da88435c4"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokument"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Beriking av journaldata i OEP"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Beriking av journaldata i OEP "
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Beriking av journaldata i OEP"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/Journalpost--991825827--426--18--2016",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalpost" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentbeskrivelse" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/4999c4b8-3d99-4958-b23d-3d0ce9f34898"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark4/7c0e2190-cbcb-4d1e-8441-b95715f83b74"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark4/df17512d-9c06-404c-8f8d-635cedd7abc6"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetsDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-01-11"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2016"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-01-11"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalpostnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/inngåendeDokument"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "426"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepart" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/27138640-04c1-4aab-aaa5-5934b8812a9c"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "cde"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "cde"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "cde"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/Saksmappe--991825827--342--2013"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjerming" : [ {
+    "@id" : "_:b0"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/Saksmappe--991825827--342--2013",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksmappe" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/administrativEnhet" : [ {
+    "@value" : "Seksjon for informasjonssikkerhet"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper" : [ {
+    "@id" : "http://data.einnsyn.no/virksomhet/oepeksport_content_provider_196"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "abc"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "abc"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "abc"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/arkivdel--991825827--Seksjon%20for%20informasjonssikkerhet"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/publisertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-06-12T12:51:09.577+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2013"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig" : [ {
+    "@value" : "JHO"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sakssekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "342"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/arkiv--991825827--Seksjon%20for%20informasjonssikkerhet",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkiv" ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/arkivdel--991825827--Seksjon%20for%20informasjonssikkerhet",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivdel" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/arkiv--991825827--Seksjon%20for%20informasjonssikkerhet"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/df17512d-9c06-404c-8f8d-635cedd7abc6",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/528a94ba-d36d-46bb-9c85-6589742ce41f"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokument"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Fulltekstpublisering av dokument i OEP"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Fulltekstpublisering av dokument i OEP "
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Fulltekstpublisering av dokument i OEP"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/f32ad77c-ae56-4d52-8e76-631da88435c4",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "https://einnsyn.difi.no/sites/einnsyn/files/einnsynberikingjournaldata.pdf"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+} ]

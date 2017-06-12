@@ -1,0 +1,196 @@
+[ {
+  "@id" : "_:b0",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Skjerming" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilgangsrestriksjon" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/ugradert"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/01cd6652-bf37-4def-bd59-8d269016b6c4",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "https://einnsyn.difi.no/sites/einnsyn/files/referat_statusmote_einnsyn_150216.pdf"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/450e6b4a-8f1e-4abc-b362-af1cdd2d8034",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil" : [ {
+    "@value" : "https://einnsyn.difi.no/sites/einnsyn/files/einnsyn_-_oppsummering_av_sporjeundersoking_-_openheit_og_innsyn_i_kommunar_og_fylkeskommunar_v1.0.pdf"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/versjonsnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/Journalpost--991825827--400--4--2016",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalpost" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentbeskrivelse" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/a8cc93e4-d754-46d3-a4ca-8118b2e75571"
+  }, {
+    "@id" : "http://data.einnsyn.no/noark4/be693a1d-4db2-44a9-a016-2e22a30e6194"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetsDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-01-08"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2016"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-01-11"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalpostnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/utgåendeDokument"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "400"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepart" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/edd838e9-b510-4a3e-96fc-947a913dc19e"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "cde"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "cde"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "cde"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/Saksmappe--991825827--872--2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjerming" : [ {
+    "@id" : "_:b0"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/Saksmappe--991825827--872--2014",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksmappe" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/administrativEnhet" : [ {
+    "@value" : "Seksjon for arkitektur"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper" : [ {
+    "@id" : "http://data.einnsyn.no/virksomhet/oepeksport_content_provider_196"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel" : [ {
+    "@value" : "abc"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "abc"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIV" : [ {
+    "@value" : "abc"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/arkivdel--991825827--Seksjon%20for%20arkitektur"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/publisertDato" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2017-06-12T12:51:08.780+02:00"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksaar" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2014"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig" : [ {
+    "@value" : "TAL"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/sakssekvensnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "872"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/a8cc93e4-d754-46d3-a4ca-8118b2e75571",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/01cd6652-bf37-4def-bd59-8d269016b6c4"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Referat statusmøte 15. februar"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Referat statusmøte 15. februar "
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Referat statusmøte 15. februar"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/arkiv--991825827--Seksjon%20for%20arkitektur",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkiv" ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/arkivdel--991825827--Seksjon%20for%20arkitektur",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivdel" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/arkiv--991825827--Seksjon%20for%20arkitektur"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/be693a1d-4db2-44a9-a016-2e22a30e6194",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt" : [ {
+    "@id" : "http://data.einnsyn.no/noark4/450e6b4a-8f1e-4abc-b362-af1cdd2d8034"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokument"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel" : [ {
+    "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_LIST" : [ {
+    "@list" : [ {
+      "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar "
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV" : [ {
+    "@value" : "Oppsummering av spørjeundersøking kommunar og fylkeskommunar"
+  } ]
+}, {
+  "@id" : "http://data.einnsyn.no/noark4/edd838e9-b510-4a3e-96fc-947a913dc19e",
+  "@type" : [ "http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondansepart" ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn" : [ {
+    "@value" : "CNECT CEF Telecom expert group secretariat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_LIST" : [ {
+    "@list" : [ {
+      "@value" : "CNECT CEF Telecom expert group secretariat"
+    } ]
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_SENSITIV" : [ {
+    "@value" : "CNECT CEF Telecom expert group secretariat"
+  } ],
+  "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype" : [ {
+    "@id" : "http://www.arkivverket.no/standarder/noark5/arkivstruktur/mottaker"
+  } ]
+} ]
