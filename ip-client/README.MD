@@ -15,7 +15,8 @@ Metodekalla som blir utført er i henhold til api https://difi.github.io/move-ap
      "orgnumber":"",//organisasjonsnummeret til innhaldsleverandør
      "data_type":"journaldata", // Indikerar kva type data det er. Journaldata vil vere gjeldande for journal-/møteleveransar. Andre type meldingar fil blir definert for t.d slettemeldingar
    }
- }" ```
+ }" 
+ ```
 
 ## Last opp data /out/messages/{conversation-id}
 Set http header
