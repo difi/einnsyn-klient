@@ -1,0 +1,80 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MoeteregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Moeteregistrering_referanseTilSak, arkiv:Moeteregistrering_saksbehandlerSENSITIV, arkiv:Moeteregistrering_saksbehandlerLIST, arkiv:Moeteregistrering_administrativEnhet , arkiv:Moeteregistrering_saksbehandler , arkiv:Moeteregistrering_moeteregistreringsstatus , arkiv:Moeteregistrering_referanseTilMoeteregistrering , arkiv:Moeteregistrering_moeteregistreringstype , arkiv:Moeteregistrering_referanseFraMoeteregistrering , arkiv:Moeteregistrering_moetesakstype, arkiv:Moeteregistrering_parent;
+        sh:scopeClass  arkiv:Moeteregistrering .
+
+arkiv:Moeteregistrering_administrativEnhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:administrativEnhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_moeteregistreringsstatus
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:moeteregistreringsstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_moeteregistreringstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moeteregistreringstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_moetesakstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetesakstype ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Moeteregistrering_referanseFraMoeteregistrering
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseFraMoeteregistrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_referanseTilMoeteregistrering
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseTilMoeteregistrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_saksbehandler
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:saksbehandler ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_saksbehandlerSENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_saksbehandlerLIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:saksbehandler_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Moeteregistrering_referanseTilSak
+        sh:class arkiv:Journalpost;
+        sh:predicate  arkiv:referanseTilSak ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Moeteregistrering_parent
+        sh:class      arkiv:Moetemappe ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .

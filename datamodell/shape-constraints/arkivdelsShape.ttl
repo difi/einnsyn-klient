@@ -1,0 +1,164 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:ArkivdelsShape  a  sh:Shape ;
+        sh:property    arkiv:Arkivdel_tittel_SENSITIV, arkiv:Arkivdel_tittel_LIST, arkiv:Arkivdel_kassasjon , arkiv:Arkivdel_avsluttetDato , arkiv:Arkivdel_opprettetAv , arkiv:Arkivdel_dokumentmedium , arkiv:Arkivdel_arkivperiodeSluttDato , arkiv:Arkivdel_avsluttetAv , arkiv:Arkivdel_sletting , arkiv:Arkivdel_arkivperiodeStartDato , arkiv:Arkivdel_arkivdelstatus , arkiv:Arkivdel_utfoertKassasjon , arkiv:Arkivdel_systemID , arkiv:Arkivdel_skjerming , arkiv:Arkivdel_beskrivelse , arkiv:Arkivdel_oppbevaringssted , arkiv:Arkivdel_referanseArvtaker , arkiv:Arkivdel_opprettetDato , arkiv:Arkivdel_mappe , arkiv:Arkivdel_parent , arkiv:Arkivdel_registrering , arkiv:Arkivdel_klassifikasjonssystem , arkiv:Arkivdel_tittel , arkiv:Arkivdel_referanseForloeper , arkiv:Arkivdel_gradering ;
+        sh:scopeClass  arkiv:Arkivdel .
+
+arkiv:Arkivdel_arkivdelstatus
+        sh:class      arkiv:Arkivdelstatus ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:arkivdelstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_arkivperiodeSluttDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:arkivperiodeSluttDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_arkivperiodeStartDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:arkivperiodeStartDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_dokumentmedium
+        sh:class      arkiv:Dokumentmedium ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentmedium ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_gradering
+        sh:class      arkiv:Gradering ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:gradering ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_kassasjon
+        sh:class      arkiv:Kassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kassasjon ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_klassifikasjonssystem
+        sh:class      arkiv:Klassifikasjonssystem ;
+        sh:predicate  arkiv:klassifikasjonssystem ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_mappe  sh:class  arkiv:Mappe ;
+        sh:predicate  arkiv:mappe ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_oppbevaringssted
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:oppbevaringssted ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_parent
+        sh:class      arkiv:Arkiv ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_referanseArvtaker
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseArvtaker ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_referanseForloeper
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseForloeper ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_registrering
+        sh:class      arkiv:Registrering ;
+        sh:predicate  arkiv:registrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_skjerming
+        sh:class      arkiv:Skjerming ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjerming ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_sletting
+        sh:class      arkiv:Sletting ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:sletting ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_systemID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_tittel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Arkivdel_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivdel_tittel_LIST
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Arkivdel_utfoertKassasjon
+        sh:class      arkiv:UtfoertKassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utfoertKassasjon ;
+        sh:severity   sh:Violation .

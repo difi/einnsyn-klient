@@ -1,0 +1,147 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:JournalpostsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Journalpost_mottattDato , arkiv:Journalpost_dokumentflyt , arkiv:Journalpost_journalaar ,
+        arkiv:Journalpost_utlaantTil , arkiv:Journalpost_antallVedlegg , arkiv:Journalpost_forfallsdato ,
+        arkiv:Journalpost_dokumentetsDato , arkiv:Journalpost_presedens , arkiv:Journalpost_sendtDato ,
+        arkiv:Journalpost_avskrivning , arkiv:Journalpost_utlaantDato , arkiv:Journalpost_journalposttype ,
+        arkiv:Journalpost_journalenhet , arkiv:Journalpost_journalstatus , arkiv:Journalpost_journaldato ,
+        arkiv:Journalpost_korrespondansepart , arkiv:Journalpost_journalpostnummer , arkiv:Journalpost_elektroniskSignatur ,
+        arkiv:Journalpost_journalsekvensnummer , arkiv:Journalpost_offentlighetsvurdertDato, arkiv:Journalpost_referanseTilMoete, arkiv:Journalpost_parent;
+        sh:scopeClass  arkiv:Journalpost .
+
+arkiv:Journalpost_antallVedlegg
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:antallVedlegg ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_avskrivning
+        sh:class      arkiv:Avskrivning ;
+        sh:predicate  arkiv:avskrivning ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_dokumentetsDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentetsDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_dokumentflyt
+        sh:class      arkiv:Dokumentflyt ;
+        sh:predicate  arkiv:dokumentflyt ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_elektroniskSignatur
+        sh:class      arkiv:ElektroniskSignatur ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:elektroniskSignatur ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_forfallsdato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:forfallsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalaar
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:journalaar ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journaldato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:journaldato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalenhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:journalenhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalpostnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:journalpostnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalposttype
+        sh:class      arkiv:Journalposttype ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:journalposttype ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalsekvensnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:journalsekvensnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_journalstatus
+        sh:class      arkiv:Journalstatus ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:journalstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_korrespondansepart
+        sh:class      arkiv:Korrespondansepart ;
+        sh:minCount   0 ;
+        sh:predicate  arkiv:korrespondansepart ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_mottattDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:mottattDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_offentlighetsvurdertDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:offentlighetsvurdertDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_presedens
+        sh:class      arkiv:Presedens ;
+        sh:predicate  arkiv:presedens ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_sendtDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:sendtDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_utlaantDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utlaantDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_utlaantTil
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utlaantTil ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_referanseTilMoete
+        sh:class arkiv:Registrering ;
+        sh:predicate arkiv:referanseTilMoete ;
+        sh:severity sh:Warning .
+
+arkiv:Journalpost_parent
+        sh:class      arkiv:Saksmappe ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+

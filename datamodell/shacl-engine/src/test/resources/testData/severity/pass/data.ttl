@@ -1,0 +1,8 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+<http://example.org/1>
+    a arkiv:Journalpost ;
+    arkiv:dokumentetsDato "2014-11-21"^^xsd:date.
+

@@ -1,0 +1,1380 @@
+@prefix : <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix meta: <http://data.einnsyn.no/meta/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bruker: <http://data.einnsyn.no/brukermeta/> .
+@prefix virksomhet: <http://data.einnsyn.no/virksomhetmeta/> .
+@prefix XmlToRdfMeta: <http://acandonorway.github.com/XmlToRdf/ontology.ttl#> .
+@base <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+<http://www.arkivverket.no/standarder/noark5/arkivstruktur/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://acandonorway.github.com/XmlToRdf/ontology.ttl#innsynskravXmlLabel
+XmlToRdfMeta:innsynskravXmlLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://acandonorway.github.com/XmlToRdf/ontology.ttl#xsdReference
+XmlToRdfMeta:xsdReference rdf:type owl:AnnotationProperty .
+
+
+###  http://data.einnsyn.no/meta/innsynskravXmlLabel
+meta:innsynskravXmlLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  tag:stardog:api:rule:content
+<tag:stardog:api:rule:content> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.einnsyn.no/virksomhetmeta/child
+virksomhet:child rdf:type owl:ObjectProperty ;
+                 owl:inverseOf virksomhet:parent .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/parent
+virksomhet:parent rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf virksomhet:parentTransitiveReflexive .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/parentTransitiveReflexive
+virksomhet:parentTransitiveReflexive rdf:type owl:ObjectProperty ,
+                                              owl:TransitiveProperty ,
+                                              owl:ReflexiveProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/alleSaksbehandlinger
+:alleSaksbehandlinger rdf:type owl:ObjectProperty ;
+                      owl:propertyChainAxiom ( :referanseTilSak
+                                               :parent
+                                               :referanseTilRelatertSak
+                                               [ owl:inverseOf :parent
+                                               ]
+                                               [ owl:inverseOf :referanseTilSak
+                                               ]
+                                             ) ,
+                                             ( :referanseTilSak
+                                               :parent
+                                               [ owl:inverseOf :parent
+                                               ]
+                                               [ owl:inverseOf :referanseTilSak
+                                               ]
+                                             ) ;
+                      rdfs:comment "Skal kunne hente ut samtlige behandlinger av en gitt sak." .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper
+:arkivskaper rdf:type owl:ObjectProperty ;
+             owl:propertyChainAxiom ( :parentTransitive
+                                      :arkivskaper
+                                    ) .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentbeskrivelse
+:dokumentbeskrivelse rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentobjekt
+:dokumentobjekt rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype
+:journalposttype rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalstatus
+:journalstatus rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepart
+:korrespondansepart rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype
+:korrespondanseparttype rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/kryssreferanse
+:kryssreferanse rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moetesaksmappe
+:moetesaksmappe rdf:type owl:ObjectProperty ;
+                owl:propertyChainAxiom ( [ owl:inverseOf :parent
+                                         ]
+                                         :referanseTilSak
+                                         :parent
+                                       ) .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/parent
+:parent rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :parentTransitive .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/parentTransitive
+:parentTransitive rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseTilBehandling
+:referanseTilBehandling rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :kryssreferanse ;
+                        owl:inverseOf :referanseTilSak .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseTilRelatertSak
+:referanseTilRelatertSak rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :kryssreferanse .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseTilSak
+:referanseTilSak rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :kryssreferanse .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjerming
+:skjerming rdf:type owl:ObjectProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/utvalg
+:utvalg rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#rest
+rdf:rest rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/shacl#scopeClass
+<http://www.w3.org/ns/shacl#scopeClass> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://data.einnsyn.no/virksomhetmeta/navn
+virksomhet:navn rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf rdfs:label .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertDato
+:arkivertDato rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetDato
+:avsluttetDato rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:dateTime .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetsDato
+:dokumentetsDato rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:date .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentnummer
+:dokumentnummer rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:integer .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumenttype
+:dokumenttype rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/filstoerrelse
+:filstoerrelse rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/forfatter
+:forfatter rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/forfatter_SENSITIV
+:forfatter_SENSITIV rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/format
+:format rdf:type owl:DatatypeProperty ;
+        rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalaar
+:journalaar rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:integer .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato
+:journaldato rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:date .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalpostnummer
+:journalpostnummer rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:integer .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalsekvensnummer
+:journalsekvensnummer rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:integer .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn
+:korrespondansepartNavn rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondansepartNavn_SENSITIV
+:korrespondansepartNavn_SENSITIV rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moetedato
+:moetedato rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moetedeltaker
+:moetedeltaker rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moeteregistreringstype
+:moeteregistreringstype rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moetesakstype
+:moetesakstype rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/moetested
+:moetested rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/noekkelord
+:noekkelord rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetAv
+:opprettetAv rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettetDato
+:opprettetDato rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/postadresse
+:postadresse rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/publisertDato
+:publisertDato rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/referanseDokumentfil
+:referanseDokumentfil rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksansvarlig
+:saksansvarlig rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksdato
+:saksdato rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:date .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjermingshjemmel
+:skjermingshjemmel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel
+:tittel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/tittel_SENSITIV
+:tittel_SENSITIV rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.einnsyn.no/brukermeta/Adminbruker
+bruker:Adminbruker rdf:type owl:Class ;
+                   rdfs:subClassOf bruker:AlminneligBruker .
+
+
+###  http://data.einnsyn.no/brukermeta/AlminneligBruker
+bruker:AlminneligBruker rdf:type owl:Class ;
+                        rdfs:subClassOf bruker:Bruker .
+
+
+###  http://data.einnsyn.no/brukermeta/AnonymBruker
+bruker:AnonymBruker rdf:type owl:Class ;
+                    rdfs:subClassOf bruker:Bruker .
+
+
+###  http://data.einnsyn.no/brukermeta/Bruker
+bruker:Bruker rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/brukermeta/Forsendelsesmåte
+bruker:Forsendelsesmåte rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/brukermeta/InnsynskravdelStatus
+bruker:InnsynskravdelStatus rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/brukermeta/Sluttbruker
+bruker:Sluttbruker rdf:type owl:Class ;
+                   rdfs:subClassOf bruker:AlminneligBruker .
+
+
+###  http://data.einnsyn.no/brukermeta/Virksomhetsbruker
+bruker:Virksomhetsbruker rdf:type owl:Class ;
+                         rdfs:subClassOf bruker:AlminneligBruker .
+
+
+###  http://data.einnsyn.no/utvalg/Arbeidssted
+<http://data.einnsyn.no/utvalg/Arbeidssted> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/utvalg/Byråd
+<http://data.einnsyn.no/utvalg/Byråd> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/Byrådsleder
+<http://data.einnsyn.no/utvalg/Byrådsleder> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/Leder
+<http://data.einnsyn.no/utvalg/Leder> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/Medlem
+<http://data.einnsyn.no/utvalg/Medlem> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/utvalg/Medlemstype
+<http://data.einnsyn.no/utvalg/Medlemstype> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/utvalg/Nestleder
+<http://data.einnsyn.no/utvalg/Nestleder> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/Ordfører
+<http://data.einnsyn.no/utvalg/Ordfører> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/Varamedlem
+<http://data.einnsyn.no/utvalg/Varamedlem> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/utvalg/Varaordfører
+<http://data.einnsyn.no/utvalg/Varaordfører> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://data.einnsyn.no/utvalg/Medlem> .
+
+
+###  http://data.einnsyn.no/utvalg/utvalg
+<http://data.einnsyn.no/utvalg/utvalg> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/utvalg/utvalgsliste
+<http://data.einnsyn.no/utvalg/utvalgsliste> rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/AdministrativEnhet
+virksomhet:AdministrativEnhet rdf:type owl:Class ;
+                              rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Bydel
+virksomhet:Bydel rdf:type owl:Class ;
+                 rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/DummyEnhet
+virksomhet:DummyEnhet rdf:type owl:Class ;
+                      rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Enhet
+virksomhet:Enhet rdf:type owl:Class .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Kommune
+virksomhet:Kommune rdf:type owl:Class ;
+                   rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Organ
+virksomhet:Organ rdf:type owl:Class ;
+                 rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Utvalg
+virksomhet:Utvalg rdf:type owl:Class ;
+                  rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/Virksomhet
+virksomhet:Virksomhet rdf:type owl:Class ;
+                      rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.stortinget.no/politiskparti/PolitiskParti
+<http://data.stortinget.no/politiskparti/PolitiskParti> rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark4/PNAVN
+<http://www.arkivverket.no/standarder/noark4/PNAVN> rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivdelstatus
+:Arkivdelstatus rdf:type owl:Class ;
+                XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivdelstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Arkivstatus
+:Arkivstatus rdf:type owl:Class ;
+             XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Avskrivningsmaate
+:Avskrivningsmaate rdf:type owl:Class ;
+                   XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/avskrivningsmaate" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Basisregistrering
+:Basisregistrering rdf:type owl:Class ;
+                   rdfs:subClassOf :Registrering .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentbeskrivelse
+:Dokumentbeskrivelse rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentmedium
+:Dokumentmedium rdf:type owl:Class ;
+                XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentmedium" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentobjekt
+:Dokumentobjekt rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Dokumentstatus
+:Dokumentstatus rdf:type owl:Class ;
+                XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ElektroniskSignaturVerifisert
+:ElektroniskSignaturVerifisert rdf:type owl:Class ;
+                               XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskSignaturVerifisert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/GraderingClass
+:GraderingClass rdf:type owl:Class ;
+                XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/gradering" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalpost
+:Journalpost rdf:type owl:Class ;
+             rdfs:subClassOf :Basisregistrering ;
+             owl:disjointWith :Moeteregistrering .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/JournalpostForMøte
+:JournalpostForMøte rdf:type owl:Class ;
+                    rdfs:subClassOf :Journalpost .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalposttype
+:Journalposttype rdf:type owl:Class ;
+                 XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Journalstatus
+:Journalstatus rdf:type owl:Class ;
+               XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Kassasjonsvedtak
+:Kassasjonsvedtak rdf:type owl:Class ;
+                  XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/kassasjonsvedtak" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondansepart
+:Korrespondansepart rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Korrespondanseparttype
+:Korrespondanseparttype rdf:type owl:Class ;
+                        XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/korrespondanseparttype" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Mappe
+:Mappe rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Moetedeltaker
+:Moetedeltaker rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Moetemappe
+:Moetemappe rdf:type owl:Class ;
+            rdfs:subClassOf :Mappe ;
+            owl:disjointWith :Saksmappe .
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoetemappe
+:Fremtidigmoetemappe rdf:type owl:Class ;
+            rdfs:subClassOf :Mappe ;
+            owl:disjointWith :Saksmappe .
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Moeteregistrering
+:Moeteregistrering rdf:type owl:Class ;
+                   rdfs:subClassOf :Basisregistrering .
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoeteregistrering
+:Fremtidigmoeteregistrering rdf:type owl:Class ;
+                   rdfs:subClassOf :Basisregistrering .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Presedensstatus
+:Presedensstatus rdf:type owl:Class ;
+                 XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/presedensstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Registrering
+:Registrering rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksmappe
+:Saksmappe rdf:type owl:Class ;
+           rdfs:subClassOf :Mappe .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/SaksmappeForMøte
+:SaksmappeForMøte rdf:type owl:Class ;
+                  rdfs:subClassOf :Saksmappe .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Saksstatus
+:Saksstatus rdf:type owl:Class ;
+            XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksstatus" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Skjerming
+:Skjerming rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/SkjermingDokument
+:SkjermingDokument rdf:type owl:Class ;
+                   XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjermingDokument" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Slettingstype
+:Slettingstype rdf:type owl:Class ;
+               XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/slettingstype" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Tilgangsrestriksjon
+:Tilgangsrestriksjon rdf:type owl:Class .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/TilknyttetRegistreringSom
+:TilknyttetRegistreringSom rdf:type owl:Class ;
+                           XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/tilknyttetRegistreringSom" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Variantformat
+:Variantformat rdf:type owl:Class ;
+               XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/variantformat" .
+
+
+###  tag:stardog:api:rule:SPARQLRule
+<tag:stardog:api:rule:SPARQLRule> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.einnsyn.no/brukermeta/forsendelsePerEpost
+bruker:forsendelsePerEpost rdf:type owl:NamedIndividual ,
+                                    bruker:Forsendelsesmåte ;
+                           rdfs:label "Epost"@no-nb ;
+                           meta:innsynskravXmlLabel "e-post" .
+
+
+###  http://data.einnsyn.no/brukermeta/forsendelsePerPost
+bruker:forsendelsePerPost rdf:type owl:NamedIndividual ,
+                                   bruker:Forsendelsesmåte ;
+                          rdfs:label "Post"@no-nb ;
+                          meta:innsynskravXmlLabel "post" .
+
+
+###  http://data.einnsyn.no/brukermeta/opprettet
+bruker:opprettet rdf:type owl:NamedIndividual ,
+                          bruker:InnsynskravdelStatus ;
+                 rdfs:label "Opprettet"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/sendtTilVirksomhet
+bruker:sendtTilVirksomhet rdf:type owl:NamedIndividual ,
+                                   bruker:InnsynskravdelStatus ;
+                          rdfs:label "Sendt til virksomhet"@no-nb .
+
+
+###  http://data.einnsyn.no/utvalg/Byråd
+<http://data.einnsyn.no/utvalg/Byråd> rdf:type owl:NamedIndividual ,
+                                               <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Byrådsleder
+<http://data.einnsyn.no/utvalg/Byrådsleder> rdf:type owl:NamedIndividual ,
+                                                     <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Leder
+<http://data.einnsyn.no/utvalg/Leder> rdf:type owl:NamedIndividual ,
+                                               <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Medlem
+<http://data.einnsyn.no/utvalg/Medlem> rdf:type owl:NamedIndividual ,
+                                                <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Nestleder
+<http://data.einnsyn.no/utvalg/Nestleder> rdf:type owl:NamedIndividual ,
+                                                   <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Ordfører
+<http://data.einnsyn.no/utvalg/Ordfører> rdf:type owl:NamedIndividual ,
+                                                  <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Varamedlem
+<http://data.einnsyn.no/utvalg/Varamedlem> rdf:type owl:NamedIndividual ,
+                                                    <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/utvalg/Varaordfører
+<http://data.einnsyn.no/utvalg/Varaordfører> rdf:type owl:NamedIndividual ,
+                                                      <http://data.einnsyn.no/utvalg/Medlemstype> .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/parent
+virksomhet:parent rdf:type owl:NamedIndividual ;
+                  rdfs:label "Virksomhetsparent"@no-nb .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/aktivPeriode
+:aktivPeriode rdf:type owl:NamedIndividual ,
+                       :Arkivdelstatus ;
+              rdfs:label "Aktiv periode" ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Aktiv periode" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/andreTilleggsdokument
+:andreTilleggsdokument rdf:type owl:NamedIndividual ,
+                                :TilknyttetRegistreringSom ;
+                       rdfs:label "Andre tilleggsdokument" ;
+                       <http://www.w3.org/2004/02/skos/core#altLabel> "A" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivert
+:arkivert rdf:type owl:NamedIndividual ,
+                   :Journalstatus ;
+          rdfs:label "Arkivert" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Arkivert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat
+:arkivformat rdf:type owl:NamedIndividual ,
+                      :Variantformat ;
+             rdfs:label "Arkivformat" ;
+             <http://www.w3.org/2004/02/skos/core#altLabel> "A" ,
+                                                            "Arkivformat" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivstatus_avsluttet
+:arkivstatus_avsluttet rdf:type owl:NamedIndividual ,
+                                :Arkivstatus ;
+                       rdfs:label "Avsluttet" ;
+                       <http://www.w3.org/2004/02/skos/core#altLabel> "Avsluttet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsender
+:avsender rdf:type owl:NamedIndividual ,
+                   :Korrespondanseparttype ;
+          rdfs:label "Avsender" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Avsender" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/avsluttetPeriode
+:avsluttetPeriode rdf:type owl:NamedIndividual ,
+                           :Arkivdelstatus ;
+                  rdfs:label "Avsluttet periode" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Avsluttet periode" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/begrensetSikkerhetsgrad
+:begrensetSikkerhetsgrad rdf:type owl:NamedIndividual ,
+                                  :GraderingClass ;
+                         rdfs:label "Begrenset (sikkerhetsgrad)" ;
+                         <http://www.w3.org/2004/02/skos/core#altLabel> "Begrenset (sikkerhetsgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/besvartMedBrev
+:besvartMedBrev rdf:type owl:NamedIndividual ,
+                         :Avskrivningsmaate ;
+                rdfs:label "Besvart med brev" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Besvart med brev" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/besvartMedE-post
+:besvartMedE-post rdf:type owl:NamedIndividual ,
+                           :Avskrivningsmaate ;
+                  rdfs:label "Besvart med e-post" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Besvart med e-post" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/besvartMedNyttNotat
+:besvartMedNyttNotat rdf:type owl:NamedIndividual ,
+                              :Avskrivningsmaate ;
+                     rdfs:label "Besvart med nytt notat" ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "Besvart med nytt notat" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/besvartPåTelefon
+:besvartPåTelefon rdf:type owl:NamedIndividual ,
+                           :Avskrivningsmaate ;
+                  rdfs:label "Besvart på telefon" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Besvart på telefon" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/bevares
+:bevares rdf:type owl:NamedIndividual ,
+                  :Kassasjonsvedtak ;
+         rdfs:label "Bevares" ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "Bevares" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/blandetFysiskOgElektroniskArkiv
+:blandetFysiskOgElektroniskArkiv rdf:type owl:NamedIndividual ,
+                                          :Dokumentmedium ;
+                                 rdfs:label "Blandet fysisk og elektronisk arkiv" ;
+                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Blandet fysisk og elektronisk arkiv" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentHvorDelerAvInnholdetErSkjermet
+:dokumentHvorDelerAvInnholdetErSkjermet rdf:type owl:NamedIndividual ,
+                                                 :Variantformat ;
+                                        rdfs:label "Dokument hvor deler av innholdet er skjermet" ;
+                                        <http://www.w3.org/2004/02/skos/core#altLabel> "Dokument hvor deler av innholdet er skjermet" ,
+                                                                                       "O" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErFerdigstilt
+:dokumentetErFerdigstilt rdf:type owl:NamedIndividual ,
+                                  :Dokumentstatus ;
+                         rdfs:label "Dokumentet er ferdigstilt" ;
+                         <http://www.w3.org/2004/02/skos/core#altLabel> "Dokumentet er ferdigstilt" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentetErUnderRedigering
+:dokumentetErUnderRedigering rdf:type owl:NamedIndividual ,
+                                      :Dokumentstatus ;
+                             rdfs:label "Dokumentet er under redigering" ;
+                             <http://www.w3.org/2004/02/skos/core#altLabel> "Dokumentet er under redigering" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ekspedert
+:ekspedert rdf:type owl:NamedIndividual ,
+                    :Journalstatus ;
+           rdfs:label "Ekspedert" ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Ekspedert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskArkiv
+:elektroniskArkiv rdf:type owl:NamedIndividual ,
+                           :Dokumentmedium ;
+                  rdfs:label "Elektronisk arkiv" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Elektronisk arkiv" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ferdigstiltFraSaksbehandler
+:ferdigstiltFraSaksbehandler rdf:type owl:NamedIndividual ,
+                                      :Journalstatus ;
+                             rdfs:label "Ferdigstilt fra saksbehandler" ;
+                             <http://www.w3.org/2004/02/skos/core#altLabel> "Ferdigstilt fra saksbehandler" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/foreldet
+:foreldet rdf:type owl:NamedIndividual ,
+                   :Presedensstatus ;
+          rdfs:label "Foreldet" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Foreldet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/forsideAvHoveddokument
+:forsideAvHoveddokument rdf:type owl:NamedIndividual ,
+                                 :TilknyttetRegistreringSom ;
+                        rdfs:label "Forside av hoveddokument" ;
+                        <http://www.w3.org/2004/02/skos/core#altLabel> "FH" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/fortroligBeskyttelsesgrad
+:fortroligBeskyttelsesgrad rdf:type owl:NamedIndividual ,
+                                    :GraderingClass ;
+                           rdfs:label "Fortrolig (beskyttelsesgrad)" ;
+                           <http://www.w3.org/2004/02/skos/core#altLabel> "Fortrolig (beskyttelsesgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/fysiskMedium
+:fysiskMedium rdf:type owl:NamedIndividual ,
+                       :Dokumentmedium ;
+              rdfs:label "Fysisk medium" ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Fysisk medium" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/følgeskriv
+:følgeskriv rdf:type owl:NamedIndividual ,
+                     :TilknyttetRegistreringSom ;
+            rdfs:label "Følgeskriv" ;
+            <http://www.w3.org/2004/02/skos/core#altLabel> "F" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/gjeldende
+:gjeldende rdf:type owl:NamedIndividual ,
+                    :Presedensstatus ;
+           rdfs:label "Gjeldende" ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Gjeldende" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/godkjentAvLeder
+:godkjentAvLeder rdf:type owl:NamedIndividual ,
+                          :Journalstatus ;
+                 rdfs:label "Godkjent av leder" ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Godkjent av leder" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/gruppemottaker
+:gruppemottaker rdf:type owl:NamedIndividual ,
+                         :Korrespondanseparttype ;
+                rdfs:label "Gruppemottaker" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Gruppemottaker" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/hemmeligSikkerhetsgrad
+:hemmeligSikkerhetsgrad rdf:type owl:NamedIndividual ,
+                                 :GraderingClass ;
+                        rdfs:label "Hemmelig (sikkerhetsgrad)" ;
+                        <http://www.w3.org/2004/02/skos/core#altLabel> "Hemmelig (sikkerhetsgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokument
+:hoveddokument rdf:type owl:NamedIndividual ,
+                        :TilknyttetRegistreringSom ;
+               rdfs:label "Hoveddokument" ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "H" ,
+                                                              "Hoveddokument" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokumentForSaksframlegg
+:hoveddokumentForSaksframlegg rdf:type owl:NamedIndividual ,
+                                       :TilknyttetRegistreringSom ;
+                              rdfs:label "Hoveddokument for saksframlegg" ;
+                              <http://www.w3.org/2004/02/skos/core#altLabel> "SF" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/hoveddokumentMøteprotokoll
+:hoveddokumentMøteprotokoll rdf:type owl:NamedIndividual ,
+                                     :TilknyttetRegistreringSom ;
+                            rdfs:label "Hoveddokument møteprotokoll" ;
+                            <http://www.w3.org/2004/02/skos/core#altLabel> "PH" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/inngåendeDokument
+:inngåendeDokument rdf:type owl:NamedIndividual ,
+                            :Journalposttype ;
+                   rdfs:label "Incoming document"@en ,
+                              "Inngående dokument"@no-nb ;
+                   <http://www.w3.org/2004/02/skos/core#altLabel> "Inngående dokument" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/internAvsender
+:internAvsender rdf:type owl:NamedIndividual ,
+                         :Korrespondanseparttype ;
+                rdfs:label "Intern avsender" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Intern avsender" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/internMottaker
+:internMottaker rdf:type owl:NamedIndividual ,
+                         :Korrespondanseparttype ;
+                rdfs:label "Intern mottaker" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Intern mottaker" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journaldato
+:journaldato rdf:type owl:NamedIndividual ;
+             rdfs:label "Journaldate"@en ,
+                        "Journaldato"@no-nb .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalført
+:journalført rdf:type owl:NamedIndividual ,
+                      :Journalstatus ;
+             rdfs:label "Journalført" ;
+             <http://www.w3.org/2004/02/skos/core#altLabel> "Journalført" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalposttype
+:journalposttype rdf:type owl:NamedIndividual ;
+                 rdfs:label "Journal post type"@en ,
+                            "Journalposttype"@no-nb .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/journalstatus_utgår
+:journalstatus_utgår rdf:type owl:NamedIndividual ,
+                              :Journalstatus ;
+                     rdfs:label "Utgår" ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "Utgår" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/kasseres
+:kasseres rdf:type owl:NamedIndividual ,
+                   :Kassasjonsvedtak ;
+          rdfs:label "Kasseres" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Kasseres" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/konfidensieltSikkerhetsgrad
+:konfidensieltSikkerhetsgrad rdf:type owl:NamedIndividual ,
+                                      :GraderingClass ;
+                             rdfs:label "Konfidensielt (sikkerhetsgrad)" ;
+                             <http://www.w3.org/2004/02/skos/core#altLabel> "Konfidensielt (sikkerhetsgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/kopimottaker
+:kopimottaker rdf:type owl:NamedIndividual ,
+                       :Korrespondanseparttype ;
+              rdfs:label "Kopimottaker" ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Kopimottaker" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/midlertidigSvarSendt
+:midlertidigSvarSendt rdf:type owl:NamedIndividual ,
+                               :Avskrivningsmaate ;
+                      rdfs:label "Midlertidig svar sendt" ;
+                      <http://www.w3.org/2004/02/skos/core#altLabel> "Midlertidig svar sendt" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/mottaker
+:mottaker rdf:type owl:NamedIndividual ,
+                   :Korrespondanseparttype ;
+          rdfs:label "Mottaker" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Mottaker" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel
+:offentligTittel rdf:type owl:NamedIndividual ;
+                 rdfs:label "Title"@en ,
+                            "Tittel"@no-nb .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/offentligTittel_SENSITIVE
+:offentligTittel_SENSITIVE rdf:type owl:NamedIndividual ;
+                           rdfs:label "Title"@en ,
+                                      "Tittel"@no-nb .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/opprettet
+:opprettet rdf:type owl:NamedIndividual ,
+                    :Arkivstatus ;
+           rdfs:label "Opprettet" ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Opprettet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/organinterntDokumentForOppfølging
+:organinterntDokumentForOppfølging rdf:type owl:NamedIndividual ,
+                                            :Journalposttype ;
+                                   rdfs:label "Internt"@no-nb ;
+                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Organinternt dokument for oppfølging" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/organinterntDokumentUtenOppfølging
+:organinterntDokumentUtenOppfølging rdf:type owl:NamedIndividual ,
+                                             :Journalposttype ;
+                                    rdfs:label "Internt"@no-nb ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Organinternt dokument uten oppfølging" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/overlappingsperiode
+:overlappingsperiode rdf:type owl:NamedIndividual ,
+                              :Arkivdelstatus ;
+                     rdfs:label "Overlappingsperiode" ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "Overlappingsperiode" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/produksjonsformat
+:produksjonsformat rdf:type owl:NamedIndividual ,
+                            :Variantformat ;
+                   rdfs:label "Produksjonsformat" ;
+                   <http://www.w3.org/2004/02/skos/core#altLabel> "P" ,
+                                                                  "Produksjonsformat" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksframlegg
+:saksframlegg rdf:type owl:NamedIndividual ,
+                       :Journalposttype ;
+              rdfs:label "Internt"@no-nb ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "Saksframlegg" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksprotokoll
+:saksprotokoll rdf:type owl:NamedIndividual ,
+                        :TilknyttetRegistreringSom ;
+               rdfs:label "Saksprotokoll" ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "SP" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksstatus_avsluttet
+:saksstatus_avsluttet rdf:type owl:NamedIndividual ,
+                               :Saksstatus ;
+                      rdfs:label "Avsluttet" ;
+                      <http://www.w3.org/2004/02/skos/core#altLabel> "Avsluttet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/saksstatus_utgår
+:saksstatus_utgår rdf:type owl:NamedIndividual ,
+                           :Saksstatus ;
+                  rdfs:label "Utgår" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Utgår" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/signaturPåførtIkkeVerifisert
+:signaturPåførtIkkeVerifisert rdf:type owl:NamedIndividual ,
+                                       :ElektroniskSignaturVerifisert ;
+                              rdfs:label "Signatur påført, ikke verifisert" ;
+                              <http://www.w3.org/2004/02/skos/core#altLabel> "Signatur påført, ikke verifisert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/signaturPåførtOgVerifisert
+:signaturPåførtOgVerifisert rdf:type owl:NamedIndividual ,
+                                     :ElektroniskSignaturVerifisert ;
+                            rdfs:label "Signatur påført og verifisert" ;
+                            <http://www.w3.org/2004/02/skos/core#altLabel> "Signatur påført og verifisert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/signertDokument
+:signertDokument rdf:type owl:NamedIndividual ,
+                          :Variantformat ;
+                 rdfs:label "Signert dokument" ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "S" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjermingAvDelerAvDokumentet
+:skjermingAvDelerAvDokumentet rdf:type owl:NamedIndividual ,
+                                       :SkjermingDokument ;
+                              rdfs:label "Skjerming av deler av dokumentet" ;
+                              <http://www.w3.org/2004/02/skos/core#altLabel> "Skjerming av deler av dokumentet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/skjermingAvHeleDokumentet
+:skjermingAvHeleDokumentet rdf:type owl:NamedIndividual ,
+                                    :SkjermingDokument ;
+                           rdfs:label "Skjerming av hele dokumentet" ;
+                           <http://www.w3.org/2004/02/skos/core#altLabel> "Skjerming av hele dokumentet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/slettingAvHeleInnholdetIArkivdelen
+:slettingAvHeleInnholdetIArkivdelen rdf:type owl:NamedIndividual ,
+                                             :Slettingstype ;
+                                    rdfs:label "Sletting av hele innholdet i arkivdelen" ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Sletting av hele innholdet i arkivdelen" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/slettingAvProduksjonsformat
+:slettingAvProduksjonsformat rdf:type owl:NamedIndividual ,
+                                      :Slettingstype ;
+                             rdfs:label "Sletting av produksjonsformat" ;
+                             <http://www.w3.org/2004/02/skos/core#altLabel> "Sletting av produksjonsformat" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/slettingAvTidligereVersjon
+:slettingAvTidligereVersjon rdf:type owl:NamedIndividual ,
+                                     :Slettingstype ;
+                            rdfs:label "Sletting av tidligere versjon" ;
+                            <http://www.w3.org/2004/02/skos/core#altLabel> "Sletting av tidligere versjon" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/slettingAvVariantMedSladdetInformasjon
+:slettingAvVariantMedSladdetInformasjon rdf:type owl:NamedIndividual ,
+                                                 :Slettingstype ;
+                                        rdfs:label "Sletting av variant med sladdet informasjon" ;
+                                        <http://www.w3.org/2004/02/skos/core#altLabel> "Sletting av variant med sladdet informasjon" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/strengtFortroligBeskyttelsesgrad
+:strengtFortroligBeskyttelsesgrad rdf:type owl:NamedIndividual ,
+                                           :GraderingClass ;
+                                  rdfs:label "Strengt fortrolig (beskyttelsesgrad)" ;
+                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Strengt fortrolig (beskyttelsesgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/strengtHemmeligSikkerhetsgrad
+:strengtHemmeligSikkerhetsgrad rdf:type owl:NamedIndividual ,
+                                        :GraderingClass ;
+                               rdfs:label "Strengt hemmelig (sikkerhetsgrad)" ;
+                               <http://www.w3.org/2004/02/skos/core#altLabel> "Strengt hemmelig (sikkerhetsgrad)" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/tattTilEtterretning
+:tattTilEtterretning rdf:type owl:NamedIndividual ,
+                              :Avskrivningsmaate ;
+                     rdfs:label "Tatt til etterretning" ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "Tatt til etterretning" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/tattTilOrientering
+:tattTilOrientering rdf:type owl:NamedIndividual ,
+                             :Avskrivningsmaate ;
+                    rdfs:label "Tatt til orientering" ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "Tatt til orientering" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/uaktuelleMapper
+:uaktuelleMapper rdf:type owl:NamedIndividual ,
+                          :Arkivdelstatus ;
+                 rdfs:label "Uaktuelle mapper" ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Uaktuelle mapper" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ugradert
+:ugradert rdf:type owl:NamedIndividual ,
+                   :Tilgangsrestriksjon ;
+          rdfs:label "Ugradert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/underBehandling
+:underBehandling rdf:type owl:NamedIndividual ,
+                          :Saksstatus ;
+                 rdfs:label "Under behandling" ;
+                 <http://www.w3.org/2004/02/skos/core#altLabel> "Under behandling" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/unntattOffentlighet
+:unntattOffentlighet rdf:type owl:NamedIndividual ,
+                              :Tilgangsrestriksjon ;
+                     rdfs:label "Unntatt offentlighet" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/utgåendeDokument
+:utgåendeDokument rdf:type owl:NamedIndividual ,
+                           :Journalposttype ;
+                  rdfs:label "Utgående dokument" ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Utgående dokument" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/vedlegg
+:vedlegg rdf:type owl:NamedIndividual ,
+                  :TilknyttetRegistreringSom ;
+         rdfs:label "Vedlegg" ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "V" ,
+                                                        "Vedlegg" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/vurderesSenere
+:vurderesSenere rdf:type owl:NamedIndividual ,
+                         :Kassasjonsvedtak ;
+                rdfs:label "Vurderes senere" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Vurderes senere" .
+
+
+[ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
+  <tag:stardog:api:rule:content> """
+
+PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
+
+IF {
+	?a arkiv:referanseTilSak ?jp.
+	?jp arkiv:parent ?saksmappe.
+	?saksmappe arkiv:sakssekvensnummer ?saksnummer.
+
+}
+THEN {
+         ?a arkiv:sakensSakssekvensnummer ?saksnummer .
+}
+
+     """
+] .
+
+[ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
+   <tag:stardog:api:rule:content> """
+
+ PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
+
+ IF {
+ 	?a arkiv:mappeID ?mappeID.
+        BIND(REPLACE(?mappeID, \"\\\\/.*\", \"\") as ?year)
+ }
+ THEN {
+          ?a arkiv:saksaar ?year.
+ }
+
+"""
+ ] .
+
+[ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
+   <tag:stardog:api:rule:content> """
+
+  PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
+
+  IF {
+  	?a arkiv:mappeID ?mappeID.
+    BIND(REPLACE(?mappeID, \".*\\\\/\", \"\") as ?sakssekvensnummer)
+  }
+  THEN {
+           ?a arkiv:sakssekvensnummer ?sakssekvensnummer.
+  }
+
+ """
+ ] .
+
+[ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
+   <tag:stardog:api:rule:content> """
+
+PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
+
+IF {
+	?a arkiv:referanseTilSak ?jp.
+	?jp arkiv:parent ?saksmappe.
+	?saksmappe arkiv:saksaar ?saksaar.
+
+}
+THEN {
+         ?a arkiv:sakensSaksaar ?saksaar .
+}
+
+     """
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://data.einnsyn.no/utvalg/Byråd> <http://www.w3.org/2004/02/skos/core#altLabel> "byråd" ,
+                                                                                      "Byråd" .
+
+
+<http://data.einnsyn.no/utvalg/Byrådsleder> <http://www.w3.org/2004/02/skos/core#altLabel> "Byrådsleder" .
+
+
+<http://data.einnsyn.no/utvalg/Leder> <http://www.w3.org/2004/02/skos/core#altLabel> "Leder" ,
+                                                                                     "leder" .
+
+
+<http://data.einnsyn.no/utvalg/Medlem> <http://www.w3.org/2004/02/skos/core#altLabel> "Medlem" ,
+                                                                                      "medlem" .
+
+
+<http://data.einnsyn.no/utvalg/Nestleder> <http://www.w3.org/2004/02/skos/core#altLabel> "nestleder" ,
+                                                                                         "Nestleder" .
+
+
+<http://data.einnsyn.no/utvalg/Ordfører> <http://www.w3.org/2004/02/skos/core#altLabel> "Ordfører" ,
+                                                                                        "ordfører" .
+
+
+<http://data.einnsyn.no/utvalg/Varamedlem> <http://www.w3.org/2004/02/skos/core#altLabel> "Varamedlem" ,
+                                                                                          "varamedlem" .
+
+
+<http://data.einnsyn.no/utvalg/Varaordfører> <http://www.w3.org/2004/02/skos/core#altLabel> "varaordfører" ,
+                                                                                            "Varaordfører" .
+
+
+<http://data.stortinget.no/politiskparti/Uavhengig> <http://www.w3.org/2004/02/skos/core#altLabel> "UAVH." .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://data.einnsyn.no/utvalg/Arbeidssted>
+                <http://data.einnsyn.no/utvalg/Medlem>
+                <http://data.einnsyn.no/utvalg/Medlemstype>
+                <http://data.einnsyn.no/utvalg/Varamedlem>
+                <http://data.einnsyn.no/utvalg/utvalg>
+                <http://data.einnsyn.no/utvalg/utvalgsliste>
+                <http://data.stortinget.no/politiskparti/PolitiskParti>
+                <http://www.arkivverket.no/standarder/noark4/PNAVN>
+                :Arkivdelstatus
+                :Arkivstatus
+                :Avskrivningsmaate
+                :Dokumentbeskrivelse
+                :Dokumentmedium
+                :Dokumentobjekt
+                :Dokumentstatus
+                :ElektroniskSignaturVerifisert
+                :GraderingClass
+                :Journalposttype
+                :Journalstatus
+                :Kassasjonsvedtak
+                :Korrespondansepart
+                :Korrespondanseparttype
+                :Mappe
+                :Moetedeltaker
+                :Presedensstatus
+                :Registrering
+                :Skjerming
+                :SkjermingDokument
+                :Slettingstype
+                :Tilgangsrestriksjon
+                :TilknyttetRegistreringSom
+                :Variantformat
+                <tag:stardog:api:rule:SPARQLRule>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

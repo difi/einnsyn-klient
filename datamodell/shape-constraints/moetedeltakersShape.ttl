@@ -1,0 +1,22 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MoetedeltakersShape
+        a              sh:Shape ;
+        sh:property    arkiv:Moetedeltaker_moetedeltakerNavn , arkiv:Moetedeltaker_moetedeltakerFunksjon ;
+        sh:scopeClass  arkiv:Moetedeltaker .
+
+arkiv:Moetedeltaker_moetedeltakerFunksjon
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:moetedeltakerFunksjon ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetedeltaker_moetedeltakerNavn
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetedeltakerNavn ;
+        sh:severity   sh:Violation .

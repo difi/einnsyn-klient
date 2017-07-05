@@ -1,0 +1,14 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:JournalpostForMøtesShape
+        a              sh:Shape ;
+        sh:property    arkiv:JournalpostForMøte_referanseTilBehandling ;
+        sh:scopeClass  arkiv:JournalpostForMøte .
+
+arkiv:JournalpostForMøte_referanseTilBehandling
+        sh:classIn   (arkiv:Moeteregistrering arkiv:Fremtidigmoeteregistrering) ;
+        sh:predicate  arkiv:referanseTilBehandling ;
+        sh:severity   sh:Violation .

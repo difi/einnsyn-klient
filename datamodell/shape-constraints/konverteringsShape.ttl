@@ -1,0 +1,51 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:KonverteringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Konvertering_konvertertTilFormat , arkiv:Konvertering_konvertertFraFormat , arkiv:Konvertering_konvertertDato , arkiv:Konvertering_konvertertAv , arkiv:Konvertering_konverteringsverktoey , arkiv:Konvertering_konverteringskommentar ;
+        sh:scopeClass  arkiv:Konvertering .
+
+arkiv:Konvertering_konverteringskommentar
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konverteringskommentar ;
+        sh:severity   sh:Violation .
+
+arkiv:Konvertering_konverteringsverktoey
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konverteringsverktoey ;
+        sh:severity   sh:Violation .
+
+arkiv:Konvertering_konvertertAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konvertertAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Konvertering_konvertertDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konvertertDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Konvertering_konvertertFraFormat
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konvertertFraFormat ;
+        sh:severity   sh:Violation .
+
+arkiv:Konvertering_konvertertTilFormat
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:konvertertTilFormat ;
+        sh:severity   sh:Violation .

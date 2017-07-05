@@ -1,0 +1,102 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:PresedenssShape
+        a              sh:Shape ;
+        sh:property    arkiv:Presedens_tittel_SENSITIV, arkiv:Presedens_tittel_LIST, arkiv:Presedens_presedensStatus , arkiv:Presedens_presedensGodkjentAv , arkiv:Presedens_tittel , arkiv:Presedens_beskrivelse , arkiv:Presedens_opprettetDato , arkiv:Presedens_avsluttetAv , arkiv:Presedens_presedensGodkjentDato , arkiv:Presedens_avsluttetDato , arkiv:Presedens_presedensDato , arkiv:Presedens_rettskildefaktor , arkiv:Presedens_presedensHjemmel , arkiv:Presedens_opprettetAv ;
+        sh:scopeClass  arkiv:Presedens .
+
+arkiv:Presedens_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_presedensDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:presedensDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_presedensGodkjentAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:presedensGodkjentAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_presedensGodkjentDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:presedensGodkjentDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_presedensHjemmel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:presedensHjemmel ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_presedensStatus
+        sh:class      arkiv:PresedensStatus ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:presedensStatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_rettskildefaktor
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:rettskildefaktor ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_tittel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Presedens_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Presedens_tittel_LIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .

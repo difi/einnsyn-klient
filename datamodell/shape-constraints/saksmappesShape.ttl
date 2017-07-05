@@ -1,0 +1,110 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:SaksmappesShape
+        a              sh:Shape ;
+        sh:property    arkiv:Saksmappe_saksansvarligSENSITIV, arkiv:Saksmappe_saksansvarligLIST, arkiv:Saksmappe_administrativEnhet , arkiv:Saksmappe_saksaar , arkiv:Saksmappe_referanseSekundaerKlassifikasjon , arkiv:Saksmappe_parent , arkiv:Saksmappe_sakspart , arkiv:Saksmappe_saksstatus , arkiv:Saksmappe_journalenhet , arkiv:Saksmappe_presedens , arkiv:Saksmappe_sakssekvensnummer , arkiv:Saksmappe_saksansvarlig , arkiv:Saksmappe_utlaantTil , arkiv:Saksmappe_saksdato , arkiv:Saksmappe_utlaantDato , arkiv:Saksmappe_referanseTilRelatertSak ;
+        sh:scopeClass  arkiv:Saksmappe .
+
+arkiv:Saksmappe_administrativEnhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        # sh:minCount   1 ; # For å støtte data fra OEP (SQL dump)
+        sh:predicate  arkiv:administrativEnhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_journalenhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:journalenhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_parent
+        sh:classIn    ( arkiv:Arkivdel arkiv:Klasse ) ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_presedens
+        sh:class      arkiv:Presedens ;
+        sh:predicate  arkiv:presedens ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_referanseSekundaerKlassifikasjon
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseSekundaerKlassifikasjon ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_saksaar
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksaar ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_saksansvarlig
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:saksansvarlig ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Saksmappe_saksansvarligSENSITIV
+        sh:datatype   xsd:string ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksansvarlig_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_saksansvarligLIST
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:saksansvarlig_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Saksmappe_saksdato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:saksdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_sakspart
+        sh:class      arkiv:Sakspart ;
+        sh:predicate  arkiv:sakspart ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_sakssekvensnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:sakssekvensnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_saksstatus
+        sh:class      arkiv:Saksstatus ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:saksstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_utlaantDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utlaantDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_utlaantTil
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utlaantTil ;
+        sh:severity   sh:Violation .
+
+arkiv:Saksmappe_referanseTilRelatertSak
+#        sh:class      arkiv:Saksmappe ;
+        sh:predicate  arkiv:referanseTilRelatertSak ;
+        sh:minCount   0 ;
+        sh:severity   sh:Violation .

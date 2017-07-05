@@ -1,0 +1,118 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:BasisregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Basisregistrering_forfatter_LIST, arkiv:Basisregistrering_forfatter_SENSITIV,
+        arkiv:Basisregistrering_tittel_LIST, arkiv:Basisregistrering_tittel_SENSITIV, arkiv:Basisregistrering_beskrivelse ,
+        arkiv:Basisregistrering_virksomhetsspesifikkeMetadata , arkiv:Basisregistrering_forfatter ,
+        arkiv:Basisregistrering_registreringsID , arkiv:Basisregistrering_oppbevaringssted , arkiv:Basisregistrering_tittel ,
+        arkiv:Basisregistrering_merknad , arkiv:Basisregistrering_offentligTittel , arkiv:Basisregistrering_dokumentmedium ,
+        arkiv:Basisregistrering_noekkelord , arkiv:Basisregistrering_offentligTittel_SENSITIV, arkiv:Basisregistrering_offentligTittel_LIST ;
+        sh:scopeClass  arkiv:Basisregistrering .
+
+arkiv:Basisregistrering_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_dokumentmedium
+        sh:class      arkiv:Dokumentmedium ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentmedium ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_forfatter
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:forfatter ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_forfatter_LIST
+        sh:minCount 0;
+        sh:class rdf:List;
+        sh:predicate  arkiv:forfatter_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_forfatter_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:forfatter_SENSITIV ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Basisregistrering_merknad
+        sh:class      arkiv:Merknad ;
+        sh:predicate  arkiv:merknad ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_noekkelord
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:noekkelord ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_offentligTittel
+        sh:datatype   xsd:string ;
+        sh:minCount 1 ; # require offentligTittel because it's the only one we have in Noark 4 and the one we should use for searching in
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:offentligTittel ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_offentligTittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount 1 ;
+        sh:predicate  arkiv:offentligTittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_offentligTittel_LIST
+        sh:maxCount   1 ;
+        sh:minCount 1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:offentligTittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Basisregistrering_oppbevaringssted
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:oppbevaringssted ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_registreringsID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:registreringsID ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Basisregistrering_tittel
+        sh:datatype   xsd:string ;
+	  #sh:minCount 1 ; # stop using tittel because we don't have tittel in Noark 4
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+       #sh:minCount 1 ; # stop using tittel because we don't have tittel in Noark 4
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_tittel_LIST
+	  #sh:minCount 1 ; # stop using tittel because we don't have tittel in Noark 4
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Basisregistrering_virksomhetsspesifikkeMetadata
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:virksomhetsspesifikkeMetadata ;
+        sh:severity   sh:Violation .

@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "sh-ext":"http://example.org/shacl-ext#",
+    "arkiv":"http://www.arkivverket.no/standarder/noark5/arkivstruktur/",
+    "sh":"http://www.w3.org/ns/shacl#",
+    "xsd":"http://www.w3.org/2001/XMLSchema#",
+    "severity": {"@id":"sh:severity", "@type":"@id"},
+    "focusNode": {"@id":"sh:focusNode", "@type":"@id"},
+    "subject": {"@id":"sh:subject", "@type":"@id"},
+    "predicate": {"@id":"sh:predicate", "@type":"@id"},
+    "message": {"@id":"sh:message"},
+    "object": {"@id":"sh:object"},
+    "actual": {"@id":"sh-ext:actual"},
+    "expected": {"@id":"sh-ext:expected"},
+    "comment": {"@id":"http://www.w3.org/2000/01/rdf-schema#comment"},
+    "sourceConstraint": {"@id":"sh:sourceConstraint", "@type":"@id"},
+    "scopeClass": {"@id":"sh:scopeClass", "@type":"@id"},
+    "type":"@type",
+    "id":"@id",
+    "value":"@value"
+  },
+  "@explicit": true,
+  "@type" : [
+    "sh-ext:ConstraintViolationExactCount",
+    "sh-ext:ConstraintViolationClass" ,
+    "sh-ext:ConstraintViolationDatatype",
+    "sh-ext:ConstraintViolationMaxCount",
+    "sh-ext:ConstraintViolationMinCount"
+  ],
+  "severity": {},
+  "focusNode":{},
+  "subject": {},
+  "predicate": {},
+  "message": {},
+  "object": {"@default":"@null", "@omitDefault":true},
+  "actual":{"@default":"@null", "@omitDefault":true},
+  "expected":{"@default":"@null", "@omitDefault":true},
+  "comment":{"@default":"@null", "@omitDefault":true},
+  "sourceConstraint": {},
+  "scopeClass": {"@default":"@null", "@omitDefault":true}
+}

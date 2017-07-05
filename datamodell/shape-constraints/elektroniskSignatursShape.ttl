@@ -1,0 +1,37 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:ElektroniskSignatursShape
+        a              sh:Shape ;
+        sh:property    arkiv:ElektroniskSignatur_verifisertDato , arkiv:ElektroniskSignatur_verifisertAv , arkiv:ElektroniskSignatur_elektroniskSignaturVerifisert , arkiv:ElektroniskSignatur_elektroniskSignaturSikkerhetsnivaa ;
+        sh:scopeClass  arkiv:ElektroniskSignatur .
+
+arkiv:ElektroniskSignatur_elektroniskSignaturSikkerhetsnivaa
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:elektroniskSignaturSikkerhetsnivaa ;
+        sh:severity   sh:Warning .
+
+arkiv:ElektroniskSignatur_elektroniskSignaturVerifisert
+        sh:class      arkiv:ElektroniskSignaturVerifisert ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:elektroniskSignaturVerifisert ;
+        sh:severity   sh:Violation .
+
+arkiv:ElektroniskSignatur_verifisertAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:verifisertAv ;
+        sh:severity   sh:Warning .
+
+arkiv:ElektroniskSignatur_verifisertDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:verifisertDato ;
+        sh:severity   sh:Violation .

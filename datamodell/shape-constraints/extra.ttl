@@ -1,0 +1,49 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:ExtraShapesForList
+        a              sh:Shape ;
+        sh:property arkiv:first, arkiv:last ;
+        sh:scopeClass  rdf:List .
+
+
+arkiv:first
+        sh:maxCount   1 ;
+        sh:predicate rdf:first ;
+        sh:severity   sh:Violation .
+
+
+arkiv:last
+        sh:maxCount   1 ;
+        sh:predicate rdf:last ;
+        sh:severity   sh:Violation .
+
+
+
+
+
+arkiv:WildCardShape
+  a              sh:Shape ;
+          sh:property arkiv:rest.
+
+arkiv:rest
+        sh:maxCount   1 ;
+        sh:predicate rdf:rest ;
+        sh:severity   sh:Violation .
+
+
+arkiv:personnavnTaggingShape
+  a              sh:Shape ;
+          sh:scopeClass  <http://xmlns.com/foaf/0.1/Person> ;
+                    sh:property arkiv:personnavnTaggingName.
+
+
+
+arkiv:personnavnTaggingName
+        sh:maxCount   1 ;
+                sh:minCount   1 ;
+        sh:predicate <http://xmlns.com/foaf/0.1/name>  ;
+        sh:severity   sh:Violation .
+

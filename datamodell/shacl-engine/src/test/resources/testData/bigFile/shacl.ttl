@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+arkiv:JournalpostsShape
+	a sh:Shape ;
+	sh:scopeClass arkiv:Journalpost ;
+
+	sh:property [
+		sh:predicate arkiv:a ;
+		sh:minCount 1 ;
+		sh:severity sh:Violation ;
+	] ;
+
+	sh:property [
+    		sh:predicate arkiv:b ;
+    		sh:minCount 1 ;
+    		sh:severity sh:Violation ;
+    	] ;
+
+	sh:property [
+    		sh:predicate arkiv:c ;
+    		sh:maxCount 2 ;
+    		sh:severity sh:Violation ;
+    	] .
+
+
+arkiv:JournalpostsShape2
+	a sh:Shape ;
+	sh:scopeClass arkiv:Journalpost2 ;
+
+	sh:property [
+		sh:predicate arkiv:a ;
+		sh:minCount 1 ;
+		sh:severity sh:Violation ;
+	] ;
+
+	sh:property [
+    		sh:predicate arkiv:b ;
+    		sh:minCount 1 ;
+    		sh:severity sh:Violation ;
+    	] ;
+
+	sh:property [
+    		sh:predicate arkiv:c ;
+    		sh:maxCount 2 ;
+    		sh:severity sh:Violation ;
+    	] .

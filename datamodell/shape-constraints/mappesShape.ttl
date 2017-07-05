@@ -1,0 +1,155 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MappesShape  a   sh:Shape ;
+        sh:property    arkiv:Mappe_tittel_SENSITIV, arkiv:Mappe_tittel_LIST, arkiv:Mappe_offentligTittel_SENSITIV, arkiv:Mappe_offentligTittel_LIST, arkiv:Mappe_oppbevaringssted , arkiv:Mappe_avsluttetAv , arkiv:Mappe_referanseArkivdel ,  arkiv:Mappe_dokumentmedium , arkiv:Mappe_beskrivelse , arkiv:Mappe_merknad , arkiv:Mappe_parent , arkiv:Mappe_skjerming , arkiv:Mappe_opprettetDato , arkiv:Mappe_opprettetAv , arkiv:Mappe_virksomhetsspesifikkeMetadata , arkiv:Mappe_noekkelord , arkiv:Mappe_mappe , arkiv:Mappe_tittel , arkiv:Mappe_offentligTittel , arkiv:Mappe_kassasjon , arkiv:Mappe_systemID , arkiv:Mappe_avsluttetDato , arkiv:Mappe_gradering , arkiv:Mappe_mappeID ;
+        sh:scopeClass  arkiv:Mappe .
+
+arkiv:Mappe_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_dokumentmedium
+        sh:class      arkiv:Dokumentmedium ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentmedium ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_gradering
+        sh:class      arkiv:Gradering ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:gradering ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_kassasjon
+        sh:class      arkiv:Kassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kassasjon ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Mappe_mappe  sh:class  arkiv:Mappe ;
+        sh:predicate  arkiv:mappe ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_mappeID  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:mappeID ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_merknad  sh:class  arkiv:Merknad ;
+        sh:predicate  arkiv:merknad ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_noekkelord
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:noekkelord ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_offentligTittel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount    1 ; # force offentligTittel for Noark 4
+        sh:predicate  arkiv:offentligTittel ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_offentligTittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount    1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:offentligTittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_offentligTittel_LIST
+        sh:maxCount   1 ;
+        sh:minCount    1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:offentligTittel_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_oppbevaringssted
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:oppbevaringssted ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_parent  sh:classIn  ( arkiv:Arkivdel arkiv:Klasse arkiv:Mappe ) ;
+        sh:maxCount 1;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_referanseArkivdel
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseArkivdel ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_skjerming
+        sh:class      arkiv:Skjerming ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjerming ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_systemID  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_tittel  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Mappe_tittel_LIST
+        #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Mappe_virksomhetsspesifikkeMetadata
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:virksomhetsspesifikkeMetadata ;
+        sh:severity   sh:Violation .

@@ -1,0 +1,47 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:SkjermingsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Skjerming_tilgangsrestriksjon , arkiv:Skjerming_skjermingsvarighet , arkiv:Skjerming_skjermingshjemmel , arkiv:Skjerming_skjermingOpphoererDato , arkiv:Skjerming_skjermingMetadata , arkiv:Skjerming_skjermingDokument ;
+        sh:scopeClass  arkiv:Skjerming .
+
+arkiv:Skjerming_skjermingDokument
+        sh:class      arkiv:SkjermingDokument ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjermingDokument ;
+        sh:severity   sh:Violation .
+
+arkiv:Skjerming_skjermingMetadata
+        sh:datatype   xsd:string ;
+        sh:minCount   0 ;
+        sh:predicate  arkiv:skjermingMetadata ;
+        sh:severity   sh:Warning .
+
+arkiv:Skjerming_skjermingOpphoererDato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjermingOpphoererDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Skjerming_skjermingshjemmel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        # sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:skjermingshjemmel ;
+        sh:severity   sh:Violation .
+
+arkiv:Skjerming_skjermingsvarighet
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjermingsvarighet ;
+        sh:severity   sh:Violation .
+
+arkiv:Skjerming_tilgangsrestriksjon
+        sh:class   arkiv:Tilgangsrestriksjon ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tilgangsrestriksjon ;
+        sh:severity   sh:Violation .

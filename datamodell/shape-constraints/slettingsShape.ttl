@@ -1,0 +1,29 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:SlettingsShape  a  sh:Shape ;
+        sh:property    arkiv:Sletting_slettingstype , arkiv:Sletting_slettetDato , arkiv:Sletting_slettetAv ;
+        sh:scopeClass  arkiv:Sletting .
+
+arkiv:Sletting_slettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:slettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Sletting_slettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:slettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Sletting_slettingstype
+        sh:class      arkiv:Slettingstype ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:slettingstype ;
+        sh:severity   sh:Violation .

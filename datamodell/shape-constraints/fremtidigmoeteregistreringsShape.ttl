@@ -1,0 +1,80 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:FremtidigmoeteregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Fremtidigmoeteregistrering_referanseTilSak, arkiv:Fremtidigmoeteregistrering_saksbehandlerSENSITIV, arkiv:Fremtidigmoeteregistrering_saksbehandlerLIST, arkiv:Fremtidigmoeteregistrering_administrativEnhet , arkiv:Fremtidigmoeteregistrering_saksbehandler , arkiv:Fremtidigmoeteregistrering_moeteregistreringsstatus , arkiv:Fremtidigmoeteregistrering_referanseTilFremtidigmoeteregistrering , arkiv:Fremtidigmoeteregistrering_moeteregistreringstype , arkiv:Fremtidigmoeteregistrering_referanseFraFremtidigmoeteregistrering , arkiv:Fremtidigmoeteregistrering_moetesakstype, arkiv:Fremtidigmoeteregistrering_parent;
+        sh:scopeClass  arkiv:Fremtidigmoeteregistrering .
+
+arkiv:Fremtidigmoeteregistrering_administrativEnhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:administrativEnhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_moeteregistreringsstatus
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:moeteregistreringsstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_moeteregistreringstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moeteregistreringstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_moetesakstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetesakstype ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Fremtidigmoeteregistrering_referanseFraFremtidigmoeteregistrering
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseFraFremtidigmoeteregistrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_referanseTilFremtidigmoeteregistrering
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseTilFremtidigmoeteregistrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_saksbehandler
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:saksbehandler ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_saksbehandlerSENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_saksbehandlerLIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:saksbehandler_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Fremtidigmoeteregistrering_referanseTilSak
+        sh:class arkiv:Journalpost;
+        sh:predicate  arkiv:referanseTilSak ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Fremtidigmoeteregistrering_parent
+        sh:class      arkiv:Fremtidigmoetemappe ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .

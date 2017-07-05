@@ -1,0 +1,89 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:DokumentobjektsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Dokumentobjekt_sjekksum , arkiv:Dokumentobjekt_versjonsnummer , arkiv:Dokumentobjekt_sjekksumAlgoritme , arkiv:Dokumentobjekt_filstoerrelse , arkiv:Dokumentobjekt_variantformat , arkiv:Dokumentobjekt_format , arkiv:Dokumentobjekt_elektroniskSignatur , arkiv:Dokumentobjekt_referanseDokumentfil , arkiv:Dokumentobjekt_konvertering , arkiv:Dokumentobjekt_opprettetDato , arkiv:Dokumentobjekt_formatDetaljer , arkiv:Dokumentobjekt_opprettetAv ;
+        sh:scopeClass  arkiv:Dokumentobjekt .
+
+arkiv:Dokumentobjekt_elektroniskSignatur
+        sh:class      arkiv:ElektroniskSignatur ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:elektroniskSignatur ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_filstoerrelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:filstoerrelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_format
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:format ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_formatDetaljer
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:formatDetaljer ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_konvertering
+        sh:class      arkiv:Konvertering ;
+        sh:predicate  arkiv:konvertering ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_referanseDokumentfil
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:referanseDokumentfil ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_sjekksum
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:sjekksum ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_sjekksumAlgoritme
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:sjekksumAlgoritme ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_variantformat
+        sh:class      arkiv:Variantformat ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:variantformat ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentobjekt_versjonsnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:versjonsnummer ;
+        sh:severity   sh:Violation .

@@ -1,0 +1,35 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MerknadsShape  a  sh:Shape ;
+        sh:property    arkiv:Merknad_merknadstype , arkiv:Merknad_merknadstekst , arkiv:Merknad_merknadsdato , arkiv:Merknad_merknadRegistrertAv ;
+        sh:scopeClass  arkiv:Merknad .
+
+arkiv:Merknad_merknadRegistrertAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:merknadRegistrertAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Merknad_merknadsdato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:merknadsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Merknad_merknadstekst
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:merknadstekst ;
+        sh:severity   sh:Violation .
+
+arkiv:Merknad_merknadstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:merknadstype ;
+        sh:severity   sh:Violation .

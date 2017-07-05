@@ -1,0 +1,42 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:GraderingsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Gradering_nedgradertAv , arkiv:Gradering_nedgraderingsdato , arkiv:Gradering_gradertAv , arkiv:Gradering_graderingsdato , arkiv:Gradering_gradering ;
+        sh:scopeClass  arkiv:Gradering .
+
+arkiv:Gradering_gradering
+        sh:class      arkiv:Gradering ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:gradering ;
+        sh:severity   sh:Violation .
+
+arkiv:Gradering_graderingsdato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:graderingsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Gradering_gradertAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:gradertAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Gradering_nedgraderingsdato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:nedgraderingsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Gradering_nedgradertAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:nedgradertAv ;
+        sh:severity   sh:Violation .

@@ -1,0 +1,23 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix bruker: <http://data.einnsyn.no/brukermeta/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+bruker:LagretSøkShape  a  sh:Shape ;
+        sh:property    bruker:LagretSøkShape_label , bruker:LagretSøkShape_spørring  ;
+        sh:scopeClass  bruker:LagretSøk .
+
+bruker:LagretSøkShape_label
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  rdfs:label ;
+        sh:severity   sh:Violation .
+
+bruker:LagretSøkShape_spørring
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  bruker:spørring ;
+        sh:severity   sh:Violation .

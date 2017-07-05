@@ -1,0 +1,121 @@
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bruker: <http://data.einnsyn.no/brukermeta/> .
+@prefix virksomhet: <http://data.einnsyn.no/virksomhetmeta/> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+
+arkiv:MoeteregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Moeteregistrering_sakensSaksaar, arkiv:Moeteregistrering_sakensSakssekvensnummer;
+        sh:scopeClass  arkiv:Moeteregistrering .
+
+arkiv:Moeteregistrering_sakensSaksaar
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:sakensSaksaar ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Moeteregistrering_sakensSakssekvensnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:sakensSakssekvensnummer ;
+        sh:severity   sh:Violation .
+
+
+arkiv:VirksomhetssShape
+        a              sh:Shape ;
+        sh:property    arkiv:Virksomhet_telefon, arkiv:Virksomhet_epost;
+        sh:scopeClass  virksomhet:Virksomhet .
+
+
+arkiv:Virksomhet_epost
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  virksomhet:epost ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Virksomhet_telefon
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  virksomhet:telefon ;
+        sh:severity   sh:Violation .
+
+
+arkiv:RegistreringsShapeArkivskaperFrontend
+                   a              sh:Shape ;
+                   sh:scopeClass  arkiv:Registrering ;
+                   sh:property    [
+                           sh:maxCount   1 ;
+                           sh:minCount   1 ;
+                           sh:predicate  arkiv:arkivskaper ;
+                           sh:severity   sh:Violation
+                   ] .
+
+arkiv:MappesShapeArkivskaperFrontend
+        a              sh:Shape ;
+        sh:scopeClass  arkiv:Mappe ;
+        sh:property    [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  arkiv:arkivskaper ;
+                sh:severity   sh:Violation
+        ] .
+
+
+arkiv:InnsynskravdelsShape
+        a              sh:Shape ;
+        sh:scopeClass  bruker:Innsynskravdel ;
+        sh:property    [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  bruker:rettetMot ;
+                sh:severity   sh:Violation
+            ] ,
+            [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  bruker:statusobjekt ;
+                sh:severity   sh:Violation
+            ] .
+
+
+arkiv:InnsynskravsShape
+        a              sh:Shape ;
+        sh:scopeClass  bruker:Innsynskrav ;
+        sh:property    [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  bruker:forsendelsesmåte ;
+                sh:severity   sh:Violation
+            ] ,
+            [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  virksomhet:opprettetDato ;
+                sh:severity   sh:Violation
+            ] .
+
+arkiv:StatusobjektsShape
+        a              sh:Shape ;
+        sh:scopeClass  bruker:Statusobjekt ;
+        sh:property    [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  bruker:status ;
+                sh:severity   sh:Violation
+            ] ,
+            [
+                sh:maxCount   1 ;
+                sh:minCount   1 ;
+                sh:predicate  virksomhet:opprettetDato ;
+                sh:severity   sh:Violation
+            ] .

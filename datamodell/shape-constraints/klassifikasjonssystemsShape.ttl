@@ -1,0 +1,83 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:KlassifikasjonssystemsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Klassifikasjonssystem_tittel_SENSITIV, arkiv:Klassifikasjonssystem_tittel_LIST, arkiv:Klassifikasjonssystem_opprettetAv , arkiv:Klassifikasjonssystem_beskrivelse , arkiv:Klassifikasjonssystem_tittel , arkiv:Klassifikasjonssystem_avsluttetAv , arkiv:Klassifikasjonssystem_systemID , arkiv:Klassifikasjonssystem_opprettetDato , arkiv:Klassifikasjonssystem_avsluttetDato , arkiv:Klassifikasjonssystem_klassifikasjonstype , arkiv:Klassifikasjonssystem_parent ;
+        sh:scopeClass  arkiv:Klassifikasjonssystem .
+
+arkiv:Klassifikasjonssystem_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_klassifikasjonstype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:klassifikasjonstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_parent
+        sh:class      arkiv:Arkivdel ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_systemID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_tittel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Klassifikasjonssystem_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Klassifikasjonssystem_tittel_LIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .

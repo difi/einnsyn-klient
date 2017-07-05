@@ -1,0 +1,59 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+arkiv:MoetemappesShape
+        a              sh:Shape ;
+
+        sh:property    arkiv:Moetemappe_utvalg , arkiv:Moetemappe_referanseNesteMoete , arkiv:Moetemappe_referanseForrigeMoete , arkiv:Moetemappe_moetested , arkiv:Moetemappe_moetenummer , arkiv:Moetemappe_moetedeltaker , arkiv:Moetemappe_moetedato ;
+        sh:scopeClass  arkiv:Moetemappe .
+
+arkiv:Moetemappe_moetedato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetedato ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_moetedeltaker
+        sh:class      arkiv:Moetedeltaker ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetedeltaker ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_moetenummer
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:moetenummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_moetested
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:moetested ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_referanseForrigeMoete
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseForrigeMoete ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_referanseNesteMoete
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseNesteMoete ;
+        sh:severity   sh:Violation .
+
+arkiv:Moetemappe_utvalg
+        sh:class  rdfs:Resource ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:utvalg ;
+        sh:severity   sh:Violation .
+
+
+

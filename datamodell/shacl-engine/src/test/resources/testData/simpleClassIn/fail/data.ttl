@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+<http://example.org/1>
+    a arkiv:Journalpost ;
+    arkiv:parent <http://example.org/2> .
+
+<http://example.org/2>
+    a arkiv:Journalpost ;
+    arkiv:parent <http://example.org/4> .
+
+<http://example.org/3>
+    a arkiv:Klasse ;
+    arkiv:parent arkiv:utfort .
+
+<http://example.org/4>
+    a arkiv:Klasse2 ;
+    arkiv:parent arkiv:utfort .
+

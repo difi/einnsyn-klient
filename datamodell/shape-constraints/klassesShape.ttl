@@ -1,0 +1,104 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:KlassesShape  a  sh:Shape ;
+        sh:property    arkiv:Klasse_tittel_SENSITIV, arkiv:Klasse_tittel_LIST, arkiv:Klasse_noekkelord , arkiv:Klasse_skjerming , arkiv:Klasse_parent , arkiv:Klasse_klasseID ,  arkiv:Klasse_beskrivelse , arkiv:Klasse_avsluttetAv , arkiv:Klasse_opprettetAv , arkiv:Klasse_tittel , arkiv:Klasse_gradering , arkiv:Klasse_opprettetDato , arkiv:Klasse_systemID , arkiv:Klasse_kassasjon , arkiv:Klasse_avsluttetDato ;
+        sh:scopeClass  arkiv:Klasse .
+
+arkiv:Klasse_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_gradering
+        sh:class      arkiv:Gradering ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:gradering ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_kassasjon
+        sh:class      arkiv:Kassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kassasjon ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_klasseID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:klasseID ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_noekkelord
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:noekkelord ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_parent  sh:classIn  ( arkiv:Klassifikasjonssystem arkiv:Klasse ) ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_skjerming
+        sh:class      arkiv:Skjerming ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjerming ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_systemID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_tittel  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Klasse_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Klasse_tittel_LIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+

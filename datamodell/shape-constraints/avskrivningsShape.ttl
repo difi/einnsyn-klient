@@ -1,0 +1,36 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:AvskrivningsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Avskrivning_referanseAvskrivesAvJournalpost , arkiv:Avskrivning_avskrivningsmaate , arkiv:Avskrivning_avskrivningsdato , arkiv:Avskrivning_avskrevetAv ;
+        sh:scopeClass  arkiv:Avskrivning .
+
+arkiv:Avskrivning_avskrevetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        # sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:avskrevetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Avskrivning_avskrivningsdato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+       # sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:predicate  arkiv:avskrivningsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Avskrivning_avskrivningsmaate
+        sh:class      arkiv:Avskrivningsmaate ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:avskrivningsmaate ;
+        sh:severity   sh:Violation .
+
+arkiv:Avskrivning_referanseAvskrivesAvJournalpost
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseAvskrivesAvJournalpost ;
+        sh:severity   sh:Violation .

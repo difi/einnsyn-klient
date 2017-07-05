@@ -1,0 +1,93 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:ArkivsShape  a   sh:Shape ;
+        sh:property    arkiv:Arkiv_tittel_SENSITIV, arkiv:Arkiv_tittel_LIST, arkiv:Arkiv_dokumentmedium , arkiv:Arkiv_beskrivelse , arkiv:Arkiv_arkivstatus , arkiv:Arkiv_parent , arkiv:Arkiv_opprettetDato , arkiv:Arkiv_systemID , arkiv:Arkiv_tittel , arkiv:Arkiv_oppbevaringssted , arkiv:Arkiv_avsluttetAv , arkiv:Arkiv_opprettetAv , arkiv:Arkiv_avsluttetDato ;
+        sh:scopeClass  arkiv:Arkiv .
+
+arkiv:Arkiv_arkivstatus
+        sh:class      arkiv:Arkivstatus ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:arkivstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_avsluttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:avsluttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_avsluttetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:avsluttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_dokumentmedium
+        sh:class      arkiv:Dokumentmedium ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentmedium ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_oppbevaringssted
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:oppbevaringssted ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_parent  sh:class  arkiv:Arkivdel ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_systemID  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_tittel  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkiv_tittel_LIST
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+

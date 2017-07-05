@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+
+arkiv:JournalpostsShape
+	a sh:Shape ;
+	sh:scopeClass arkiv:Journalpost ;
+	sh:property [
+		sh:predicate arkiv:tittel ;
+		sh:datatype xsd:string ;
+	] .

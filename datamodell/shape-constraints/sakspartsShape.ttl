@@ -1,0 +1,72 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:SakspartsShape  a  sh:Shape ;
+        sh:property    arkiv:Sakspart_postnummer , arkiv:Sakspart_sakspartID , arkiv:Sakspart_land , arkiv:Sakspart_postadresse , arkiv:Sakspart_sakspartRolle , arkiv:Sakspart_virksomhetsspesifikkeMetadata , arkiv:Sakspart_poststed , arkiv:Sakspart_epostadresse , arkiv:Sakspart_kontaktperson , arkiv:Sakspart_sakspartNavn , arkiv:Sakspart_telefonnummer ;
+        sh:scopeClass  arkiv:Sakspart .
+
+arkiv:Sakspart_epostadresse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:epostadresse ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_kontaktperson
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kontaktperson ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_land  sh:datatype  xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:land ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_postadresse
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:postadresse ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_postnummer
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:postnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_poststed
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:poststed ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_sakspartID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:sakspartID ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_sakspartNavn
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:sakspartNavn ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_sakspartRolle
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:sakspartRolle ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_telefonnummer
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:telefonnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Sakspart_virksomhetsspesifikkeMetadata
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:virksomhetsspesifikkeMetadata ;
+        sh:severity   sh:Violation .

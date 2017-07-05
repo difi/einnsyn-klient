@@ -1,0 +1,50 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:DokumentflytsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Dokumentflyt_flytTil , arkiv:Dokumentflyt_flytStatus , arkiv:Dokumentflyt_flytSendtDato , arkiv:Dokumentflyt_flytMottattDato , arkiv:Dokumentflyt_flytMerknad , arkiv:Dokumentflyt_flytFra ;
+        sh:scopeClass  arkiv:Dokumentflyt .
+
+arkiv:Dokumentflyt_flytFra
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:flytFra ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentflyt_flytMerknad
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:flytMerknad ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentflyt_flytMottattDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:flytMottattDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentflyt_flytSendtDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:flytSendtDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentflyt_flytStatus
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:flytStatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentflyt_flytTil
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:flytTil ;
+        sh:severity   sh:Violation .

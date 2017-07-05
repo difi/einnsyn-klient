@@ -1,0 +1,188 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:DokumentbeskrivelsesShape
+        a              sh:Shape ;
+        sh:property    arkiv:Dokumentbeskrivelse_forfatter_LIST, arkiv:Dokumentbeskrivelse_forfatter_SENSITIV, arkiv:Dokumentbeskrivelse_tittel_SENSITIV, arkiv:Dokumentbeskrivelse_tittel_LIST, arkiv:Dokumentbeskrivelse_oppbevaringssted , arkiv:Dokumentbeskrivelse_tilknyttetDato , arkiv:Dokumentbeskrivelse_parent , arkiv:Dokumentbeskrivelse_beskrivelse , arkiv:Dokumentbeskrivelse_dokumentmedium , arkiv:Dokumentbeskrivelse_dokumenttype , arkiv:Dokumentbeskrivelse_referanseArkivdel , arkiv:Dokumentbeskrivelse_gradering , arkiv:Dokumentbeskrivelse_opprettetAv , arkiv:Dokumentbeskrivelse_tilknyttetRegistreringSom , arkiv:Dokumentbeskrivelse_utfoertKassasjon , arkiv:Dokumentbeskrivelse_systemID , arkiv:Dokumentbeskrivelse_merknad , arkiv:Dokumentbeskrivelse_dokumentobjekt , arkiv:Dokumentbeskrivelse_elektroniskSignatur , arkiv:Dokumentbeskrivelse_opprettetDato , arkiv:Dokumentbeskrivelse_dokumentnummer , arkiv:Dokumentbeskrivelse_tittel , arkiv:Dokumentbeskrivelse_forfatter , arkiv:Dokumentbeskrivelse_sletting , arkiv:Dokumentbeskrivelse_kassasjon , arkiv:Dokumentbeskrivelse_dokumentstatus , arkiv:Dokumentbeskrivelse_skjerming , arkiv:Dokumentbeskrivelse_tilknyttetAv ;
+        sh:scopeClass  arkiv:Dokumentbeskrivelse .
+
+arkiv:Dokumentbeskrivelse_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_dokumentmedium
+        sh:class      arkiv:Dokumentmedium ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:dokumentmedium ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_dokumentnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:dokumentnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_dokumentobjekt
+        sh:class      arkiv:Dokumentobjekt ;
+        sh:predicate  arkiv:dokumentobjekt ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_dokumentstatus
+        sh:class      arkiv:Dokumentstatus ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:dokumentstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_dokumenttype
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:dokumenttype ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_elektroniskSignatur
+        sh:class      arkiv:ElektroniskSignatur ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:elektroniskSignatur ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_forfatter
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:forfatter ;
+        sh:severity   sh:Violation .
+
+
+
+arkiv:Dokumentbeskrivelse_forfatter_LIST
+        sh:minCount 0;
+        sh:class rdf:List;
+        sh:predicate  arkiv:forfatter_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_forfatter_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:forfatter_SENSITIV ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Dokumentbeskrivelse_gradering
+        sh:class      arkiv:Gradering ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:gradering ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_kassasjon
+        sh:class      arkiv:Kassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kassasjon ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_merknad
+        sh:class      arkiv:Merknad ;
+        sh:predicate  arkiv:merknad ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_oppbevaringssted
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:oppbevaringssted ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_opprettetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:opprettetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_opprettetDato
+        sh:datatype   xsd:dateTime ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:opprettetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_parent
+        sh:class      arkiv:Moeteregistrering ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_referanseArkivdel
+        sh:datatype   xsd:string ;
+        sh:predicate  arkiv:referanseArkivdel ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_skjerming
+        sh:class      arkiv:Skjerming ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:skjerming ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_sletting
+        sh:class      arkiv:Sletting ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:sletting ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_systemID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:systemID ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_tilknyttetAv
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:tilknyttetAv ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_tilknyttetDato
+		sh:datatypeIn (xsd:dateTime xsd:date) ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; MANGLER I NOARK 4
+        sh:predicate  arkiv:tilknyttetDato ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_tilknyttetRegistreringSom
+        sh:class      arkiv:TilknyttetRegistreringSom ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tilknyttetRegistreringSom ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_tittel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:tittel ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Dokumentbeskrivelse_tittel_SENSITIV
+        sh:datatype   xsd:string ;
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:tittel_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Dokumentbeskrivelse_tittel_LIST
+        sh:minCount   1 ;
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:tittel_LIST ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Dokumentbeskrivelse_utfoertKassasjon
+        sh:class      arkiv:UtfoertKassasjon ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:utfoertKassasjon ;
+        sh:severity   sh:Violation .

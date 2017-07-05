@@ -1,0 +1,36 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:KassasjonsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Kassasjon_kassasjonsvedtak , arkiv:Kassasjon_kassasjonshjemmel , arkiv:Kassasjon_kassasjonsdato , arkiv:Kassasjon_bevaringstid ;
+        sh:scopeClass  arkiv:Kassasjon .
+
+arkiv:Kassasjon_bevaringstid
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:bevaringstid ;
+        sh:severity   sh:Violation .
+
+arkiv:Kassasjon_kassasjonsdato
+        sh:datatype   xsd:date ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:kassasjonsdato ;
+        sh:severity   sh:Violation .
+
+arkiv:Kassasjon_kassasjonshjemmel
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:kassasjonshjemmel ;
+        sh:severity   sh:Violation .
+
+arkiv:Kassasjon_kassasjonsvedtak
+        sh:class      arkiv:Kassasjonsvedtak ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:kassasjonsvedtak ;
+        sh:severity   sh:Violation .

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>libraries</artifactId>
+        <groupId>no.difi.einnsyn</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>shacl-engine</artifactId>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+
+        <!--<dependency>-->
+            <!--<groupId>com.complexible.stardog.sesame</groupId>-->
+            <!--<artifactId>stardog-sesame-core</artifactId>-->
+            <!--<version>4.1</version>-->
+            <!--<type>jar</type>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.openrdf.sesame</groupId>-->
+            <!--<artifactId>sesame-sail-memory</artifactId>-->
+            <!--<version>4.0.0</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.openrdf.sesame</groupId>-->
+            <!--<artifactId>sesame-repository-sail</artifactId>-->
+            <!--<version>4.0.0</version>-->
+        <!--</dependency>-->
+
+        <!-- http://mvnrepository.com/artifact/org.openrdf.sesame/sesame -->
+        <dependency>
+            <groupId>org.openrdf.sesame</groupId>
+            <artifactId>sesame</artifactId>
+            <version>4.1.2</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- http://mvnrepository.com/artifact/org.openrdf.sesame/sesame-rio-jsonld -->
+        <dependency>
+            <groupId>org.openrdf.sesame</groupId>
+            <artifactId>sesame-rio-jsonld</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+
+        <!-- http://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>no.difi.einnsyn</groupId>
+            <artifactId>sesame-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                        <groupId>com.complexible.stardog.sesame</groupId>
+                        <artifactId>stardog-sesame-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>no.difi.einnsyn</groupId>
+            <artifactId>shacl-vocabulary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.complexible.stardog.sesame</groupId>
+                    <artifactId>stardog-sesame-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>no.difi.einnsyn</groupId>
+            <artifactId>arkiv-vocabulary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.complexible.stardog.sesame</groupId>
+                    <artifactId>stardog-sesame-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-arq</artifactId>
+            <version>3.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-tdb</artifactId>
+            <version>3.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.2.1.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+
+
+</project>
