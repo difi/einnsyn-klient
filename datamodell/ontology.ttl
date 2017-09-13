@@ -48,9 +48,21 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://data.einnsyn.no/brukermeta/forsendelsesmåte
+bruker:forsendelsesmåte rdf:type owl:ObjectProperty .
+
+
+###  http://data.einnsyn.no/brukermeta/virksomhet
+bruker:virksomhet rdf:type owl:ObjectProperty .
+
+
 ###  http://data.einnsyn.no/virksomhetmeta/child
 virksomhet:child rdf:type owl:ObjectProperty ;
                  owl:inverseOf virksomhet:parent .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/kontaktperson
+virksomhet:kontaktperson rdf:type owl:ObjectProperty .
 
 
 ###  http://data.einnsyn.no/virksomhetmeta/parent
@@ -85,10 +97,7 @@ virksomhet:parentTransitiveReflexive rdf:type owl:ObjectProperty ,
 
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivskaper
-:arkivskaper rdf:type owl:ObjectProperty ;
-             owl:propertyChainAxiom ( :parentTransitive
-                                      :arkivskaper
-                                    ) .
+:arkivskaper rdf:type owl:ObjectProperty .
 
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/dokumentbeskrivelse
@@ -174,9 +183,70 @@ rdf:rest rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
+###  http://data.einnsyn.no/brukermeta/brukernavn
+bruker:brukernavn rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/brukermeta/epost
+bruker:epost rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/brukermeta/passord
+bruker:passord rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/brukermeta/telefon
+bruker:telefon rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/adresse
+virksomhet:adresse rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/avsluttetDato
+virksomhet:avsluttetDato rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/epost
+virksomhet:epost rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/forkortelse
+virksomhet:forkortelse rdf:type owl:DatatypeProperty .
+
+
 ###  http://data.einnsyn.no/virksomhetmeta/navn
 virksomhet:navn rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf rdfs:label .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/orgnummer
+virksomhet:orgnummer rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/skjult
+virksomhet:skjult rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:boolean .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/oppdatertDato
+virksomhet:oppdatertDato rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/opprettetDato
+virksomhet:opprettetDato rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/orgnummer
+virksomhet:orgnummer rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/skjult
+virksomhet:skjult rdf:type owl:DatatypeProperty .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/telefon
+virksomhet:telefon rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivertDato
@@ -348,6 +418,10 @@ bruker:Bruker rdf:type owl:Class .
 bruker:Forsendelsesmåte rdf:type owl:Class .
 
 
+###  http://data.einnsyn.no/brukermeta/Innsynskrav
+bruker:Innsynskrav rdf:type owl:Class .
+
+
 ###  http://data.einnsyn.no/brukermeta/InnsynskravdelStatus
 bruker:InnsynskravdelStatus rdf:type owl:Class .
 
@@ -437,12 +511,18 @@ virksomhet:Enhet rdf:type owl:Class .
 
 ###  http://data.einnsyn.no/virksomhetmeta/Kommune
 virksomhet:Kommune rdf:type owl:Class ;
-                   rdfs:subClassOf virksomhet:Enhet .
+                   rdfs:subClassOf virksomhet:Enhet ,
+                                   virksomhet:SkjulbarEnhet .
 
 
 ###  http://data.einnsyn.no/virksomhetmeta/Organ
 virksomhet:Organ rdf:type owl:Class ;
                  rdfs:subClassOf virksomhet:Enhet .
+
+
+###  http://data.einnsyn.no/virksomhetmeta/SkjulbarEnhet
+virksomhet:SkjulbarEnhet rdf:type owl:Class ;
+                         rdfs:subClassOf virksomhet:Enhet .
 
 
 ###  http://data.einnsyn.no/virksomhetmeta/Utvalg
@@ -452,7 +532,8 @@ virksomhet:Utvalg rdf:type owl:Class ;
 
 ###  http://data.einnsyn.no/virksomhetmeta/Virksomhet
 virksomhet:Virksomhet rdf:type owl:Class ;
-                      rdfs:subClassOf virksomhet:Enhet .
+                      rdfs:subClassOf virksomhet:Enhet ,
+                                      virksomhet:SkjulbarEnhet .
 
 
 ###  http://data.stortinget.no/politiskparti/PolitiskParti
@@ -504,6 +585,17 @@ virksomhet:Virksomhet rdf:type owl:Class ;
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ElektroniskSignaturVerifisert
 :ElektroniskSignaturVerifisert rdf:type owl:Class ;
                                XmlToRdfMeta:xsdReference "http://www.arkivverket.no/standarder/noark5/arkivstruktur/elektroniskSignaturVerifisert" .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoetemappe
+:Fremtidigmoetemappe rdf:type owl:Class ;
+                     rdfs:subClassOf :Mappe ;
+                     owl:disjointWith :Saksmappe .
+
+
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoeteregistrering
+:Fremtidigmoeteregistrering rdf:type owl:Class ;
+                            rdfs:subClassOf :Basisregistrering .
 
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/GraderingClass
@@ -559,17 +651,9 @@ virksomhet:Virksomhet rdf:type owl:Class ;
             rdfs:subClassOf :Mappe ;
             owl:disjointWith :Saksmappe .
 
-###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoetemappe
-:Fremtidigmoetemappe rdf:type owl:Class ;
-            rdfs:subClassOf :Mappe ;
-            owl:disjointWith :Saksmappe .
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Moeteregistrering
 :Moeteregistrering rdf:type owl:Class ;
-                   rdfs:subClassOf :Basisregistrering .
-
-###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/Fremtidigmoeteregistrering
-:Fremtidigmoeteregistrering rdf:type owl:Class ;
                    rdfs:subClassOf :Basisregistrering .
 
 
@@ -633,6 +717,24 @@ virksomhet:Virksomhet rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  http://data.einnsyn.no/brukermeta/avslåttInnsyn
+bruker:avslåttInnsyn rdf:type owl:NamedIndividual ,
+                              bruker:InnsynskravdelStatus ;
+                     rdfs:label "Avslått innsyn"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/avslåttKlage
+bruker:avslåttKlage rdf:type owl:NamedIndividual ,
+                             bruker:InnsynskravdelStatus ;
+                    rdfs:label "Avslått klage"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/delvisInnvilget
+bruker:delvisInnvilget rdf:type owl:NamedIndividual ,
+                                bruker:InnsynskravdelStatus ;
+                       rdfs:label "Delvis innvilget"@no-nb .
+
+
 ###  http://data.einnsyn.no/brukermeta/forsendelsePerEpost
 bruker:forsendelsePerEpost rdf:type owl:NamedIndividual ,
                                     bruker:Forsendelsesmåte ;
@@ -647,10 +749,34 @@ bruker:forsendelsePerPost rdf:type owl:NamedIndividual ,
                           meta:innsynskravXmlLabel "post" .
 
 
+###  http://data.einnsyn.no/brukermeta/innvilgetInnsyn
+bruker:innvilgetInnsyn rdf:type owl:NamedIndividual ,
+                                bruker:InnsynskravdelStatus ;
+                       rdfs:label "Innvilget innsyn"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/klageSendt
+bruker:klageSendt rdf:type owl:NamedIndividual ,
+                           bruker:InnsynskravdelStatus ;
+                  rdfs:label "Klage sendt"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/nærmereBegrunnelse
+bruker:nærmereBegrunnelse rdf:type owl:NamedIndividual ,
+                                   bruker:InnsynskravdelStatus ;
+                          rdfs:label "Nærmere begrunnelse"@no-nb .
+
+
 ###  http://data.einnsyn.no/brukermeta/opprettet
 bruker:opprettet rdf:type owl:NamedIndividual ,
                           bruker:InnsynskravdelStatus ;
                  rdfs:label "Opprettet"@no-nb .
+
+
+###  http://data.einnsyn.no/brukermeta/purringSendt
+bruker:purringSendt rdf:type owl:NamedIndividual ,
+                             bruker:InnsynskravdelStatus ;
+                    rdfs:label "Purring sendt"@no-nb .
 
 
 ###  http://data.einnsyn.no/brukermeta/sendtTilVirksomhet
@@ -724,6 +850,11 @@ virksomhet:parent rdf:type owl:NamedIndividual ;
           rdfs:label "Arkivert" ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Arkivert" .
 
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/reservert
+:arkivert rdf:type owl:NamedIndividual ,
+                   :Journalstatus ;
+          rdfs:label "Reservert" ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "Reservert" .
 
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/arkivformat
 :arkivformat rdf:type owl:NamedIndividual ,
@@ -1194,6 +1325,11 @@ virksomhet:parent rdf:type owl:NamedIndividual ;
           rdfs:label "Ugradert" .
 
 
+###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/ukjentAvskrivningsmåte
+:ukjentAvskrivningsmåte rdf:type owl:NamedIndividual ,
+                                 :Avskrivningsmaate .
+
+
 ###  http://www.arkivverket.no/standarder/noark5/arkivstruktur/underBehandling
 :underBehandling rdf:type owl:NamedIndividual ,
                           :Saksstatus ;
@@ -1232,24 +1368,6 @@ virksomhet:parent rdf:type owl:NamedIndividual ;
 [ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
   <tag:stardog:api:rule:content> """
 
-PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
-
-IF {
-	?a arkiv:referanseTilSak ?jp.
-	?jp arkiv:parent ?saksmappe.
-	?saksmappe arkiv:sakssekvensnummer ?saksnummer.
-
-}
-THEN {
-         ?a arkiv:sakensSakssekvensnummer ?saksnummer .
-}
-
-     """
-] .
-
-[ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
-   <tag:stardog:api:rule:content> """
-
  PREFIX arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/>
 
  IF {
@@ -1261,7 +1379,7 @@ THEN {
  }
 
 """
- ] .
+] .
 
 [ rdf:type <tag:stardog:api:rule:SPARQLRule> ;
    <tag:stardog:api:rule:content> """
@@ -1339,42 +1457,15 @@ THEN {
 #    General axioms
 #################################################################
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://data.einnsyn.no/utvalg/Arbeidssted>
-                <http://data.einnsyn.no/utvalg/Medlem>
-                <http://data.einnsyn.no/utvalg/Medlemstype>
-                <http://data.einnsyn.no/utvalg/Varamedlem>
-                <http://data.einnsyn.no/utvalg/utvalg>
-                <http://data.einnsyn.no/utvalg/utvalgsliste>
-                <http://data.stortinget.no/politiskparti/PolitiskParti>
-                <http://www.arkivverket.no/standarder/noark4/PNAVN>
-                :Arkivdelstatus
-                :Arkivstatus
-                :Avskrivningsmaate
-                :Dokumentbeskrivelse
-                :Dokumentmedium
-                :Dokumentobjekt
-                :Dokumentstatus
-                :ElektroniskSignaturVerifisert
-                :GraderingClass
-                :Journalposttype
-                :Journalstatus
-                :Kassasjonsvedtak
-                :Korrespondansepart
-                :Korrespondanseparttype
-                :Mappe
-                :Moetedeltaker
-                :Presedensstatus
-                :Registrering
-                :Skjerming
-                :SkjermingDokument
-                :Slettingstype
-                :Tilgangsrestriksjon
-                :TilknyttetRegistreringSom
-                :Variantformat
-                <tag:stardog:api:rule:SPARQLRule>
-              )
+[ owl:intersectionOf ( virksomhet:Enhet
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty virksomhet:orgnummer ;
+                         owl:someValuesFrom xsd:string
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf virksomhet:SkjulbarEnhet
 ] .
 
 
-###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
