@@ -1,0 +1,20 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: einnsyn-klient
+  product: einnsyn-klient
+  version:
+  folders:
+  
+
+  - title: Eksempel menyelement
+    output: web, pdf
+    folderitems:
+
+      - title: Eksempelside 1
+        url: /eksempelside.html
+        output: web,pdf
+
+      - title: Eksempelside 2
+        url: /eksempelside2.html
+        output: web,pdf
