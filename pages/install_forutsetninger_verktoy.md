@@ -25,6 +25,7 @@ For å installere einnsyn-klienten må du laste ned 3 filer fra vår Github.
 
 [Alle disse filene kan du laste ned her](https://github.com/difi/einnsyn-klient/releases/) 
 
+Legg så filene i ønska katalog. For eksempel C:\einnsyn
  
  
  
