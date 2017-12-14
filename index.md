@@ -9,6 +9,4 @@ sidebar: main_sidebar
 isHome: true
 ---
 
-## Overskrift
-
-Tekst....
+Work in progress... (14.12.17)
