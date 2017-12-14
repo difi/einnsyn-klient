@@ -1,4 +1,12 @@
+---
+title: Installere einnsyn-klient som Windows-service
+description: Installere einnsyn-klient som Windows-service
+summary: "Her finner du informasjon om Installere einnsyn-klient som Windows-service"
+permalink: install_tjeneste.html
 
+layout: page
+sidebar: main_sidebar
+---
 
 Installasjon av applikasjon som windows-service
 Opne kommandolinjeverktøy i katalogen du har lagt installasjonsfilene. Dette kan gjerast ved å leite opp overkatalogen i Filutforskar. Hald inn Shift og høgreklikk på installasjonskatalogen. I kontekstmenyen vil det då komme «Åpne kommandovindu her».
