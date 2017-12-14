@@ -7,14 +7,14 @@ entries:
   folders:
   
 
-  - title: Eksempel menyelement
+  - title: Installasjon
     output: web, pdf
     folderitems:
 
-      - title: Eksempelside 1
-        url: /eksempelside.html
+      - title: Forutsetning for installasjon og verktøy
+        url: /install_forutsetninger_verktoy.html
         output: web,pdf
 
-      - title: Eksempelside 2
-        url: /eksempelside2.html
+      - title: 
+        url: /install_.html
         output: web,pdf
