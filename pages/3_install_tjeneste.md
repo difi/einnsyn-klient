@@ -15,7 +15,7 @@ Etter du er ferdig å redigere einnsyn-klient.xml-fila må du installere tjenest
 
 Disse kommandoene må kjøres uten noe form for skråstrek eller bindestrek foran. Skrives nøyaktig som på bildet under:
 
-![installere einnsyn-klient tjenesten](../resources/install.klient.png)
+![installere einnsyn-klient tjenesten](../resources/install_klient.png)
 
 Du kan sjekke status på tjenesten ved å bruke følgande kommando i samme kommandovindu:
 
