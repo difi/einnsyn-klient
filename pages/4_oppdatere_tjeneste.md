@@ -2,7 +2,7 @@
 title: Oppdatere til ny versjon av einnsyn-klient
 description: Oppdatere til ny versjon av einnsyn-klient
 summary: "Her finner du informasjon om hvordan oppdatere til ny versjon av einnsyn-klient"
-permalink: install_tjeneste.html
+permalink: oppdatere_tjeneste.html
 
 layout: page
 sidebar: main_sidebar
