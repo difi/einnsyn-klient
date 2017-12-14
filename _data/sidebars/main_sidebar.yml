@@ -16,5 +16,5 @@ entries:
         output: web,pdf
 
       - title: Steg2: Konfigurasjon av einnsyn-klient.xml
-        url: /install_.html
+        url: /install.html
         output: web,pdf
