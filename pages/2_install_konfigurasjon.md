@@ -12,7 +12,7 @@ sidebar: main_sidebar
 
 Det første som må gjøres er å legge inn korrekte verdier i einnsyn-klient.xml-filen. I utgangspunktet ser denne slik ut:
 
-```
+```java
 <service>
 	<id>einnsyn-klient</id>
 	<name>einnsyn-klient</name>
@@ -36,51 +36,33 @@ Det første som må gjøres er å legge inn korrekte verdier i einnsyn-klient.xm
 ### Disse fyller du inn
 
 Det som må gjøres her er å fylle inn følgende(ikke fjerne <argument> og </argument>. Du skal fylle inn innimellom de) :
-* "-Dapplication.moveUrl=http://localhost:9093"
+* ```-Dapplication.moveUrl=http://localhost:9093```
   * Denne linker einnsyn-klienten til integrasjonspunktet. Her må du ha med navnet på integrasjonspunktet og porten det kjører på. ```http://localhost:9093``` er standardnavnet.
-* "-Dapplication.inputDirectory=sti til katalog"
+* ```-Dapplication.inputDirectory=sti til katalog```
   * Dette er mappen som einnsyn-klienten vil lese filer fra. Filer som skal lastes opp til eInnsyn. Etter at en fil er lest herifra vil den forsvinne frå inputDirectory-mappa. Feks: ```-Dapplication.inputDirectory=C:\einnsyn\opplasting``` 
-* -Dapplication.orgnummer=
+* ```-Dapplication.orgnummer=```
   * Her skal du fylle inn organisasjonsnummeret til din organisasjon. Feks: ```-Dapplication.orgnummer=123456789```
-* -Dspring.mail.host=
+* ```-Dspring.mail.host=```
   * Her må du fylle inn navnet til din e-postserver. Denne skal sende ut e-posten med innsynskravet. Deres integrasjonspunkt vil motta innsynskravet hos seg for og så deretter fortelle einnsyn-klienten at den må sende e-posten.
-  * standardport for -Dspring.mail.port er 25. Så denne trenger du ikke fylle inn om du bruker port 25.
-  * br
+  * standardport for ```-Dspring.mail.port``` er 25. Så denne trenger du ikke fylle inn om du bruker port 25.
+  * Brukernavn og passord feltet trenger en kun å fylle ut om e-postserveren krever autentisering for sending av e-post.
 
 
+### Dette kan du endre
 
+Dette er innstillinger som kan endres, men ikke nødvendigvis må endres for å få tjenesten til å fungere.
 
+* ```<logpath>%BASE%/Loggkatalog</logpath> ``` er for å velge loggkatalog. %BASE% variabelen peker på installasjonsmappen.
+* ```<id>einnsyn-klient</id>``` og ```<name>einnsyn-klient</name>``` er for å velge id og navn på tjenesten i listen over Windows tjenester. 
 
+#### Loggrotering
+I tillegg kan du legge inn loggrotering om det er ønskelig. Dermed kan du rotere logger på størrelse og velge hvor mange en ønsker å ta vare på. standardstørrelsen her er 10MB, denne kan du endre til ønsket størrelse. Antall filer som blir tatt vare på er 8. Dette kan også endres. Sørg for at dette er innenfor ``` <service> </service> ``` taggen slik som resten av konfigurasjonen.
 
-
-Legg til lenke til integrasjonspunktet som verdi for moveUrl. Her må du og ha protokoll med
-
-<argument>-Dapplication.moveUrl=http://localhost:9093</argument>
- 
-
-Katalogen klienten vil lese filer frå
-
-<argument>-Dapplication.inputDirectory=Sti til katalog</argument>
- 
-
-Organisasjonsnummeret
-
-<argument>-Dapplication.orgnummer=Her legg du inn organisasjonsnummeret ditt</argument>
- 
-
-Logkatalog
-
-<logpath>%BASE%/Loggkatalog</logpath>
-
-Stien her er relativt til installasjonsmappa. %BASE% variabelen peikar på installasjonsmappa.
+```
+<log mode="roll-by-size">
+	<sizeThreshold>10240</sizeThreshold>
+	<keepFiles>8</keepFiles>
+</log> 
+```
 
  
-
-Epostinstillingar
-<argument>-Dspring.mail.host=</argument>
-
-<argument>-Dspring.mail.port</argument>
-
-<argument>-Dspring.mail.username=</argument>
-
-<argument>-Dspring.mail.password=</argument>
