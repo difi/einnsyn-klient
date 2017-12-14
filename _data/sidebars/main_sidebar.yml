@@ -11,10 +11,10 @@ entries:
     output: web, pdf
     folderitems:
 
-      - title: Forutsetning for installasjon og verktøy
+      - title: Steg1: Forutsetning for installasjon og verktøy
         url: /install_forutsetninger_verktoy.html
         output: web,pdf
 
-      - title: Konfigurasjon av einnsyn-klient.xml
+      - title: Steg2: Konfigurasjon av einnsyn-klient.xml
         url: /install_.html
         output: web,pdf
