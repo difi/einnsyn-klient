@@ -8,12 +8,12 @@ layout: page
 sidebar: main_sidebar
 ---
 
-Når du skal bruke flere integrasjonspunkt eller einnsyn-klienter på samme server må du bruke forskjellige porter. Om du skal bruke ett integrasjonspunkt og flere einnsyn-klienter må du endre id, navn og port på einnsyn-klient tjenesten. I tillegg må hver einnsyn-klient ha sin egen inputDirectory-mappe.
+Når du skal bruke flere integrasjonspunkt eller einnsyn-klienter på samme server må du bruke forskjellige porter. Om du skal bruke ett integrasjonspunkt og flere einnsyn-klienter må du endre id, navn og port på einnsyn-klient tjenesten. I tillegg må hver einnsyn-klient ha sin egen inputDirectory-mappe. 
 Alt dette endres i einnsyn-klient.xml-filen. I tillegg må du legge til et ekstra argument:
 
 * ```-Dserver.port= ```
 
-Om du skal ha flere integrasjonspunkt installert på samme server må du endre server.port i integrasjonspunkt-local.properties for hver instans. Denne må være unik. Du må også da peke ``` -Dapplication.moveUrl= ````til å gå mot riktig integrasjonspunkt og port.
+Om du skal ha flere integrasjonspunkt installert på samme server må du endre server.port i integrasjonspunkt-local.properties for hver instans. Denne må være unik. Du må også da peke ```-Dapplication.moveUrl=``` til å gå mot riktig integrasjonspunkt og port. Porten som integrasjonspunktet og einnsyn-klienten trenger ikke være like. 
 
 
 ```
