@@ -1,4 +1,3 @@
-
 ---
 title: Oppdatere til ny versjon av einnsyn-klient
 description: Oppdatere til ny versjon av einnsyn-klient
