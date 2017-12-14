@@ -48,9 +48,7 @@ Det som må gjøres her er å fylle inn følgende(ikke fjerne <argument> og </ar
   * br
 
 
-### Disse lar du stå
 
-Disse trenger du ikke endre på
 
 
 
