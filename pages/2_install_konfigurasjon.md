@@ -48,7 +48,7 @@ Det som må gjøres her er å fylle inn følgende(ikke fjerne <argument> og </ar
   * Brukernavn og passord feltet trenger en kun å fylle ut om e-postserveren krever autentisering for sending av e-post.
 
 
-### Dette kan du endre
+### Dette kan du også endre
 
 Dette er innstillinger som kan endres, men ikke nødvendigvis må endres for å få tjenesten til å fungere.
 
