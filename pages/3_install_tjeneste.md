@@ -8,18 +8,19 @@ layout: page
 sidebar: main_sidebar
 ---
 
-Installasjon av applikasjon som windows-service
-Opne kommandolinjeverktøy i katalogen du har lagt installasjonsfilene. Dette kan gjerast ved å leite opp overkatalogen i Filutforskar. Hald inn Shift og høgreklikk på installasjonskatalogen. I kontekstmenyen vil det då komme «Åpne kommandovindu her».
+Etter du er ferdig å redigere einnsyn-klient.xml-fila må du installere tjenesten. For å gjøre dette må du åpne et kommandovindu som administrator. Deretter navigere til einnsyn-mappen (feks: ```C:\einnsyn```)og kjøre følgende kommandoer. 
 
-I kommandovindauge skriv du inn «einnsyn-klient.exe install». Deretter «einnsyn-klient.exe start»
+* einnsyn-klient.exe install
+* einnsyn-klient.exe start
+
+Disse kommandoene må kjøres uten noe form for skråstrek eller bindestrek foran. Skrives nøyaktig som på bildet under:
+
+![installere einnsyn-klient tjenesten](../resources/..)
+
+Du kan sjekke status på tjenesten ved å bruke følgande kommando i samme kommandovindu:
+
+* einnsyn-klient.exe status
+
 
  
 
-Oppdatering/Avinstallering av applikasjon som windows-service
-Åpne kommanduvindauge som beskrive ovanfor.
-
-Stop tenesta med «einnsyn-klient.exe stop»
-
-Avinstaller «einnsyn-klient uninstall»
-
-Dersom du skal oppdatere til ny versjon eller gjer endringer i XML-fila, så må du først gjere ein avinstallering, før du deretter køyrer «einnsyn-klient.exe install» og «einnsyn-klient.exe start» for å installere ny versjon
