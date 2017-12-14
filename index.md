@@ -9,6 +9,7 @@ sidebar: main_sidebar
 isHome: true
 ---
 
+## [Nyeste versjon av einnsyn-klienten finner du her](https://github.com/difi/einnsyn-klient/releases/)
 Work in progress... (14.12.17)
 ## Hvordan fungerer einnsyn-klienten i helhet.. working title
 
