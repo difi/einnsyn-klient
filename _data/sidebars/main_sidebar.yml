@@ -15,6 +15,6 @@ entries:
         url: /install_forutsetninger_verktoy.html
         output: web,pdf
 
-      - title: 
+      - title: Konfigurasjon av einnsyn-klient.xml
         url: /install_.html
         output: web,pdf
