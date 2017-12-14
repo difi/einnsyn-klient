@@ -2,7 +2,7 @@
 title: Konfigurasjon av einnsyn-klient
 description: Konfigurasjon av einnsyn-klient
 summary: "Konfigurasjon av einnsyn-klient ++"
-permalink: install.html
+permalink: install_.html
 
 layout: page
 sidebar: main_sidebar
