@@ -1,7 +1,7 @@
 ---
 title: Forutsetninger for installasjon og verktøy
 description: Forutsetninger og verktøy
-summary: "Eksempelside - summary"
+summary: "Her finner du informasjon om program som må lastes ned og installeres for å bruke einnsyn-klienten"
 permalink: install_forutsetninger_verktoy.html
 
 layout: page
