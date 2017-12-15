@@ -23,7 +23,7 @@ Du kan sjekke status på tjenesten ved å bruke følgande kommando i samme komma
 
 ### Verifisere at einnsyn-klient tjenesten har startet
 
-Meldinga **n.d.e.s.service.DirectoryReadingService : Starting Recursive Watcher** bør ligge i einnsyn-klient.out. Denne indikerer at tjenesten har starter og lytter på inputDirectory-mappen.
+Meldinga **n.d.e.s.service.DirectoryReadingService : Starting Recursive Watcher** bør ligge i einnsyn-klient.out loggen. Denne indikerer at tjenesten har starter og lytter på inputDirectory-mappen.
 
 ### Verifisere at klienten har prosessert filene
 
