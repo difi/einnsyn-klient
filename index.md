@@ -1,5 +1,5 @@
 ---
-title: einnsyn-klient
+title: Installasjonsguide for einnsyn-klienten
 description: Dokumentasjon for einnsyn-klient
 summary: "Dokumentasjon for einnsyn-klient"
 permalink: index.html
