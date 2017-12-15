@@ -64,5 +64,33 @@ I tillegg kan du legge inn loggrotering om det er ønskelig. Dermed kan du roter
 	<keepFiles>8</keepFiles>
 </log> 
 ```
+### Eksempel på ferdig konfigurert einnsyn-klient.xml
+
+Her er et eksempel på en ferdig konfigurert einnsyn-klient.xml-fil inkludert loggrotering.
+
+``` java
+<service>
+	<id>einnsyn-klient</id>
+	<name>einnsyn-klient</name>
+	<description>Klient for parsing og sending av journaldata</description>
+	<env name="USE_IP" value="true"/>
+	<env name="RECEIVER_ORGNUMMER" value="991825827" />
+	<argument>-jar</argument>
+	<argument>-Dapplication.moveUrl=http://localhost:9093</argument>
+	<argument>-Dapplication.inputDirectory=C:\einnsyn\opplasting</argument>
+	<argument>-Dapplication.orgnummer=123456789</argument>
+	<argument>-Dspring.mail.host=navnet.til.epost.server</argument>
+	<argument>-Dspring.mail.port</argument>
+	<argument>-Dspring.mail.username=</argument>
+	<argument>-Dspring.mail.password=</argument>
+	<argument>sender-2017-11-29T10_48.jar</argument>
+	<logpath>%BASE%/logs</logpath>
+	<log mode="roll-by-size">
+		<sizeThreshold>10240</sizeThreshold>
+		<keepFiles>8</keepFiles>
+	</log>
+	<executable>javaw</executable>
+</service>
+```	
 
  
