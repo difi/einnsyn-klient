@@ -39,7 +39,7 @@ I loggfilen einnsyn-klient.out vil det komme meldinger som disse:
 {"@timestamp":"2017-11-30T12:22:42.828+01:00","@version":1,"message":"Upload message http://localhost:9093/out/messages/57e0477e-cec1-476c-9e49-e45734bfc736
 ```
 
-I integrasjonspunktloggen skal det ligge loggmeldinger som:
+I integrasjonspunktloggen application.log skal det ligge loggmeldinger som disse:
 [Last ned som loggfil](ip_sending_eksempel.xml)
 
 ```
