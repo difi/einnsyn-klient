@@ -28,6 +28,7 @@ Meldinga **n.d.e.s.service.DirectoryReadingService : Starting Recursive Watcher*
 ### Verifisere at klienten har prosessert filene
 
 I loggfilen einnsyn-klient.out vil det komme meldinger som disse:
+[Last ned som loggfil](../resources/einnsyn_sending_eksempel.xml)
 
 ```
 {"@timestamp":"2017-11-30T12:22:42.812+01:00","@version":1,"message":"Splitting took 0 ms","logger_name":"no.difi.einnsyn.sender.service.AsyncDataSplittingService","thread_name":"main","level":"DEBUG","level_value":10000}
@@ -39,6 +40,7 @@ I loggfilen einnsyn-klient.out vil det komme meldinger som disse:
 ```
 
 I integrasjonspunktloggen skal det ligge loggmeldinger som:
+[Last ned som loggfil](ip_sending_eksempel.xml)
 
 ```
 2017-12-11 11:01:19.538  INFO 14932 --- [ qtp10823740-24] n.d.m.nextmove.MessageOutController      : Created new conversation resource [id=b32ef599-4a2f-41ab-b641-ca29d0d63715, serviceIdentifier=DPE_DATA]
