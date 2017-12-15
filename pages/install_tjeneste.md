@@ -40,7 +40,7 @@ I loggfilen einnsyn-klient.out vil det komme meldinger som disse:
 ```
 
 I integrasjonspunktloggen application.log skal det ligge loggmeldinger som disse:
-[Last ned som loggfil](ip_sending_eksempel.xml)
+[Last ned som loggfil](../resources/ip_sending_eksempel.xml)
 
 ```
 2017-12-11 11:01:19.538  INFO 14932 --- [ qtp10823740-24] n.d.m.nextmove.MessageOutController      : Created new conversation resource [id=b32ef599-4a2f-41ab-b641-ca29d0d63715, serviceIdentifier=DPE_DATA]
