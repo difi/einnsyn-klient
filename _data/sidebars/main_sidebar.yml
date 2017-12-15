@@ -20,7 +20,7 @@ entries:
         output: web,pdf
         
       - title: Steg3; Installere einnsyn-klient som Windows service
-        url: /install_tjeneste2.html
+        url: /install_tjeneste.html
         output: web,pdf
         
       - title: Oppdatere einnsyn-klient
