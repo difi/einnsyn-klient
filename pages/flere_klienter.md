@@ -2,7 +2,7 @@
 title: Flere einnsyn-klienter på samme integrasjonspunkt
 description: Flere einnsyn-klienter på samme integrasjonspunkt
 summary: "Her finner du informasjon om hvordan bruke flere einnsyn-klienter på samme integrasjonspunkt"
-permalink: install_tjeneste.html
+permalink: flere_klienter.html
 
 layout: page
 sidebar: main_sidebar
