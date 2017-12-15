@@ -21,7 +21,7 @@ Du kan sjekke status på tjenesten ved å bruke følgande kommando i samme komma
 
 * einnsyn-klient.exe status
 
-sss
+
 
 
  
