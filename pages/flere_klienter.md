@@ -16,7 +16,7 @@ Alt dette endres i einnsyn-klient.xml-filen. I tillegg må du legge til et ekstr
 Om du skal ha flere integrasjonspunkt installert på samme server må du endre server.port i integrasjonspunkt-local.properties for hver instans. Denne må være unik. Du må også da peke ```-Dapplication.moveUrl=``` til å gå mot riktig integrasjonspunkt og port. Porten som integrasjonspunktet og einnsyn-klienten trenger ikke være like. 
 
 
-```
+``` java
 <service>
       <id>einnsyn-klient-2</id> Her må du ha unik ID for prosessen
       <name>einnsyn-klient-2</name> Dette namnet blir det som viser i lista over windows tjenester.
