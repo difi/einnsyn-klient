@@ -1,3 +1,4 @@
+
 {"@timestamp":"2017-11-30T12:22:42.812+01:00","@version":1,"message":"Splitting took 0 ms","logger_name":"no.difi.einnsyn.sender.service.AsyncDataSplittingService","thread_name":"main","level":"DEBUG","level_value":10000}
 {"@timestamp":"2017-11-30T12:22:42.812+01:00","@version":1,"message":"Splitting serialization took 0 ms","logger_name":"no.difi.einnsyn.sender.service.AsyncDataSplittingService","thread_name":"main","level":"DEBUG","level_value":10000}
 {"@timestamp":"2017-11-30T12:22:42.812+01:00","@version":1,"message":"ConversationId \"57e0477e-cec1-476c-9e49-e45734bfc736\"","logger_name":"ipclient_transactionlogger","thread_name":"main","level":"INFO","level_value":20000}
