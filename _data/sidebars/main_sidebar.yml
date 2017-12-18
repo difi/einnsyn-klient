@@ -39,8 +39,8 @@ entries:
         url: /flere_klienter.html
         output: web, pdf
         
-      - title: Placeholder..
-        url: /placeholder.html
+      - title: Innsynskrav og e-postoppsett
+        url: /innsynskrav.html
         output: web,pdf
         
         
