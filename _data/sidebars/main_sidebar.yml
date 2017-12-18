@@ -8,10 +8,13 @@ entries:
   
 
   - title: Grunnleggende installasjonsguide
-    url: /index.html
     output: web, pdf
     folderitems:
 
+      - title: Introduksjon
+        url: /index.html
+        output: web,pdf
+        
       - title: Steg1; Forutsetning for installasjon og verktøy
         url: /install_forutsetninger_verktoy.html
         output: web,pdf
