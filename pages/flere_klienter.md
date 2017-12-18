@@ -38,4 +38,27 @@ Om du skal ha flere integrasjonspunkt installert på samme server må du endre s
 </service>
 ```
 
-[Her kan du laste ned einnsyn-klient.xml-filen](..resources/avansert/einnsyn-klient.xml)
+Her finner du samme fil uten kommentarer i:
+
+```java
+<service>
+	<id>einnsyn-klient</id>
+	<name>einnsyn-klient</name>
+	<description>Klient for parsing og sending av journaldata</description>
+	<env name="USE_IP" value="true"/>
+	<env name="RECEIVER_ORGNUMMER" value="991825827" />
+	<argument>-jar</argument>
+	<argument>-Dapplication.moveUrl=</argument>
+	<argument>-Dapplication.inputDirectory=</argument>
+	<argument>-Dapplication.orgnummer=</argument>
+      <argument>-Dserver.port=</argument>
+	<argument>-Dspring.mail.host=</argument>
+	<argument>-Dspring.mail.port</argument>
+	<argument>-Dspring.mail.username=</argument>
+	<argument>-Dspring.mail.password=</argument>
+	<argument>sender-2017-11-29T10_48.jar</argument>
+	<logpath>%BASE%/logs</logpath>
+	<executable>javaw</executable>
+</service>
+```
+
