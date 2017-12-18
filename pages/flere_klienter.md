@@ -37,3 +37,5 @@ Om du skal ha flere integrasjonspunkt installert på samme server må du endre s
       <executable>javaw</executable>
 </service>
 ```
+
+[Her kan du laste ned einnsyn-klient.xml-filen](..resources/avansert/einnsyn-klient.xml)
