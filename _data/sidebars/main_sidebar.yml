@@ -8,6 +8,7 @@ entries:
   
 
   - title: Grunnleggende installasjonsguide
+    url: /index.html
     output: web, pdf
     folderitems:
 
