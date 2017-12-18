@@ -11,7 +11,7 @@ Når en sluttbruker bestiller innsynskrav til en virksomhet så skal dette motta
 
 ## Hvordan fungerer det ?
 
-Når en sluttbruker bestiller et innsynskrav så vil Difi sin einnsyn-klient generere en bestilling og sende denne til Difi sitt integrasjonspunkt. Dette integrasjonspunktet vil dermed kryptere og pakke for så å sende innsynskravet via Azure Servicebus til mottaker sitt integrasjonspunkt. Her vil det bli dekryptert og sendt videre til mottakers einnsyn-klienten. Denne vil kontakte en intern SMTP-server og be den sende bestillingen. Det vil så gå en e-post fra denne e-postserveren, men med avsender e-postadresse "admin@oep.no". Denne e-posten går til den adressen som er angitt på einnsyn.no under ``` virksomhet -> "..." -> endre -> e-post ```. Deretter må filen importeres inn i sakarkivsystemet. 
+Når en sluttbruker bestiller et innsynskrav så vil Difi sin einnsyn-klient generere en bestilling og sende denne til Difi sitt integrasjonspunkt. Dette integrasjonspunktet vil dermed kryptere, signere og pakke meldingen for så å sende denne via Azure Servicebus til mottaker sitt integrasjonspunkt. Her vil det bli dekryptert og sendt videre til mottakers einnsyn-klienten. Denne vil kontakte en intern SMTP-server og be den sende bestillingen. Det vil så gå en e-post fra denne e-postserveren, men med avsender e-postadresse "admin@oep.no". Denne e-posten går til den adressen som er angitt på einnsyn.no under ``` virksomhet -> "..." -> endre -> e-post ```. Deretter må filen importeres inn i sakarkivsystemet. 
 
 ![nettverksoppsett einnsyn-klient](../resources/nettverksoppsett.png)
 
@@ -34,8 +34,8 @@ Se forklaring under bildet.
 9. Person søker innsyn
 10. Innsynskrav lastes opp til integrasjonspunkt
 11. Integrasjonspunktet gjør oppslag for å finne mottaker (capability oppslag)
-12. intgrasjonspunktet krypterer, signerer og pakker melding. Laster deretter opp til mottakers kø
-13. Integrasjonspunktet laster ned nye meldinger fra kø, pakker opp, sjekker signatur, dekrypterer melding, tilgjengeligjør for mottaker
+12. integrasjonspunktet krypterer, signerer og pakker melding. Laster deretter opp til mottakers kø
+13. Integrasjonspunktet laster ned nye meldinger fra kø, pakker opp, sjekker signatur, dekrypterer melding, tilgjengeliggjør for mottaker
 14. eInnsynsklient sender innsynskrav via mottakers mailserver
 15. Innsynskrav tilgjengeliggjøres i via mottakers sakarkvisystem/mailserver el
 
