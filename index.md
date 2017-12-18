@@ -11,8 +11,6 @@ isHome: true
 
 ## [Nyeste versjon av einnsyn-klienten finner du her](https://github.com/difi/einnsyn-klient/releases/)
 
-Work in progress... (14.12.17)
-
 ## Hvordan fungerer einnsyn-klienten
 
 I de fleste tilfeller vil det være naturlig å sette opp både integrasjonspunktet og einnsyn-klient på samme server. Denne veiledningen tar utgangspunkt i det. 
