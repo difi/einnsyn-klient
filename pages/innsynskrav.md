@@ -1,6 +1,6 @@
 ---
-title: Innsynskrav
-description: Innsynskrav
+title: Innsynskrav og e-postoppsett
+description: Innsynskrav og e-postoppsett
 permalink: innsynskrav.html
 
 layout: page
