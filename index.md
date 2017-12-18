@@ -21,4 +21,4 @@ eInnsyn-klienten kommuniserer over HTTP med integrasjonspunktet og trenger derme
 
 Filkatalogen (inputDirectory) er grensesnittet for arkivar. eInnsyn-klienten må kunne overvåke og skrive til denne katalogen. Samtidig må arkivar ha tilgang denne for å kunne laste opp filer. Dette forbeholder at filene ligger på en server som både arkivar har tilgang til, og som kommunisere med de andre komponentene. 
 
-
+[Installasjonsveiledning for integrasjonspunktet finner du her](http://difi.github.io/move-integrasjonspunkt/vStaging/)
