@@ -25,12 +25,8 @@ sidebar: main_sidebar
 more text </p>
 
 
-function name() {
-  string x = "Brannmuråpning for meldingsutveksling er 93.94.10.45"
-  string y = "brannmuråpning for oidc er 146.192..."
-  
-  return x </br> y;
-  
-  }
-  
-  name();
+
+{{data.strings.STRING_1|t}}
+
+{{data.strings.STRING_A|t}}
+
