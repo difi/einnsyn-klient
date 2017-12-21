@@ -20,7 +20,7 @@ sidebar: main_sidebar
 Dette må gjerast
 - [x] prereq
 - [x] konfigurerer einnsyn-klient.xml
-- [] installere tjenesten
+- [ ] installere tjenesten
 
 
 [!include[<brannmur.md>](<../_includes>)]
