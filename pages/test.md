@@ -26,6 +26,8 @@ sidebar: main_sidebar
 
 [id]
 
+>[!WARNING]
+> a warning
 
 [der][id]
 
