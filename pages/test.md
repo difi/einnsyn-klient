@@ -26,7 +26,7 @@ more text </p>
 
 
 
-{{data.strings.STRING_1|t}}
+{{_data.strings.STRING_1|t}}
 
-{{data.strings.STRING_A|t}}
+{{_data.strings.STRING_A|t}}
 
