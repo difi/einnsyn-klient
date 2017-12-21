@@ -17,6 +17,11 @@ sidebar: main_sidebar
 
 [!include[brannmur.md](../_includes/brannmur.md)]
 
+Dette må gjerast
+- [x] prereq
+- [x] konfigurerer einnsyn-klient.xml
+- [] installere tjenesten
+
 
 [!include[<brannmur.md>](<../_includes>)]
 
