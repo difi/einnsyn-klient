@@ -8,6 +8,11 @@ layout: page
 sidebar: main_sidebar
 ---
 
+
+```[!include[<title>](<filepath>)]```
+
+[!include[brannmur.md](../_includes/)]
+
 [id]: http://db.no
 
 [derp][id]
