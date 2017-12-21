@@ -8,7 +8,7 @@ layout: page
 sidebar: main_sidebar
 ---
 
-[id]:alt eg skriv her skal komme på nytt 
+[id]: http://db.no
 
 [derp][id]
 
