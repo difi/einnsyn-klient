@@ -11,8 +11,14 @@ sidebar: main_sidebar
 
 ```[!include[<title>](<filepath>)]```
 
-[!include[brannmur.md](../_includes/)]
-[!include[<brannmur.md>](<../_includes/>)]
+[!include[brannmur.md](../_includes)]
+
+[!include[brannmur.md](/_includes/brannmur.md)]
+
+[!include[brannmur.md](../_includes/brannmur.md)]
+
+
+[!include[<brannmur.md>](<../_includes>)]
 
 [id]: http://db.no
 
