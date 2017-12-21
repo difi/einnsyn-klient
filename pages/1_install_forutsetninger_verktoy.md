@@ -27,6 +27,4 @@ For å installere einnsyn-klienten må du laste ned 3 filer fra vår Github.
 
 Legg så filene i ønska katalog. For eksempel C:\einnsyn
  
- 
-> [!TIP]
-> Dagens tips
+test
