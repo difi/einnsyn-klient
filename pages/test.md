@@ -23,3 +23,14 @@ sidebar: main_sidebar
 
 <p>some text </br>
 more text </p>
+
+
+function name() {
+  string x = "Brannmuråpning for meldingsutveksling er 93.94.10.45"
+  string y = "brannmuråpning for oidc er 146.192..."
+  
+  return x </br> y;
+  
+  }
+  
+  name();
