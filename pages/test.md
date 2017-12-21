@@ -33,4 +33,9 @@ more text </p>
 
 {r conditional_print, child='text.Rmd', eval = show_text}
 
+[test1](../_includes/brannmur.md)
+
+[test3](./_includes/brannmur.md)
+
+![test12](../_includes/brannmur.md)
 
