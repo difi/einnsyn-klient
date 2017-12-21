@@ -30,3 +30,6 @@ more text </p>
 
 {{_data.strings.STRING_A|t}}
 
+```{r conditional_print, child='text.Rmd', eval = show_text}
+```
+
