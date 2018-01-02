@@ -8,53 +8,41 @@ layout: page
 sidebar: main_sidebar
 ---
 
+<details>
+	<summary>Brannmuråpninger i testmiljø</summary>
 
-```[!include[<title>](<filepath>)]```
+### Generelle
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
+* beta-meldingsutveksling.difi.no
+	- 93.94.10.30:443 
+	- 93.94.10.45:443 
+	- 93.94.10.5:443
 
-[!include[brannmur.md](../_includes)]
+Id-portens autentiseringstjeneste 
+* oidc-ver2.difi.no
+	- 146.192.252.152:443
+* oidc-ver1.difi.no 
+	- 146.192.252.121:443
 
-[!include[brannmur.md](/_includes/brannmur.md)]
+Logging 
++ 93.94.10.18:8300/5343
 
-[!include[brannmur.md](../_includes/brannmur.md)]
+### einnsyn 
+Meldingsformidler eInnsyn
+* move-dpe.servicebus.windows.net -> *.cloudapp.net[Hva er dette? les mer her]()
 
-Dette må gjerast
-- [x] prereq
-- [x] konfigurerer einnsyn-klient.xml
-- [ ] installere tjenesten
+### Meldingsformidler DPO og DPV
+* www.altinn.no 
+	- 79.171.86.33:443
+	
+### Meldingsformidler DPI
 
+qaoffentlig.meldingsformidler.digipost.no
+	- 146.192.168.18:443
+	- 146.192.168.19:443
+	
+Meldingsformidler KS SvarUt/SvarInn
 
-[!include[<brannmur.md>](<../_includes>)]
+test.svarut.ks.no -> 193.161.160.165:443
 
-[id]: http://db.no
-
-[derp][id]
-
-[id]
-
->[!WARNING]
-> a warning
-
-[der][id]
-
-[google](www.google.com)
-
-[google]
-
-<p>some text </br>
-more text </p>
-
-
-
-```{_data.strings.STRING_1|t}```
-
-```{_data.strings.STRING_A|t}
-```
-
-{r conditional_print, child='text.Rmd', eval = show_text}
-
-[test1](../_includes/brannmur.md)
-
-```[test3](../_includes/brannmur.md)```
-
-![test12](../_includes/brannmur.md)
-
+</details>
