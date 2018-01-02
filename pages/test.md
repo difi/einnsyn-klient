@@ -9,7 +9,7 @@ sidebar: main_sidebar
 ---
 
 <details>
-	<summary>Brannmuråpninger i testmiljø</summary>
+	<summary>Brannmuråpninger i testmiljø</summary><p>
 
 ### Generelle
 Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
@@ -45,4 +45,5 @@ Meldingsformidler KS SvarUt/SvarInn
 
 test.svarut.ks.no -> 193.161.160.165:443
 
+</p>
 </details>
