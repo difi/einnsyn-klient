@@ -20,3 +20,4 @@ Etter du er ferdig å redigere einnsyn-klient.xml-fila må du reinstallere tjene
 Disse kommandoene må kjøres uten noe form for skråstrek eller bindestrek foran. Skrives nøyaktig som på bildet under:
 ![Reinstallere tjeneste](../resources/reinstall_klient.png)
 
+[Nyeste versjon finner du her](https://github.com/difi/einnsyn-klient/releases/)
