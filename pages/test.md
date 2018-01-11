@@ -52,4 +52,10 @@ test.svarut.ks.no -> 193.161.160.165:443
 Also attempting to include
 {% include custom/reuse.html %}
 
->Did it work?
+>Did it work? yup!
+
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
