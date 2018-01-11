@@ -37,7 +37,7 @@ sidebar: main_sidebar
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger produksjonsmiljø: DPV</button>
-<div id="demo" class="collapse">
+<button data-toggle="collapse" data-target="#demo6">Brannmuråpninger produksjonsmiljø: DPV</button>
+<div id="demo6" class="collapse">
   {% include custom/reuse.html %}
 </div>
