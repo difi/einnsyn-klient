@@ -57,7 +57,7 @@ Also attempting to include
 <button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPE</button>
 
 <div id="demo" class="collapse">
-<p>
+
 	### Generelle
 Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
 * beta-meldingsutveksling.difi.no
@@ -92,6 +92,5 @@ Meldingsformidler KS SvarUt/SvarInn
 
 test.svarut.ks.no -> 193.161.160.165:443
 
-</p>
 
 </div>
