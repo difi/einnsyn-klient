@@ -18,7 +18,7 @@ sidebar: main_sidebar
 
 <button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: DPO og DPV</button>
 <div id="demo2" class="collapse">
-  {% include custom/reuse.html %}
+  {% include custom/reuse.html %} </br>
   {% include custom/test_dpo.html %}
 </div>
 
