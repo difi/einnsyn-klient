@@ -15,24 +15,24 @@ sidebar: main_sidebar
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPO</button>
+<button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: DPO</button>
 <div id="demo" class="collapse">
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPV</button>
+<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPV</button>
 <div id="demo" class="collapse">
   {% include custom/reuse.html %}
 </div>
 
 ## Brannmuråpninger produksjon
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger produksjonsmiljø: DPE</button>
+<button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: DPE</button>
 <div id="demo" class="collapse">
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger produksjonsmiljø: DPO</button>
+<button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO</button>
 <div id="demo" class="collapse">
   {% include custom/reuse.html %}
 </div>
