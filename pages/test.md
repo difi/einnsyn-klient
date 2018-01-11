@@ -16,14 +16,10 @@ sidebar: main_sidebar
   {% include custom/test_dpe.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: DPO</button>
+<button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: DPO og DPV</button>
 <div id="demo2" class="collapse">
   {% include custom/reuse.html %}
-</div>
-
-<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPV</button>
-<div id="demo3" class="collapse">
-  {% include custom/reuse.html %}
+  {% include custom/test_dpo.html %}
 </div>
 
 ## Brannmuråpninger produksjon
@@ -33,12 +29,8 @@ sidebar: main_sidebar
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO</button>
+<button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO og DPV</button>
 <div id="demo5" class="collapse">
   {% include custom/reuse.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo6">Brannmuråpninger produksjonsmiljø: DPV</button>
-<div id="demo6" class="collapse">
-  {% include custom/reuse.html %}
-</div>
