@@ -31,6 +31,6 @@ sidebar: main_sidebar
 
 <button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO og DPV</button>
 <div id="demo5" class="collapse">
-  {% include custom/reuse.html %}
+  {% include custom/prod_generell.html %}
 </div>
 
