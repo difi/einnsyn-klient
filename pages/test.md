@@ -58,7 +58,7 @@ Also attempting to include
 
 <div id="demo" class="collapse">
 
-	### Generelle
+### Generelle
 Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
 * beta-meldingsutveksling.difi.no
 	- 93.94.10.30:443 
