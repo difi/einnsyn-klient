@@ -9,12 +9,6 @@ sidebar: main_sidebar
 ---
 
 
-
-Also attempting to include
-{% include custom/reuse.html %}
-
->Did it work? yup!
-
 <button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPE</button>
 
 <div id="demo" class="collapse">
