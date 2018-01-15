@@ -29,6 +29,16 @@ sidebar: main_sidebar
   {% include custom/tabell.html %}
 </div>
 
+| Properties | Eksempel Java Keystore(JKS) | Beskrivelse | 
+| --- | --- | --- |
+| server.port | 9093 | Portnummer integrasjonspunktet skal kjøre på (default 9093)  | 
+| difi.move.org.number | 123456789 | Organisasjonsnummer til din organisasjon (9 siffer) | 
+| difi.move.org.keystore.alias  | alias | alias=navnet på virksomhetssertifikatet som ligger i JKS(case sensitivt) | 
+| difi.move.org.keystore.password | changeit | Passord til java keystore | 
+| difi.move.org.keystore.path | | difi.move.org.keystore.path=file:c:/integrasjonspunkt/keystore.jks  | Path til .jks fil | 
+
+*** 
+
 <button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO og DPV</button>
 <div id="demo5" class="collapse">
   {% include custom/prod_generell.html %}
