@@ -26,7 +26,7 @@ sidebar: main_sidebar
 
 <button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: DPE</button>
 <div id="demo4" class="collapse">
-  {% include custom/reuse.html %}
+  {% include custom/tabell.html %}
 </div>
 
 <button data-toggle="collapse" data-target="#demo5">Brannmuråpninger produksjonsmiljø: DPO og DPV</button>
