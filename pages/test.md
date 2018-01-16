@@ -27,6 +27,7 @@ sidebar: main_sidebar
 <button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: DPE</button>
 <div id="demo4" class="collapse">
   {% include custom/tabell.html %}
+  {% include custom/reuse.html %} 
 </div>
 
 | Properties | Eksempel Java Keystore(JKS) | Beskrivelse | 
