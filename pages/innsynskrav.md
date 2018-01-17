@@ -22,6 +22,7 @@ I tillegg er det også lagt inn støtte for at e-posten som mottas har avsendera
 Se forklaring under bildet.
 
 ![meldingsflyt einnsyn](../resources/meldingsflyt.bmp)
+[Trykk her for å laste ned bildet](../resources/meldingsflyt.bmp)
 
 1. Arkivar henter trigger eksport av oep saker
 2. Laster opp oep fil til filområde arkivar og eInnsynsklient har tilgang til
