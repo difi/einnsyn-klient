@@ -11,7 +11,8 @@ arkiv:BasisregistreringsShape
         arkiv:Basisregistrering_virksomhetsspesifikkeMetadata , arkiv:Basisregistrering_forfatter ,
         arkiv:Basisregistrering_registreringsID , arkiv:Basisregistrering_oppbevaringssted , arkiv:Basisregistrering_tittel ,
         arkiv:Basisregistrering_merknad , arkiv:Basisregistrering_offentligTittel , arkiv:Basisregistrering_dokumentmedium ,
-        arkiv:Basisregistrering_noekkelord , arkiv:Basisregistrering_offentligTittel_SENSITIV, arkiv:Basisregistrering_offentligTittel_LIST ;
+        arkiv:Basisregistrering_noekkelord , arkiv:Basisregistrering_offentligTittel_SENSITIV, arkiv:Basisregistrering_referanseTilRegistrering,
+        arkiv:Basisregistrering_referanseTilMappe, arkiv:Basisregistrering_referanseTilKlasse, arkiv:Basisregistrering_offentligTittel_LIST ;
         sh:scopeClass  arkiv:Basisregistrering .
 
 arkiv:Basisregistrering_beskrivelse
@@ -115,4 +116,20 @@ arkiv:Basisregistrering_tittel_LIST
 arkiv:Basisregistrering_virksomhetsspesifikkeMetadata
         sh:maxCount   1 ;
         sh:predicate  arkiv:virksomhetsspesifikkeMetadata ;
+        sh:severity   sh:Violation .
+
+
+arkiv:Basisregistrering_referanseTilRegistrering
+        sh:nodeKind   sh:IRI ;
+        sh:predicate  arkiv:referanseTilRegistrering ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_referanseTilMappe
+        sh:nodeKind   sh:IRI ;
+        sh:predicate  arkiv:referanseTilMappe ;
+        sh:severity   sh:Violation .
+
+arkiv:Basisregistrering_referanseTilKlasse
+        sh:nodeKind   sh:IRI ;
+        sh:predicate  arkiv:referanseTilKlasse ;
         sh:severity   sh:Violation .

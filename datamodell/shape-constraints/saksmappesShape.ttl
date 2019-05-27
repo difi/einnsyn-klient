@@ -22,7 +22,7 @@ arkiv:Saksmappe_journalenhet
         sh:severity   sh:Violation .
 
 arkiv:Saksmappe_parent
-        sh:classIn    ( arkiv:Arkivdel arkiv:Klasse ) ;
+        sh:classIn    ( arkiv:Arkiv arkiv:Arkivdel arkiv:Klasse ) ;
         sh:maxCount   1 ;
         sh:predicate  arkiv:parent ;
         sh:severity   sh:Violation .
@@ -33,13 +33,14 @@ arkiv:Saksmappe_presedens
         sh:severity   sh:Violation .
 
 arkiv:Saksmappe_referanseSekundaerKlassifikasjon
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:predicate  arkiv:referanseSekundaerKlassifikasjon ;
         sh:severity   sh:Violation .
 
 arkiv:Saksmappe_saksaar
         sh:datatype   xsd:integer ;
         sh:maxCount   1 ;
+        sh:minCount   1 ;
         sh:predicate  arkiv:saksaar ;
         sh:severity   sh:Violation .
 
@@ -81,6 +82,7 @@ arkiv:Saksmappe_sakspart
 arkiv:Saksmappe_sakssekvensnummer
         sh:datatype   xsd:integer ;
         sh:maxCount   1 ;
+        sh:minCount   1 ;
         sh:predicate  arkiv:sakssekvensnummer ;
         sh:severity   sh:Violation .
 

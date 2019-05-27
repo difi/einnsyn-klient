@@ -11,7 +11,8 @@ arkiv:KorrespondansepartsShape
         arkiv:Korrespondansepart_postadresse , arkiv:Korrespondansepart_korrespondanseparttype ,
         arkiv:Korrespondansepart_telefonnummer , arkiv:Korrespondansepart_poststed , arkiv:Korrespondansepart_administrativEnhet ,
         arkiv:Korrespondansepart_land , arkiv:Korrespondansepart_korrespondansepartNavn , arkiv:Korrespondansepart_kontaktperson ,
-        arkiv:Korrespondansepart_postnummer , arkiv:Korrespondansepart_epostadresse ;
+        arkiv:Korrespondansepart_postnummer , arkiv:Korrespondansepart_epostadresse, arkiv:Korrespondansepart_korrespondansepartEnhetstype ,
+        arkiv:Korrespondansepart_organisasjonsnummer ;
         sh:scopeClass  arkiv:Korrespondansepart .
 
 arkiv:Korrespondansepart_administrativEnhet
@@ -103,10 +104,19 @@ arkiv:Korrespondansepart_saksbehandler_LIST
         sh:predicate  arkiv:saksbehandler_LIST ;
         sh:severity   sh:Violation .
 
-
-
-
 arkiv:Korrespondansepart_telefonnummer
         sh:datatype   xsd:string ;
         sh:predicate  arkiv:telefonnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Korrespondansepart_korrespondansepartEnhetstype
+        sh:class   arkiv:KorrespondansepartEnhetstype ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:korrespondansepartEnhetstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Korrespondansepart_organisasjonsnummer
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:organisasjonsnummer ;
         sh:severity   sh:Violation .

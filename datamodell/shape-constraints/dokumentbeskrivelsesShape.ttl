@@ -114,7 +114,7 @@ arkiv:Dokumentbeskrivelse_parent
         sh:severity   sh:Violation .
 
 arkiv:Dokumentbeskrivelse_referanseArkivdel
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:predicate  arkiv:referanseArkivdel ;
         sh:severity   sh:Violation .
 

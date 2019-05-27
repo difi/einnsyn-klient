@@ -11,7 +11,8 @@ arkiv:JournalpostsShape
         arkiv:Journalpost_avskrivning , arkiv:Journalpost_utlaantDato , arkiv:Journalpost_journalposttype ,
         arkiv:Journalpost_journalenhet , arkiv:Journalpost_journalstatus , arkiv:Journalpost_journaldato ,
         arkiv:Journalpost_korrespondansepart , arkiv:Journalpost_journalpostnummer , arkiv:Journalpost_elektroniskSignatur ,
-        arkiv:Journalpost_journalsekvensnummer , arkiv:Journalpost_offentlighetsvurdertDato, arkiv:Journalpost_referanseTilMoete, arkiv:Journalpost_parent;
+        arkiv:Journalpost_journalsekvensnummer , arkiv:Journalpost_offentlighetsvurdertDato, arkiv:Journalpost_referanseTilMoete,
+        arkiv:Journalpost_parent , arkiv:Journalpost_følgsakenreferanse;
         sh:scopeClass  arkiv:Journalpost .
 
 arkiv:Journalpost_antallVedlegg
@@ -97,6 +98,12 @@ arkiv:Journalpost_korrespondansepart
         sh:class      arkiv:Korrespondansepart ;
         sh:minCount   0 ;
         sh:predicate  arkiv:korrespondansepart ;
+        sh:severity   sh:Violation .
+
+arkiv:Journalpost_følgsakenreferanse
+        sh:nodeKind   sh:IRI ;
+        sh:minCount   0 ;
+        sh:predicate  arkiv:følgsakenReferanse ;
         sh:severity   sh:Violation .
 
 arkiv:Journalpost_mottattDato

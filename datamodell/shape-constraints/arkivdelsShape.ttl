@@ -99,13 +99,13 @@ arkiv:Arkivdel_parent
         sh:severity   sh:Violation .
 
 arkiv:Arkivdel_referanseArvtaker
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:maxCount   1 ;
         sh:predicate  arkiv:referanseArvtaker ;
         sh:severity   sh:Violation .
 
 arkiv:Arkivdel_referanseForloeper
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:maxCount   1 ;
         sh:predicate  arkiv:referanseForloeper ;
         sh:severity   sh:Violation .
@@ -131,6 +131,7 @@ arkiv:Arkivdel_systemID
         sh:datatype   xsd:string ;
         sh:maxCount   1 ;
         #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:pattern    "([0-9a-fA-F]{8}(-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})" ;
         sh:predicate  arkiv:systemID ;
         sh:severity   sh:Violation .
 

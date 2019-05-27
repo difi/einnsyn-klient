@@ -1,0 +1,48 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MøtedokumentregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Møtedokumentregistrering_møtedokumentregistreringstype , arkiv:Møtedokumentregistrering_parent ,
+                       arkiv:Møtedokumentregistrering_saksbehandler , arkiv:Møtedokumentregistrering_saksbehandlerSENSITIV ,
+                       arkiv:Møtedokumentregistrering_saksbehandlerLIST , arkiv:Møtedokumentregistrering_administrativEnhet ;
+        sh:scopeClass  arkiv:Møtedokumentregistrering.
+
+arkiv:Møtedokumentregistrering_møtedokumentregistreringstype
+        sh:class      arkiv:Møtedokumentregistreringstype ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:møtedokumentregistreringstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtedokumentregistrering_parent
+        sh:class      arkiv:Moetemappe ;
+        sh:predicate  arkiv:parent ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtedokumentregistrering_saksbehandler
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtedokumentregistrering_saksbehandlerSENSITIV
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtedokumentregistrering_saksbehandlerLIST
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:saksbehandler_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtedokumentregistrering_administrativEnhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:administrativEnhet ;
+        sh:severity   sh:Violation .
+

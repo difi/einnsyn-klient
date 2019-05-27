@@ -30,7 +30,7 @@ arkiv:Avskrivning_avskrivningsmaate
         sh:severity   sh:Violation .
 
 arkiv:Avskrivning_referanseAvskrivesAvJournalpost
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:maxCount   1 ;
         sh:predicate  arkiv:referanseAvskrivesAvJournalpost ;
         sh:severity   sh:Violation .

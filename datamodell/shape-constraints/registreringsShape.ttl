@@ -9,7 +9,8 @@ arkiv:RegistreringsShape
         sh:property    arkiv:Registrering_opprettetDato , arkiv:Registrering_parent , arkiv:Registrering_gradering ,
         arkiv:Registrering_arkivertDato , arkiv:Registrering_systemID , arkiv:Registrering_skjerming ,
         arkiv:Registrering_referanseArkivdel , arkiv:Registrering_opprettetAv , arkiv:Registrering_arkivertAv ,
-        arkiv:Registrering_dokumentobjekt , arkiv:Registrering_dokumentbeskrivelse , arkiv:Registrering_kassasjon ;
+        arkiv:Registrering_dobbelt_hoveddokument ,
+        arkiv:Registrering_dokumentbeskrivelse , arkiv:Registrering_kassasjon , arkiv:Registrering_korrespondansepart ;
         sh:scopeClass  arkiv:Registrering .
 
 arkiv:Registrering_arkivertAv
@@ -37,10 +38,10 @@ arkiv:Registrering_dokumentbeskrivelse
         sh:predicate  arkiv:dokumentbeskrivelse ;
         sh:severity   sh:Violation .
 
-arkiv:Registrering_dokumentobjekt
-        sh:class      arkiv:Dokumentobjekt ;
-        sh:predicate  arkiv:dokumentobjekt ;
-        sh:severity   sh:Violation .
+#arkiv:Registrering_dokumentobjekt
+ #       sh:class      arkiv:Dokumentobjekt ;
+  #      sh:predicate  arkiv:dokumentobjekt ;
+   #     sh:severity   sh:Violation .
 
 arkiv:Registrering_gradering
         sh:class      arkiv:Gradering ;
@@ -76,7 +77,7 @@ arkiv:Registrering_parent
         sh:severity   sh:Violation .
 
 arkiv:Registrering_referanseArkivdel
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:predicate  arkiv:referanseArkivdel ;
         sh:severity   sh:Violation .
 
@@ -90,5 +91,25 @@ arkiv:Registrering_systemID
         sh:datatype   xsd:string ;
         sh:maxCount   1 ;
         #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:pattern    "([0-9a-fA-F]{8}(-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})" ;
         sh:predicate  arkiv:systemID ;
         sh:severity   sh:Violation .
+
+arkiv:Registrering_korrespondansepart
+        sh:class      arkiv:Korrespondansepart ;
+        sh:minCount   0 ;
+        sh:predicate  arkiv:korrespondansepart ;
+        sh:severity   sh:Violation .
+
+arkiv:Registrering_dobbelt_hoveddokument
+    sh:sparql """
+    select * where {
+        ?a arkiv:dokumentbeskrivelse ?besk1, ?besk2.
+        ?besk1 arkiv:tilknyttetRegistreringSom arkiv:hoveddokument.
+        ?besk2 arkiv:tilknyttetRegistreringSom arkiv:hoveddokument.
+        FILTER(?besk1 != ?besk2)
+    }
+    """;
+    sh:sparqlSubject "?a";
+    sh:sparqlErrorMessage "Registrering {?a} har to hoveddokument, {?besk1} og {?besk2}.";
+    sh:severity sh:Violation.

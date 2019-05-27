@@ -106,13 +106,13 @@ arkiv:Mappe_opprettetDato
         sh:predicate  arkiv:opprettetDato ;
         sh:severity   sh:Violation .
 
-arkiv:Mappe_parent  sh:classIn  ( arkiv:Arkivdel arkiv:Klasse arkiv:Mappe ) ;
+arkiv:Mappe_parent  sh:classIn  ( arkiv:Arkiv arkiv:Arkivdel arkiv:Klasse arkiv:Mappe ) ;
         sh:maxCount 1;
         sh:predicate  arkiv:parent ;
         sh:severity   sh:Violation .
 
 arkiv:Mappe_referanseArkivdel
-        sh:datatype   xsd:string ;
+        sh:nodeKind   sh:IRI ;
         sh:predicate  arkiv:referanseArkivdel ;
         sh:severity   sh:Violation .
 
@@ -125,6 +125,7 @@ arkiv:Mappe_skjerming
 arkiv:Mappe_systemID  sh:datatype  xsd:string ;
         sh:maxCount   1 ;
         #sh:minCount   1 ; OPTIONAL IN NOARK 4
+        sh:pattern    "([0-9a-fA-F]{8}(-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12})" ;
         sh:predicate  arkiv:systemID ;
         sh:severity   sh:Violation .
 

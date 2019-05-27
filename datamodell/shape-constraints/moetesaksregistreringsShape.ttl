@@ -1,0 +1,95 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:MøtesaksregistreringsShape
+        a              sh:Shape ;
+        sh:property    arkiv:Møtesaksregistrering_møtesakstype , arkiv:Møtesaksregistrering_parent ,
+                       arkiv:Møtesaksregistrering_møteregistreringsstatus ,
+                       arkiv:Møtesaksregistrering_saksbehandler , arkiv:Møtesaksregistrering_saksbehandlerSENSITIV ,
+                       arkiv:Møtesaksregistrering_saksbehandlerLIST , arkiv:Møtesaksregistrering_administrativEnhet ,
+                       arkiv:Møtesaksregistrering_referanseTilMøtesak, arkiv:Møtesaksregistrering_møtesaksår,
+                       arkiv:Møtesaksregistrering_moetedatoOgMøtesakssekvensnummer, arkiv:Møtesaksregistrering_moetedatoOgMøtesaksår ,
+                       arkiv:Møtesaksregistrering_møtesakssekvensnummer, arkiv:Møtesaksregistrering_møtesaksundersekvensnummer;
+        sh:scopeClass  arkiv:Møtesaksregistrering.
+
+arkiv:Møtesaksregistrering_møtesakstype
+        sh:class      arkiv:Møtesakstype ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:møtesakstype ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_parent
+        sh:class      arkiv:Moetemappe ;
+        sh:predicate  arkiv:parent ;
+        sh:maxCount   1 ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_møteregistreringsstatus
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:møteregistreringsstatus ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_saksbehandler
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_saksbehandlerSENSITIV
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:saksbehandler_SENSITIV ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_saksbehandlerLIST
+        sh:maxCount   1 ;
+        sh:class rdf:List;
+        sh:predicate  arkiv:saksbehandler_LIST ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_administrativEnhet
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:administrativEnhet ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_referanseTilMøtesak
+        sh:nodeKind   sh:IRI ;
+        sh:minCount   0 ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:referanseTilMøtesak ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_møtesaksår
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:møtesaksår ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_møtesakssekvensnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:møtesakssekvensnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_møtesaksundersekvensnummer
+        sh:datatype   xsd:integer ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:møtesaksundersekvensnummer ;
+        sh:severity   sh:Violation .
+
+arkiv:Møtesaksregistrering_moetedatoOgMøtesakssekvensnummer
+    sh:sparql "select * where {?a arkiv:parent ?møte. ?møte arkiv:moetedato ?dato. FILTER(! EXISTS {?a arkiv:møtesakssekvensnummer ?møtesakssekvensnummer})}";
+    sh:sparqlSubject "?a";
+    sh:sparqlErrorMessage "Forventet å finne møtesakssekvensnummer på {?a} siden parent møte {?møte} har møtedato {?dato}.";
+    sh:severity sh:Violation.
+
+arkiv:Møtesaksregistrering_moetedatoOgMøtesaksår
+    sh:sparql "select * where {?a arkiv:parent ?møte. ?møte arkiv:moetedato ?dato. FILTER(! EXISTS {?a arkiv:møtesaksår ?møtesaksår})}";
+    sh:sparqlSubject "?a";
+    sh:sparqlErrorMessage "Forventet å finne møtesaksår på {?a} siden parent møte {?møte} har møtedato {?dato}.";
+    sh:severity sh:Violation.
