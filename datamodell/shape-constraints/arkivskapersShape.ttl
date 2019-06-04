@@ -1,0 +1,39 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix arkiv: <http://www.arkivverket.no/standarder/noark5/arkivstruktur/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+arkiv:ArkivsShape  a   sh:Shape ;
+        sh:property    arkiv:Arkiv_arkivskaper ;
+        sh:scopeClass  arkiv:Arkiv .
+
+arkiv:Arkiv_arkivskaper
+        sh:class      arkiv:Arkivskaper ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:arkivskaper ;
+        sh:severity   sh:Violation .
+
+arkiv:ArkivskapersShape
+        a              sh:Shape ;
+        sh:property    arkiv:Arkivskaper_beskrivelse , arkiv:Arkivskaper_arkivskaperNavn , arkiv:Arkivskaper_arkivskaperID ;
+        sh:scopeClass  arkiv:Arkivskaper .
+
+arkiv:Arkivskaper_arkivskaperID
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        #sh:minCount   1 ; # Ikke-obligatorisk for å støtte OEP SQL dump
+        sh:predicate  arkiv:arkivskaperID ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivskaper_arkivskaperNavn
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:minCount   1 ;
+        sh:predicate  arkiv:arkivskaperNavn ;
+        sh:severity   sh:Violation .
+
+arkiv:Arkivskaper_beskrivelse
+        sh:datatype   xsd:string ;
+        sh:maxCount   1 ;
+        sh:predicate  arkiv:beskrivelse ;
+        sh:severity   sh:Violation .
